@@ -109,6 +109,60 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <12 13>;
+        };
+
+        bs {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <6 7>;
+        };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <7 8>;
+        };
+
+        ime {
+            bindings = <&kp GRAVE>;
+            key-positions = <13 16>;
+        };
+
+        m1 {
+            bindings = <&mkp MB1>;
+            key-positions = <16 17>;
+        };
+
+        m2 {
+            bindings = <&mkp MB2>;
+            key-positions = <17 18>;
+        };
+
+        m4 {
+            bindings = <&mkp MB4>;
+            key-positions = <15 16>;
+        };
+
+        m5 {
+            bindings = <&mkp MB5>;
+            key-positions = <18 19>;
+        };
+
+        mc {
+            bindings = <&mkp MCLK>;
+            key-positions = <16 17 18>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
