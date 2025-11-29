@@ -386,6 +386,46 @@
             bindings = <&plus>;
             key-positions = <1 11>;
         };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <3 13>;
+        };
+
+        aster {
+            bindings = <&aster>;
+            key-positions = <2 12>;
+        };
+
+        hutt {
+            bindings = <&kp EQUAL>;
+            key-positions = <4 14>;
+        };
+
+        anp {
+            bindings = <&anp>;
+            key-positions = <14 24>;
+        };
+
+        coron {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <13 23>;
+        };
+
+        semic {
+            bindings = <&kp SEMI>;
+            key-positions = <12 22>;
+        };
+
+        hush {
+            bindings = <&hush>;
+            key-positions = <11 21>;
+        };
+
+        dollar {
+            bindings = <&dollar>;
+            key-positions = <10 20>;
+        };
     };
 
     keymap {
