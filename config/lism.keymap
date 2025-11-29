@@ -407,16 +407,6 @@
             key-positions = <14 24>;
         };
 
-        coron {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <13 23>;
-        };
-
-        semic {
-            bindings = <&kp SEMI>;
-            key-positions = <12 22>;
-        };
-
         hush {
             bindings = <&hush>;
             key-positions = <11 21>;
