@@ -430,6 +430,11 @@
             bindings = <&dollar>;
             key-positions = <10 20>;
         };
+
+        stab {
+            bindings = <&stab>;
+            key-positions = <11 12>;
+        };
     };
 
     keymap {
