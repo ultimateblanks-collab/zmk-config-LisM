@@ -435,6 +435,11 @@
             bindings = <&stab>;
             key-positions = <11 12>;
         };
+
+        cw {
+            bindings = <&C_W>;
+            key-positions = <35 36>;
+        };
     };
 
     keymap {
