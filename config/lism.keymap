@@ -244,6 +244,34 @@
 
             label = "STAB";
         };
+
+        endapp: endapp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 50>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp F4 &kp LEFT_SHIFT>;
+
+            label = "ENDAPP";
+        };
+
+        ctbs: ctbs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp BACKSPACE>,
+                <&macro_release>,
+                <&kp BACKSPACE &kp LCTRL>;
+
+            label = "CTBS";
+        };
     };
 
     behaviors {
@@ -295,7 +323,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
@@ -309,7 +337,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
@@ -444,6 +472,11 @@
         st {
             bindings = <&S_key LEFT_SHIFT>;
             key-positions = <34 37>;
+        };
+
+        ctbs {
+            bindings = <&ctbs>;
+            key-positions = <26 27>;
         };
     };
 
