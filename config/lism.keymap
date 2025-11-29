@@ -440,6 +440,11 @@
             bindings = <&C_W>;
             key-positions = <35 36>;
         };
+
+        st {
+            bindings = <&S_key LEFT_SHIFT>;
+            key-positions = <34 37>;
+        };
     };
 
     keymap {
