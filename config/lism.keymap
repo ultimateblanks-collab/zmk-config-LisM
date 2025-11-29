@@ -119,7 +119,7 @@
             label = "SQ";
         };
 
-        lk: aster {
+        lk: lk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -130,7 +130,7 @@
                 <&macro_release>,
                 <&kp N8 &kp LEFT_SHIFT>;
 
-            label = "ASTER";
+            label = "lk";
         };
 
         rk: rk {
@@ -215,6 +215,20 @@
                 <&kp SEMI &kp LEFT_SHIFT>;
 
             label = "PLUS";
+        };
+
+        aster: aster {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp SINGLE_QUOTE>,
+                <&macro_release>,
+                <&kp SINGLE_QUOTE &kp LEFT_SHIFT>;
+
+            label = "ASTER";
         };
     };
 
@@ -366,6 +380,11 @@
         exc {
             bindings = <&exc>;
             key-positions = <10 20>;
+        };
+
+        plus {
+            bindings = <&plus>;
+            key-positions = <1 11>;
         };
     };
 
