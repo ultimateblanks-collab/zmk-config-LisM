@@ -20,6 +20,202 @@
                 <&macro_release>,
                 <&kp CAPSLOCK>;
         };
+
+        exc: exc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N1>,
+                <&macro_release>,
+                <&kp N1 &kp LEFT_SHIFT>;
+
+            label = "EXC";
+        };
+
+        dq: dq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N2>,
+                <&macro_release>,
+                <&kp N2 &kp LEFT_SHIFT>;
+
+            label = "DQ";
+        };
+
+        hush: hush {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N3>,
+                <&macro_release>,
+                <&kp N3 &kp LEFT_SHIFT>;
+
+            label = "HUSH";
+        };
+
+        dollar: dollar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N4>,
+                <&macro_release>,
+                <&kp N4 &kp LEFT_SHIFT>;
+
+            label = "DOLLAR";
+        };
+
+        percent: percent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N5>,
+                <&macro_release>,
+                <&kp N5 &kp LEFT_SHIFT>;
+
+            label = "PERCENT";
+        };
+
+        anp: anp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N6>,
+                <&macro_release>,
+                <&kp N6 &kp LEFT_SHIFT>;
+
+            label = "ANP";
+        };
+
+        sq: sq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N7>,
+                <&macro_release>,
+                <&kp N7 &kp LEFT_SHIFT>;
+
+            label = "SQ";
+        };
+
+        lk: aster {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N8>,
+                <&macro_release>,
+                <&kp N8 &kp LEFT_SHIFT>;
+
+            label = "ASTER";
+        };
+
+        rk: rk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp N9>,
+                <&macro_release>,
+                <&kp N9 &kp LEFT_SHIFT>;
+
+            label = "RK";
+        };
+
+        us: us {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp INT_RO>,
+                <&macro_release>,
+                <&kp INT_RO &kp LEFT_SHIFT>;
+
+            label = "US";
+        };
+
+        pl: pl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp INT3>,
+                <&macro_release>,
+                <&kp INT3 &kp LEFT_SHIFT>;
+
+            label = "PL";
+        };
+
+        eql: eql {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp MINUS>,
+                <&macro_release>,
+                <&kp MINUS &kp LEFT_SHIFT>;
+
+            label = "EQL";
+        };
+
+        tilde: tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp EQUAL>,
+                <&macro_release>,
+                <&kp EQUAL &kp LEFT_SHIFT>;
+
+            label = "TILDE";
+        };
+
+        plus: plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 50>,
+                <&kp SEMI>,
+                <&macro_release>,
+                <&kp SEMI &kp LEFT_SHIFT>;
+
+            label = "PLUS";
+        };
     };
 
     behaviors {
