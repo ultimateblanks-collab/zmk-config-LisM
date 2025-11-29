@@ -357,6 +357,16 @@
             bindings = <&mkp MCLK>;
             key-positions = <16 17 18>;
         };
+
+        at {
+            bindings = <&kp LBRC>;
+            key-positions = <0 10>;
+        };
+
+        exc {
+            bindings = <&exc>;
+            key-positions = <10 20>;
+        };
     };
 
     keymap {
