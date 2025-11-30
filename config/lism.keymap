@@ -573,10 +573,10 @@
         layer_2 {
             display-name = "ARROW";
             bindings = <
-&none         &kp NUMBER_7       &kp NUMBER_8         &kp NUMBER_9       &kp EQUAL                        &kp F1     &kp F2    &kp UP_ARROW     &kp F10      &kp RSHIFT
-&kp ASTERISK  &mt LALT NUMBER_4  &mt LSHIFT NUMBER_5  &mt LGUI NUMBER_6  &mt LCTRL MINUS                  &mkp MB1   &kp LEFT  &kp DOWN_ARROW   &kp RIGHT    &kp RGUI
-&kp SLASH     &kp NUMBER_1       &kp NUMBER_2         &kp NUMBER_3       &kp PLUS                         &mkp MB2   &none     &kp DOWN         &none        &kp RALT
-&none         &kp DOT            &kp NUMBER_0         &none              &kp LANG2        &none    &none  &kp LANG1  &none     &kp RS(RC(TAB))  &kp RC(TAB)  &kp F12
+&none         &none     &none      &none           &none                  &none      &kp PG_UP  &kp UP_ARROW     &kp PAGE_DOWN  &none
+&kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &kp HOME   &kp LEFT   &kp DOWN_ARROW   &kp RIGHT      &kp END
+&none         &none     &none      &none           &none                  &none      &none      &none            &none          &none
+&none         &none     &none      &none           &none  &none    &none  &kp LANG1  &none      &kp RS(RC(TAB))  &kp RC(TAB)    &kp F12
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
