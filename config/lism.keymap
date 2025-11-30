@@ -466,12 +466,12 @@
 
         cw {
             bindings = <&C_W>;
-            key-positions = <35 36>;
+            key-positions = <29 20>;
         };
 
         st {
             bindings = <&S_key LEFT_SHIFT>;
-            key-positions = <34 37>;
+            key-positions = <19 10>;
         };
 
         ctbs {
@@ -498,6 +498,21 @@
             bindings = <&rk>;
             key-positions = <8 18>;
         };
+
+        lbra {
+            bindings = <&kp RBRC>;
+            key-positions = <16 26>;
+        };
+
+        rbla {
+            bindings = <&kp NUHS>;
+            key-positions = <18 28>;
+        };
+
+        sq {
+            bindings = <&sq>;
+            key-positions = <17 27>;
+        };
     };
 
     keymap {
@@ -506,10 +521,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q              &kp W          &kp E           &kp R                &kp T                                                   &kp Y             &kp U                 &kp I             &kp O          &kp P
-&L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                                                   &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K    &R_HRM RALT L  &R_HRM RIGHT_WIN MINUS
-&kp Z              &kp X          &kp C           &kp V                &kp B                                                   &kp N             &kp M                 &kp COMMA         &kp DOT        &kp ENTER
-&kp HOME           &kp LCTRL      &kp LEFT_ALT    &L_THUMB 2 PG_UP     &kp PG_DN  &kp PRINTSCREEN    &R_THUMB 4 K_APPLICATION  &R_THUMB 3 SPACE  &none                 &kp SINGLE_QUOTE  &kp SEMI       &kp END
+&kp Q              &kp W          &kp E           &kp R                &kp T                                  &kp Y             &kp U                 &kp I             &kp O          &kp P
+&L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                                  &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K    &R_HRM RALT L  &R_HRM RIGHT_WIN MINUS
+&kp Z              &kp X          &kp C           &kp V                &kp B                                  &kp N             &kp M                 &L_THUMB 2 COMMA  &kp DOT        &kp ENTER
+&kp PRINTSCREEN    &kp LCTRL      &kp LEFT_ALT    &L_THUMB 2 PG_UP     &kp PG_DN  &kp HOME    &R_THUMB 4 END  &R_THUMB 3 SPACE  &none                 &kp SINGLE_QUOTE  &kp SEMI       &kp K_APPLICATION
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
