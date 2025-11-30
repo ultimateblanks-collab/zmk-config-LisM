@@ -513,6 +513,16 @@
             bindings = <&sq>;
             key-positions = <17 27>;
         };
+
+        us {
+            bindings = <&us>;
+            key-positions = <13 23>;
+        };
+
+        pl {
+            bindings = <&pl>;
+            key-positions = <12 22>;
+        };
     };
 
     keymap {
