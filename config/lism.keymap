@@ -342,6 +342,20 @@
 
             label = "CTEND";
         };
+
+        ctdel: ctdel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp DELETE>,
+                <&macro_release>,
+                <&kp DELETE &kp LCTRL>;
+
+            label = "CTDEL";
+        };
     };
 
     behaviors {
@@ -598,6 +612,11 @@
         af4 {
             bindings = <&endapp>;
             key-positions = <25 37>;
+        };
+
+        ctdel {
+            bindings = <&ctdel>;
+            key-positions = <27 28>;
         };
     };
 
