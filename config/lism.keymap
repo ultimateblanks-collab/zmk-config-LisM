@@ -456,7 +456,7 @@
 
         dollar {
             bindings = <&dollar>;
-            key-positions = <10 20>;
+            key-positions = <5 15>;
         };
 
         stab {
@@ -477,6 +477,26 @@
         ctbs {
             bindings = <&ctbs>;
             key-positions = <26 27>;
+        };
+
+        yen {
+            bindings = <&kp INT_YEN>;
+            key-positions = <5 15>;
+        };
+
+        lkakko {
+            bindings = <&lk>;
+            key-positions = <6 16>;
+        };
+
+        dq {
+            bindings = <&dq>;
+            key-positions = <7 17>;
+        };
+
+        rkakko {
+            bindings = <&rk>;
+            key-positions = <8 18>;
         };
     };
 
