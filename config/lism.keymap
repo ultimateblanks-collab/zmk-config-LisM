@@ -479,8 +479,8 @@
             key-positions = <16 17>;
         };
 
-        m2 {
-            bindings = <&mkp MB2>;
+        enter {
+            bindings = <&kp ENTER>;
             key-positions = <17 18>;
         };
 
@@ -617,6 +617,11 @@
         ctdel {
             bindings = <&ctdel>;
             key-positions = <27 28>;
+        };
+
+        m2 {
+            bindings = <&mkp MB2>;
+            key-positions = <16 18>;
         };
     };
 
