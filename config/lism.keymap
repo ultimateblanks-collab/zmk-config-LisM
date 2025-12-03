@@ -2,7 +2,6 @@
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -515,7 +514,7 @@
         };
 
         slash {
-            bindings = <&kp SLASH>;
+            bindings = <&anp>;
             key-positions = <3 13>;
         };
 
@@ -527,11 +526,6 @@
         hutt {
             bindings = <&kp EQUAL>;
             key-positions = <4 14>;
-        };
-
-        anp {
-            bindings = <&anp>;
-            key-positions = <14 24>;
         };
 
         hush {
@@ -628,6 +622,11 @@
             bindings = <&tog 3>;
             key-positions = <12 17>;
         };
+
+        ltog4 {
+            bindings = <&tog 4>;
+            key-positions = <14 15>;
+        };
     };
 
     keymap {
@@ -638,7 +637,7 @@
             bindings = <
 &kp Q              &kp W          &kp E           &kp R                &kp T                                                    &kp Y             &kp U                 &kp I             &kp O          &kp P
 &L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                                                    &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K    &R_HRM RALT L  &R_HRM RIGHT_WIN MINUS
-&kp Z              &kp X          &kp C           &kp V                &kp B                                                    &kp N             &kp M                 &L_THUMB 2 COMMA  &kp DOT        &kp ENTER
+&kp Z              &kp X          &kp C           &kp V                &kp B                                                    &kp N             &kp M                 &L_THUMB 2 COMMA  &kp DOT        &L_THUMB 2 SLASH
 &kp PRINTSCREEN    &kp LCTRL      &kp LEFT_ALT    &L_THUMB 2 PG_UP     &L_THUMB 3 PAGE_DOWN  &L_THUMB 4 HOME    &R_THUMB 4 END  &R_THUMB 3 SPACE  &none                 &kp SINGLE_QUOTE  &kp SEMI       &kp K_APPLICATION
             >;
 
@@ -680,10 +679,10 @@
         layer_4 {
             display-name = "FUNCTION";
             bindings = <
-&none    &none    &none   &none   &bt BT_CLR                  &kp F10  &kp F7  &kp F8  &kp F9  &none
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                      &kp F11  &kp F4  &kp F5  &kp F6  &none
-&kp F11  &kp F12  &none   &none   &none                       &kp F12  &kp F1  &kp F2  &kp F3  &none
-&none    &none    &none   &calte  &evalue     &none    &none  &none    &none   &none   &none   &none
+&none  &none  &none  &none  &none                   &kp F10  &kp F7  &kp F8  &kp F9  &none
+&none  &none  &none  &none  &none                   &kp F11  &kp F4  &kp F5  &kp F6  &none
+&none  &none  &none  &none  &none                   &kp F12  &kp F1  &kp F2  &kp F3  &none
+&none  &none  &none  &none  &none  &none    &calte  &evalue  &none   &none   &none   &none
             >;
         };
 
