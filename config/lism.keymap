@@ -545,12 +545,12 @@
 
         cw {
             bindings = <&C_W>;
-            key-positions = <8 1>;
+            key-positions = <20 29>;
         };
 
         st {
             bindings = <&S_key LEFT_SHIFT>;
-            key-positions = <11 18>;
+            key-positions = <10 19>;
         };
 
         ctbs {
@@ -616,16 +616,6 @@
         m2 {
             bindings = <&mkp MB2>;
             key-positions = <16 18>;
-        };
-
-        ltog3 {
-            bindings = <&tog 3>;
-            key-positions = <12 17>;
-        };
-
-        ltog4 {
-            bindings = <&tog 4>;
-            key-positions = <7 2>;
         };
     };
 
