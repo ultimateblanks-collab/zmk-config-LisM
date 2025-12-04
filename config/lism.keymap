@@ -518,11 +518,6 @@
             key-positions = <15 25>;
         };
 
-        stab {
-            bindings = <&stab>;
-            key-positions = <11 12>;
-        };
-
         cw {
             bindings = <&C_W>;
             key-positions = <20 29>;
@@ -625,7 +620,7 @@
 &none         &none         &none      &none           &none                  &none     &msc SCRL_UP    &mkp MCLK  &msc SCRL_DOWN   &none
 &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &mkp MB4  &mkp MB1        &mkp MB2   &mkp MB5         &kp HOME
 &none         &none         &none      &none           &none                  &none     &msc SCRL_LEFT  &none      &msc SCRL_RIGHT  &none
-&none         &none         &none      &none           &none  &none    &none  &none     &none           &none      &none            &none
+&bootloader   &none         &none      &none           &none  &none    &none  &none     &none           &none      &none            &none
             >;
         };
 
@@ -635,7 +630,7 @@
 &none         &none     &none      &none           &none                  &msc SCRL_LEFT  &msc SCRL_UP    &kp UP_ARROW  &msc SCRL_DOWN  &msc SCRL_RIGHT
 &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &kp HOME        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT       &kp END
 &none         &none     &none      &none           &none                  &none           &kp PG_UP       &none         &kp PG_DN       &none
-&bootloader   &none     &none      &none           &none  &none    &none  &kp SPACE       &none           &none         &kp RC(TAB)     &kp F12
+&none         &none     &none      &none           &none  &none    &none  &kp SPACE       &none           &none         &kp RC(TAB)     &kp F12
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
