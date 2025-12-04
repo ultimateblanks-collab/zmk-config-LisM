@@ -613,29 +613,29 @@
 &kp Q              &kp W          &kp E                &kp R                &kp T                                                        &kp Y             &kp U                 &kp I             &kp O          &kp P
 &L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D       &L_HRM LEFT_SHIFT F  &kp G                                                        &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K    &R_HRM RALT L  &R_HRM RIGHT_WIN MINUS
 &kp Z              &kp X          &kp C                &kp V                &kp B                                                        &kp N             &kp M                 &L_THUMB 2 COMMA  &kp DOT        &L_THUMB 2 SLASH
-&kp PRINTSCREEN    &kp LCTRL      &R_THUMB 1 LEFT_ALT  &L_THUMB 2 PG_UP     &L_THUMB 3 PAGE_DOWN  &L_THUMB 4 LEFT_WIN    &R_THUMB 4 TAB  &R_THUMB 3 SPACE  &none                 &kp SINGLE_QUOTE  &kp SEMI       &kp K_APPLICATION
+&kp PRINTSCREEN    &kp LCTRL      &R_THUMB 2 LEFT_ALT  &L_THUMB 1 PG_UP     &L_THUMB 3 PAGE_DOWN  &L_THUMB 4 LEFT_WIN    &R_THUMB 4 TAB  &R_THUMB 3 SPACE  &none                 &kp SINGLE_QUOTE  &kp SEMI       &kp K_APPLICATION
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
         };
 
         layer_1 {
-            display-name = "Arrow";
+            display-name = "Mouse";
             bindings = <
-&none         &none         &none      &none           &none                  &none     &kp PG_UP       &kp UP    &kp PAGE_DOWN  &none
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &kp HOME  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT      &kp END
-&none         &none         &none      &none           &none                  &none     &none           &none     &none          &none
-&none         &none         &none      &none           &none  &none    &none  &none     &none           &none     &none          &none
+&none         &none         &none      &none           &none                  &none     &msc SCRL_UP    &mkp MCLK  &msc SCRL_DOWN   &none
+&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &mkp MB4  &mkp MB1        &mkp MB2   &mkp MB5         &kp HOME
+&none         &none         &none      &none           &none                  &none     &msc SCRL_LEFT  &none      &msc SCRL_RIGHT  &none
+&none         &none         &none      &none           &none  &none    &none  &none     &none           &none      &none            &none
             >;
         };
 
         layer_2 {
-            display-name = "MB";
+            display-name = "Arrow";
             bindings = <
-&none         &none     &none      &none           &none                  &none      &msc SCRL_UP    &mkp MCLK      &msc SCRL_DOWN   &none
-&kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &mkp MB5   &mkp MB1        &mkp MB2       &mkp MB5         &kp HOME
-&none         &none     &none      &none           &none                  &cthome    &msc SCRL_LEFT  &kp PAGE_UP    &msc SCRL_RIGHT  &ctend
-&bootloader   &none     &none      &none           &none  &none    &none  &kp SPACE  &none           &kp PAGE_DOWN  &kp RC(TAB)      &kp F12
+&none         &none     &none      &none           &none                  &msc SCRL_LEFT  &msc SCRL_UP    &kp UP_ARROW  &msc SCRL_DOWN  &msc SCRL_RIGHT
+&kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &kp HOME        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT       &kp END
+&none         &none     &none      &none           &none                  &none           &kp PG_UP       &none         &kp PG_DN       &none
+&bootloader   &none     &none      &none           &none  &none    &none  &kp SPACE       &none           &none         &kp RC(TAB)     &kp F12
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
