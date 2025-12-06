@@ -355,6 +355,48 @@
 
             label = "CTDEL";
         };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp C &kp LCTRL>;
+
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp V &kp LCTRL>;
+
+            label = "PASTE";
+        };
+
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp Z>,
+                <&macro_release>,
+                <&kp Z &kp LCTRL>;
+
+            label = "CUT";
+        };
     };
 
     behaviors {
@@ -617,6 +659,21 @@
             bindings = <&mkp MCLK>;
             key-positions = <26 27 28>;
         };
+
+        copy {
+            bindings = <&copy>;
+            key-positions = <21 22>;
+        };
+
+        paste {
+            bindings = <&paste>;
+            key-positions = <22 23>;
+        };
+
+        cut {
+            bindings = <&cut>;
+            key-positions = <21 23>;
+        };
     };
 
     keymap {
@@ -625,10 +682,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q              &kp W            &kp E                     &kp R                &kp T                                                         &kp Y                  &kp U                 &kp I             &kp O          &kp P
-&L_HRM LEFT_WIN A  &L_HRM LALT S    &L_HRM LCTRL D            &L_HRM LEFT_SHIFT F  &kp G                                                         &kp H                  &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K    &R_HRM RALT L  &R_HRM RIGHT_WIN MINUS
-&kp Z              &kp X            &kp C                     &kp V                &kp B                                                         &kp N                  &kp M                 &kp COMMA         &kp DOT        &L_THUMB 2 SLASH
-&pl                &kp PRINTSCREEN  &L_THUMB 2 K_APPLICATION  &L_THUMB 1 TAB       &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL    &L_THUMB 4 LEFT_WIN  &mt RIGHT_SHIFT SPACE  &none                 &kp SINGLE_QUOTE  &kp SEMI       &us
+&kp Q              &kp W            &kp E                     &kp R                &kp T                                                                       &kp Y             &kp U                 &kp I             &kp O          &kp P
+&L_HRM LEFT_WIN A  &L_HRM LALT S    &L_HRM LCTRL D            &L_HRM LEFT_SHIFT F  &kp G                                                                       &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K    &R_HRM RALT L  &R_HRM RIGHT_WIN MINUS
+&kp Z              &kp X            &kp C                     &kp V                &kp B                                                                       &kp N             &kp M                 &kp COMMA         &kp DOT        &L_THUMB 2 SLASH
+&pl                &kp PRINTSCREEN  &L_THUMB 4 K_APPLICATION  &L_THUMB 1 TAB       &L_THUMB 3 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL    &R_HRM LEFT_SHIFT LEFT_WIN  &L_THUMB 2 SPACE  &none                 &kp SINGLE_QUOTE  &kp SEMI       &us
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
