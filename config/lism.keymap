@@ -497,7 +497,7 @@
 
         end {
             bindings = <&kp END>;
-            key-positions = <12 13>;
+            key-positions = <6 7>;
         };
 
         del {
@@ -512,7 +512,7 @@
 
         bs {
             bindings = <&kp BACKSPACE>;
-            key-positions = <16 17>;
+            key-positions = <27 28>;
         };
 
         enter {
@@ -572,7 +572,7 @@
 
         m1 {
             bindings = <&mkp MB1>;
-            key-positions = <26 27>;
+            key-positions = <16 17>;
         };
 
         yen {
@@ -627,37 +627,37 @@
 
         m2 {
             bindings = <&mkp MB2>;
-            key-positions = <27 28>;
+            key-positions = <16 18>;
         };
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <11 12>;
+            key-positions = <5 6>;
         };
 
         pgup {
             bindings = <&kp PG_UP>;
-            key-positions = <5 6>;
+            key-positions = <25 26>;
         };
 
         pgdn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <6 7>;
+            key-positions = <26 27>;
         };
 
         m4 {
             bindings = <&mkp MB4>;
-            key-positions = <25 26>;
+            key-positions = <15 16>;
         };
 
         m5 {
             bindings = <&mkp MB5>;
-            key-positions = <28 29>;
+            key-positions = <18 19>;
         };
 
         mc {
             bindings = <&mkp MCLK>;
-            key-positions = <26 27 28>;
+            key-positions = <16 17 18>;
         };
 
         copy {
