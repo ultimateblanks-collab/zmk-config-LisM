@@ -657,12 +657,12 @@
 
         pgup {
             bindings = <&kp PG_UP>;
-            key-positions = <13 11>;
+            key-positions = <3 2>;
         };
 
         pgdn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <16 18>;
+            key-positions = <6 7>;
         };
 
         copy {
