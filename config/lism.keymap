@@ -516,7 +516,7 @@
 
         bs {
             bindings = <&kp BACKSPACE>;
-            key-positions = <27 28>;
+            key-positions = <17 18>;
         };
 
         enter {
@@ -663,8 +663,8 @@
             bindings = <
 &kp Q              &kp W            &kp E               &kp R                &kp T                                                                       &kp Y             &kp U                 &kp I             &kp O          &kp P
 &L_HRM LEFT_WIN A  &L_HRM LALT S    &L_HRM LCTRL D      &L_HRM LEFT_SHIFT F  &kp G                                                                       &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K    &R_HRM RALT L  &R_HRM RIGHT_WIN MINUS
-&kp Z              &kp X            &kp C               &kp V                &kp B                                                                       &kp N             &kp M                 &L_THUMB 2 COMMA  &kp DOT        &kp SLASH
-&pl                &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 TAB       &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL    &R_HRM LEFT_SHIFT LEFT_WIN  &L_THUMB 2 SPACE  &none                 &kp SINGLE_QUOTE  &kp SEMI       &us
+&kp Z              &kp X            &kp C               &kp V                &kp B                                                                       &kp N             &kp M                 &L_THUMB 2 COMMA  &kp DOT        &kp ENTER
+&pl                &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 TAB       &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL    &R_HRM LEFT_SHIFT LEFT_WIN  &L_THUMB 2 SPACE  &none                 &kp SINGLE_QUOTE  &kp SEMI       &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
