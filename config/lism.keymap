@@ -416,11 +416,18 @@
             label = "VBE";
         };
 
-        new_macro: new_macro {
+        prompt: prompt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
-            label = "NEW_MACRO";
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_wait_time 50>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp R &kp LEFT_WIN>;
+
+            label = "PROMPT";
         };
     };
 
@@ -685,7 +692,7 @@
 &kp Q              &kp W            &kp E               &kp R                &kp T                                                                  &kp Y             &kp U                 &kp I             &kp O          &kp P
 &L_HRM LEFT_WIN A  &L_HRM LALT S    &L_HRM LCTRL D      &L_HRM LEFT_SHIFT F  &kp G                                                                  &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K    &R_HRM RALT L  &R_HRM RIGHT_WIN MINUS
 &kp Z              &kp X            &kp C               &kp V                &kp B                                                                  &kp N             &kp M                 &L_THUMB 2 COMMA  &kp DOT        &kp ENTER
-&pl                &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_WIN  &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL    &R_HRM LEFT_SHIFT TAB  &L_THUMB 2 SPACE  &none                 &kp SINGLE_QUOTE  &kp SEMI       &kp SLASH
+&prompt            &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_WIN  &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL    &R_HRM LEFT_SHIFT TAB  &L_THUMB 2 SPACE  &none                 &kp SINGLE_QUOTE  &kp SEMI       &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -717,7 +724,7 @@
             display-name = "NUM";
             bindings = <
 &kp EQUAL  &hush      &dollar       &percent   &anp                       &none       &kp N7        &kp N8  &kp N9  &none
-&kp N1     &kp N2     &kp N3        &kp N4     &kp N5                     &kp PERIOD  &kp NUMBER_4  &kp N5  &kp N6  &kp TAB
+&none      &none      &none         &none      &none                      &kp PERIOD  &kp NUMBER_4  &kp N5  &kp N6  &kp TAB
 &plus      &kp MINUS  &aster        &kp SLASH  &eql                       &kp N0      &kp N1        &kp N2  &kp N3  &kp ENTER
 &none      &none      &kp NUMBER_0  &none      &kp SPACE  &none    &none  &kp ENTER   &none         &none   &none   &none
             >;
