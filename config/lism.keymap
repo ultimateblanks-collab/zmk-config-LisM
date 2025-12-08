@@ -626,17 +626,17 @@
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <15 16>;
+            key-positions = <12 13>;
         };
 
         pgup {
             bindings = <&kp PG_UP>;
-            key-positions = <25 26>;
+            key-positions = <13 11>;
         };
 
         pgdn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <26 27>;
+            key-positions = <16 18>;
         };
 
         copy {
