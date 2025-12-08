@@ -401,6 +401,32 @@
 
             label = "CUT";
         };
+
+        mscup: mscup {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&msc SCRL_UP>,
+                <&macro_wait_time 60>,
+                <&macro_release>,
+                <&msc SCRL_UP>;
+
+            label = "MSCUP";
+        };
+
+        mscdown: mscdown {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&msc SCRL_DOWN>,
+                <&macro_wait_time 60>,
+                <&macro_release>,
+                <&msc SCRL_DOWN>;
+
+            label = "MSCDOWN";
+        };
     };
 
     behaviors {
@@ -673,7 +699,7 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&none         &none         &none      &none           &none                  &none     &msc SCRL_UP    &mkp MCLK  &msc SCRL_DOWN   &none
+&none         &none         &none      &none           &none                  &none     &mscup          &mkp MCLK  &mscdown         &none
 &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &mkp MB4  &mkp MB1        &mkp MB2   &mkp MB5         &kp HOME
 &none         &none         &none      &none           &none                  &none     &msc SCRL_LEFT  &mo 2      &msc SCRL_RIGHT  &none
 &none         &none         &none      &none           &none  &none    &none  &none     &none           &none      &none            &none
