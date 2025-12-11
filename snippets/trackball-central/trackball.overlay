@@ -33,6 +33,22 @@
         // max_threshold = <200>
         // max_pending_activations = <10>
     };
+     zip_keybind_tab: zip_keybind_tab {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        track_remainders;
+        bindings = <&kp TAB>,
+                  <&kp TAB>,
+                  <&kp TAB>,
+                  <&kp TAB>;
+        tick = <40>;
+        wait-ms = <0>;
+        tap-ms = <10>;
+        // mode = <1>
+        // threshold = <10>
+        // max_threshold = <200>
+        // max_pending_activations = <10>
+    };
 };
 
 // セントラルのリスナーを有効化し、deviceを紐付け
@@ -54,6 +70,13 @@
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
              &zip_keybind_keys>;
+    };
+
+    tab {
+        layers = <4>;
+        input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+             &zip_keybind_tab>;
     };
 };
 
