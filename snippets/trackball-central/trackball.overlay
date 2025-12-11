@@ -1,3 +1,4 @@
+#include <input/processors/zmk-input-processor-keybind.dtsi>
 &spi0 {
     status = "okay";
 
