@@ -7,7 +7,7 @@
 
 //&mkp_input_listener { input-processors = <&zip_temp_layer 1 250>; };
 
-&msc_input_listener { input-processors = <&zip_temp_layer 1 10000>; };
+&msc_input_listener { input-processors = <&zip_temp_layer 1 1000>; };
 
 / {
     macros {
