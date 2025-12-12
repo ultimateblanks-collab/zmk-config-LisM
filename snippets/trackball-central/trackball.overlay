@@ -26,7 +26,7 @@
                   <&kp UP>,
                   <&kp DOWN>;
         tick = <40>;
-        wait-ms = <0>;
+        wait-ms = <50>;
         tap-ms = <10>;
          mode = <1>;
         // threshold = <10>
@@ -42,7 +42,7 @@
                   <&ctpgup>,
                   <&ctpgdn>;
         tick = <80>;
-        wait-ms = <0>;
+        wait-ms = <50>;
         tap-ms = <10>;
          mode = <1>;
         // threshold = <10>
