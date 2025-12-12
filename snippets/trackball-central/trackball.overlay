@@ -41,7 +41,7 @@
                   <&stab>,
                   <&ctpgup>,
                   <&ctpgdn>;
-        tick = <40>;
+        tick = <60>;
         wait-ms = <0>;
         tap-ms = <10>;
          mode = <1>;
