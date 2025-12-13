@@ -262,20 +262,6 @@
             label = "ENDAPP";
         };
 
-        ctbs: ctbs {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_wait_time 50>,
-                <&kp BACKSPACE>,
-                <&macro_release>,
-                <&kp BACKSPACE &kp LCTRL>;
-
-            label = "CTBS";
-        };
-
         calte: calte {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
