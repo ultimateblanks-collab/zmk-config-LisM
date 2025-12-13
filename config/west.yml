@@ -28,6 +28,6 @@ manifest:
       revision: 57017e89fa64a731803f8b45cb047d8300fdc982
     - name: zmk-input-processor-keybind
       remote: ultimateblanks-collab
-      revision: main
+      revision: 3d62fbe08e05a28c97b3136a4a25d6b62567d762
   self:
     path: config
