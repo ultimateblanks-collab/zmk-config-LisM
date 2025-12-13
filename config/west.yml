@@ -10,22 +10,24 @@ manifest:
       url-base: https://github.com/4mplelab
     - name: zettaface
       url-base: https://github.com/zettaface
+    - name: ultimateblanks-collab
+      url-base: https://github.com/ultimateblanks-collab
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
     - name: zmk-driver-paw3222
-      remote: sekigon-gonnoc
-      revision: main
+      remote: ultimateblanks-collab
+      revision: b5040e76081284654181f0ade4508064f5cabb46
     - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
+      remote: ultimateblanks-collab
+      revision: ae2864f400774d6cfc7d65b50f74605bfe5e9031
     - name: zmk-feature-charge-indicator
-      remote: 4mplelab
-      revision: main
+      remote: ultimateblanks-collab
+      revision: 57017e89fa64a731803f8b45cb047d8300fdc982
     - name: zmk-input-processor-keybind
-      remote: zettaface
-      revision: main
+      remote: ultimateblanks-collab
+      revision: e08fe487f8b13a77fc3b72bd6e52821d4054a14d
   self:
     path: config
