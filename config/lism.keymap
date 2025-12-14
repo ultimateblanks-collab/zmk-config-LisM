@@ -589,7 +589,7 @@
 
         cw {
             bindings = <&C_W>;
-            key-positions = <15 14>;
+            key-positions = <22 27>;
         };
 
         st {
