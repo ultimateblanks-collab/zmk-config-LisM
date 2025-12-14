@@ -429,6 +429,34 @@
 
             label = "CA";
         };
+
+        ctrl_t: ctrl_t {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp T>,
+                <&macro_release>,
+                <&kp T &kp LCTRL>;
+
+            label = "CTRL_T";
+        };
+
+        ctrl_w: ctrl_w {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp W>,
+                <&macro_release>,
+                <&kp W &kp LCTRL>;
+
+            label = "CTRL_W";
+        };
     };
 
     behaviors {
@@ -522,18 +550,13 @@
     combos {
         compatible = "zmk,combos";
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
-        };
-
         end {
             bindings = <&kp END>;
             key-positions = <16 17>;
         };
 
-        del {
-            bindings = <&kp DEL>;
+        escape {
+            bindings = <&kp ESCAPE>;
             key-positions = <7 8>;
         };
 
@@ -682,14 +705,24 @@
             key-positions = <23 24>;
         };
 
-        escape {
-            bindings = <&kp ESCAPE>;
+        delete {
+            bindings = <&kp DELETE>;
             key-positions = <27 28>;
         };
 
         ca {
             bindings = <&ca>;
             key-positions = <11 12 13>;
+        };
+
+        ctrl_t {
+            bindings = <&ctrl_t>;
+            key-positions = <3 4>;
+        };
+
+        ctrl_w {
+            bindings = <&ctrl_w>;
+            key-positions = <1 2>;
         };
     };
 
