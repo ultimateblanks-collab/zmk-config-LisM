@@ -724,6 +724,11 @@
             bindings = <&ctrl_w>;
             key-positions = <1 2>;
         };
+
+        filerun {
+            bindings = <&prompt>;
+            key-positions = <1 2 3>;
+        };
     };
 
     keymap {
