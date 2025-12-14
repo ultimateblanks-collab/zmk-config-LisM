@@ -589,12 +589,12 @@
 
         cw {
             bindings = <&C_W>;
-            key-positions = <26 27 26 27 28>;
+            key-positions = <15 14>;
         };
 
         st {
             bindings = <&S_key LEFT_SHIFT>;
-            key-positions = <16 17 18>;
+            key-positions = <17 12>;
         };
 
         yen {
