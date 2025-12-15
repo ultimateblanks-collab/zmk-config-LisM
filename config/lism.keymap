@@ -545,6 +545,15 @@
             continue-list = <INT_YEN INT_RO>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        coron: coron {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CORON";
+            bindings = <&kp PERIOD>, <&kp SINGLE_QUOTE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
+        };
     };
 
     combos {
