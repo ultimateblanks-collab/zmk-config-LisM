@@ -736,6 +736,16 @@
             bindings = <&pl>;
             key-positions = <12 22>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <12 13>;
+        };
+
+        stab {
+            bindings = <&stab>;
+            key-positions = <11 12>;
+        };
     };
 
     keymap {
