@@ -564,10 +564,10 @@
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
         };
 
-        slapi: slapi {
+        uspi: uspi {
             compatible = "zmk,behavior-mod-morph";
-            label = "SLAPI";
-            bindings = <&kp SLASH>, <&pl>;
+            label = "USPI";
+            bindings = <&us>, <&pl>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
@@ -666,8 +666,8 @@
             key-positions = <17 27>;
         };
 
-        us {
-            bindings = <&us>;
+        uspi {
+            bindings = <&uspi>;
             key-positions = <13 23>;
         };
 
@@ -751,7 +751,7 @@
 &kp Q              &kp W            &kp E              &kp R                &kp T                                                                  &kp Y             &kp U                 &kp I             &kp O          &kp P
 &L_HRM LEFT_WIN A  &L_HRM LALT S    &L_HRM LCTRL D     &L_HRM LEFT_SHIFT F  &kp G                                                                  &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K    &R_HRM RALT L  &R_HRM RIGHT_WIN MINUS
 &kp Z              &kp X            &kp C              &kp V                &kp B                                                                  &kp N             &kp M                 &semicoron        &coron         &L_THUMB 2 ENTER
-&husstt            &kp PRINTSCREEN  &kp K_APPLICATION  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LEFT_WIN  &L_HRM LEFT_SHIFT LCTRL    &R_HRM LEFT_SHIFT TAB  &L_THUMB 2 SPACE  &none                 &kp LEFT_BRACKET  &exc           &slapi
+&husstt            &kp PRINTSCREEN  &kp K_APPLICATION  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LEFT_WIN  &L_HRM LEFT_SHIFT LCTRL    &R_HRM LEFT_SHIFT TAB  &L_THUMB 2 SPACE  &none                 &kp LEFT_BRACKET  &exc           &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
