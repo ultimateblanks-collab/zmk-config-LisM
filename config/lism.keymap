@@ -616,16 +616,6 @@
             key-positions = <2 12>;
         };
 
-        hutt {
-            bindings = <&kp EQUAL>;
-            key-positions = <4 14>;
-        };
-
-        hush {
-            bindings = <&hush>;
-            key-positions = <11 21>;
-        };
-
         dollar {
             bindings = <&dollar>;
             key-positions = <15 25>;
@@ -679,11 +669,6 @@
         us {
             bindings = <&us>;
             key-positions = <13 23>;
-        };
-
-        pl {
-            bindings = <&pl>;
-            key-positions = <12 22>;
         };
 
         af4 {
@@ -749,6 +734,11 @@
         filerun {
             bindings = <&prompt>;
             key-positions = <1 2 3>;
+        };
+
+        anpa {
+            bindings = <&anp>;
+            key-positions = <13 3>;
         };
     };
 
