@@ -464,7 +464,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp LEFT_ARROW>,
                 <&macro_release>,
                 <&kp LEFT_ARROW &kp LCTRL>;
@@ -478,7 +478,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp RIGHT>,
                 <&macro_release>,
                 <&kp RIGHT &kp LCTRL>;
@@ -492,7 +492,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp UP_ARROW>,
                 <&macro_release>,
                 <&kp UP_ARROW &kp LCTRL>;
@@ -506,7 +506,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp DOWN>,
                 <&macro_release>,
                 <&kp DOWN_ARROW &kp LCTRL>;
