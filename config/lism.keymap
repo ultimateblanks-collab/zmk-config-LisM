@@ -282,7 +282,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp PG_UP>,
                 <&macro_release>,
                 <&kp PG_UP &kp LCTRL>;
@@ -296,7 +296,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_wait_time 50>,
+                <&macro_wait_time 20>,
                 <&kp PG_DN>,
                 <&macro_release>,
                 <&kp PG_DN &kp LCTRL>;
