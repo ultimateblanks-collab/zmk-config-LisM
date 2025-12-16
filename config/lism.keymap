@@ -597,13 +597,13 @@
             key-positions = <17 18>;
         };
 
-        plus {
-            bindings = <&plus>;
+        slash {
+            bindings = <&kp SLASH>;
             key-positions = <1 11>;
         };
 
-        aster {
-            bindings = <&aster>;
+        pl {
+            bindings = <&pl>;
             key-positions = <2 12>;
         };
 
@@ -659,7 +659,7 @@
 
         us {
             bindings = <&us>;
-            key-positions = <13 23>;
+            key-positions = <13 3>;
         };
 
         af4 {
@@ -729,11 +729,11 @@
 
         anpa {
             bindings = <&anp>;
-            key-positions = <13 3>;
+            key-positions = <13 23>;
         };
 
-        pl {
-            bindings = <&pl>;
+        ast {
+            bindings = <&aster>;
             key-positions = <12 22>;
         };
 
@@ -745,6 +745,11 @@
         stab {
             bindings = <&stab>;
             key-positions = <11 12>;
+        };
+
+        plus {
+            bindings = <&plus>;
+            key-positions = <11 21>;
         };
     };
 
