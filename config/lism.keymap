@@ -457,6 +457,62 @@
 
             label = "CTRL_W";
         };
+
+        ctrlleft: ctrlleft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_ARROW &kp LCTRL>;
+
+            label = "CTRLLEFT";
+        };
+
+        ctrlright: ctrlright {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp RIGHT &kp LCTRL>;
+
+            label = "CTRLRIGHT";
+        };
+
+        ctrlup: ctrlup {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp UP_ARROW &kp LCTRL>;
+
+            label = "CTRLUP";
+        };
+
+        ctrldown: ctrldown {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp DOWN>,
+                <&macro_release>,
+                <&kp DOWN_ARROW &kp LCTRL>;
+
+            label = "CTRLDOWN";
+        };
     };
 
     behaviors {
