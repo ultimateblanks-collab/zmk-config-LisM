@@ -669,10 +669,11 @@
         MMR_KAKKO: MMR_KAKKO {
             compatible = "zmk,behavior-mod-morph";
             label = "MMR_KAKKO";
-            bindings = <&rk>, <&R_yamakakko>;
+            bindings = <&rk>, <&kp PERIOD>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LSFT)>;
         };
     };
 
