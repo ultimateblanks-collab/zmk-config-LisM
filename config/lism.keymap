@@ -664,6 +664,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
+            keep-mods = <(MOD_LSFT)>;
         };
 
         MMR_KAKKO: MMR_KAKKO {
