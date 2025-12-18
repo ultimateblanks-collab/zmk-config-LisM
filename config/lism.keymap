@@ -513,6 +513,34 @@
 
             label = "CTRLDOWN";
         };
+
+        lyk: lyk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 20>,
+                <&kp COMMA>,
+                <&macro_release>,
+                <&kp COMMA &kp LEFT_SHIFT>;
+
+            label = "LYK";
+        };
+
+        Ryamak: Ryamak {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 20>,
+                <&kp PERIOD>,
+                <&macro_release>,
+                <&kp PERIOD &kp LEFT_SHIFT>;
+
+            label = "RYAMAK";
+        };
     };
 
     behaviors {
@@ -628,6 +656,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
         };
+
+        lyamak: lyamak {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LYAMAK";
+            bindings = <&lk>, <&lyk>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
+        };
+
+        ryamak: ryamak {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RYAMAK";
+            bindings = <&rk>, <&Ryamak>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
+        };
     };
 
     combos {
@@ -684,7 +730,7 @@
         };
 
         lkakko {
-            bindings = <&lk>;
+            bindings = <&lyamak>;
             key-positions = <6 16>;
         };
 
@@ -694,7 +740,7 @@
         };
 
         rkakko {
-            bindings = <&rk>;
+            bindings = <&ryamak>;
             key-positions = <8 18>;
         };
 
