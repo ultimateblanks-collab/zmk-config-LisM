@@ -660,7 +660,7 @@
         lyamak: lyamak {
             compatible = "zmk,behavior-mod-morph";
             label = "LYAMAK";
-            bindings = <&lk>, <&lyk>;
+            bindings = <&lk>, <&lyamak>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
