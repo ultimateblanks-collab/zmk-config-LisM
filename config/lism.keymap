@@ -514,7 +514,7 @@
             label = "CTRLDOWN";
         };
 
-        lyk: lyk {
+        L_yamakakko: lyk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -528,7 +528,7 @@
             label = "LYK";
         };
 
-        Ryamak: Ryamak {
+        R_yamakakko: Ryamak {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -657,19 +657,19 @@
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
         };
 
-        lyamak: lyamak {
+        MML_KAKKO: MML_KAKKO {
             compatible = "zmk,behavior-mod-morph";
-            label = "LYAMAK";
-            bindings = <&lk>, <&lyamak>;
+            label = "MML_KAKKO";
+            bindings = <&lk>, <&L_yamakakko>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
         };
 
-        ryamak: ryamak {
+        MMR_KAKKO: MMR_KAKKO {
             compatible = "zmk,behavior-mod-morph";
-            label = "RYAMAK";
-            bindings = <&rk>, <&Ryamak>;
+            label = "MMR_KAKKO";
+            bindings = <&rk>, <&R_yamakakko>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
@@ -730,7 +730,7 @@
         };
 
         lkakko {
-            bindings = <&lyamak>;
+            bindings = <&MML_KAKKO>;
             key-positions = <6 16>;
         };
 
@@ -740,7 +740,7 @@
         };
 
         rkakko {
-            bindings = <&ryamak>;
+            bindings = <&MMR_KAKKO>;
             key-positions = <8 18>;
         };
 
