@@ -660,7 +660,7 @@
         MML_KAKKO: MML_KAKKO {
             compatible = "zmk,behavior-mod-morph";
             label = "MML_KAKKO";
-            bindings = <&lk>, <&L_yamakakko>;
+            bindings = <&lk>, <&kp COMMA>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
