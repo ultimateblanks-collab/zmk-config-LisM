@@ -846,16 +846,6 @@
             key-positions = <12 22>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <12 13>;
-        };
-
-        stab {
-            bindings = <&stab>;
-            key-positions = <11 12>;
-        };
-
         plus {
             bindings = <&plus>;
             key-positions = <11 21>;
@@ -869,6 +859,16 @@
         pct {
             bindings = <&percent>;
             key-positions = <3 13>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <26 27>;
+        };
+
+        stab {
+            bindings = <&stab>;
+            key-positions = <25 26>;
         };
     };
 
