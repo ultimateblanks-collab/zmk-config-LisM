@@ -743,7 +743,7 @@
 
         st {
             bindings = <&S_key LEFT_SHIFT>;
-            key-positions = <16 37>;
+            key-positions = <37 15>;
         };
 
         yen {
