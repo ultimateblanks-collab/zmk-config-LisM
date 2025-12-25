@@ -25,7 +25,7 @@
                   <&saltesc>,
                   <&ctpgup>,
                   <&ctpgdn>;
-        tick = <60>;
+        tick = <70>;
         wait-ms = <0>;
         tap-ms = <10>;
          mode = <1>;
@@ -41,7 +41,7 @@
                   <&kp HOME>,
                   <&cthome>,
                   <&ctend>;
-        tick = <60>;
+        tick = <70>;
         wait-ms = <0>;
         tap-ms = <10>;
          mode = <1>;
