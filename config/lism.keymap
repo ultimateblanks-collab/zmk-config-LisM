@@ -736,7 +736,7 @@
 
         end {
             bindings = <&kp END>;
-            key-positions = <16 17>;
+            key-positions = <17 19 18>;
         };
 
         escape {
