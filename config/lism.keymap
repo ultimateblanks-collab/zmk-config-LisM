@@ -541,6 +541,34 @@
 
             label = "RYAMAK";
         };
+
+        altesc: altesc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_wait_time 20>,
+                <&kp ESCAPE>,
+                <&macro_release>,
+                <&kp ESCAPE &kp RIGHT_ALT>;
+
+            label = "ALTESC";
+        };
+
+        saltesc: saltesc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT &kp RSHIFT>,
+                <&macro_wait_time 20>,
+                <&kp ESCAPE>,
+                <&macro_release>,
+                <&kp ESCAPE &kp RIGHT_ALT &kp RSHIFT>;
+
+            label = "SALTESC";
+        };
     };
 
     behaviors {
@@ -742,8 +770,8 @@
         };
 
         st {
-            bindings = <&S_key LEFT_SHIFT>;
-            key-positions = <37 15>;
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <37 16>;
         };
 
         yen {
@@ -788,7 +816,7 @@
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <16 15>;
+            key-positions = <16 17 18>;
         };
 
         pgup {
@@ -863,12 +891,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <26 27>;
+            key-positions = <16 17>;
         };
 
         stab {
             bindings = <&stab>;
-            key-positions = <25 26>;
+            key-positions = <15 16>;
         };
     };
 
