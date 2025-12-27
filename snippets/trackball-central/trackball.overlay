@@ -81,7 +81,7 @@
     vertical_scroller {
         layers = <5>;
         input-processors = <
-            &zip_xy_to_scroll_mapper
+            &zip_xy_to_scroll_mapper 1 0
             &zip_scroll_x_scaler 0 1
             &zip_scroll_scaler 1 16
         >;
@@ -90,7 +90,7 @@
     horizontal_scroller {
         layers = <6>;
         input-processors = <
-            &zip_xy_to_scroll_mapper
+            &zip_xy_to_scroll_mapper 0 1
             &zip_scroll_y_scaler 1 0
             &zip_scroll_scaler 16 1
         >;
