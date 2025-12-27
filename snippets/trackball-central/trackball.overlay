@@ -11,12 +11,6 @@
         irq-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
-
-// ペリフェラル（split経由）のリスナーを有効化
-&peripheral_listener {
-    status = "okay";
-};
-
 / {
     zip_keybind_keys: zip_keybind_keys {
         compatible = "zmk,input-processor-keybind";
@@ -58,17 +52,26 @@
             codes = <INPUT_REL_HWHEEL>;
             track-remainders;
         };
-
-        zip_scroll_y_scaler: zip_scroll_y_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_WHEEL>;
-            track-remainders;
-        };
     };
 
 };
+// ペリフェラル（split経由）のリスナーを有効化
+&peripheral_listener {
+    status = "okay";
+    AltesCtpg {
+    layers = <0>;
+        input-processors =
+                    <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+                     &zip_keybind_keys>;
+                     process-next;    
+    };
+    prevent-AltesCtpg-move {
+        layers = <0>;
+        input-processors = <&zip_xy_scaler 0 1>;
+    };
+};
+
+
 
 // セントラルのリスナーを有効化し、deviceを紐付け
 &central_listener {
@@ -87,30 +90,8 @@
         >;
     };
 
-    horizontal_scroller {
-        layers = <6>;
-        input-processors = <
-            &zip_xy_to_scroll_mapper
-            &zip_scroll_y_scaler 1 0
-            &zip_scroll_scaler 1 16
-        >;
-    };
-
-    appchange {
-        layers = <3>;
-        input-processors =
-            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-             &zip_keybind_keys>;
-             process-next;
-    };
-
-    appchange-prevent-move {
-        layers = <3>;
-        input-processors = <&zip_xy_scaler 0 1>;
-    };
-
     homeend {
-        layers = <4>;
+        layers = <3>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
              &zip_keybind_tab>;
@@ -118,7 +99,7 @@
     };
 
     homeend-prevent-move {
-        layers = <4>;
+        layers = <3>;
         input-processors = <&zip_xy_scaler 0 1>;
     };
 
@@ -128,7 +109,7 @@
     require-prior-idle-ms = <400>;
 
     excluded-positions = <
-        1 2 3 4 5 6 8 9
+         5 6 8 9
         // 16 17 18 19
         25 26 27 28 29
     >;
