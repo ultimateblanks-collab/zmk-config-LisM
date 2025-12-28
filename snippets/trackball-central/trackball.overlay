@@ -105,6 +105,14 @@
 
 };
 
+&zip_keybind_tab{
+    require-prior-idle-ms = <400>;
+};
+
+&zip_keybind_keys{
+    require-prior-idle-ms = <400>;
+};
+
 &zip_temp_layer {
     require-prior-idle-ms = <400>;
 
