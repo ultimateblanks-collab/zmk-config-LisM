@@ -58,20 +58,13 @@
 // ペリフェラル（split経由）のリスナーを有効化
 &peripheral_listener {
     status = "okay";
-    AltesCtpg {
     layers = <0>;
-        input-processors =
-                    <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-                     &zip_keybind_keys>;
-                     process-next;    
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_x_scaler 0 1
+            &zip_scroll_scaler 1 16
+        >;
     };
-    prevent-AltesCtpg-move {
-        layers = <0>;
-        input-processors = <&zip_xy_scaler 0 1>;
-    };
-};
-
-
 
 // セントラルのリスナーを有効化し、deviceを紐付け
 &central_listener {
@@ -81,36 +74,25 @@
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
         &zip_temp_layer 1 10000>;
 
-    homeend {
+    altesc {
         layers = <3>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-             &zip_keybind_tab>;
+             &zip_keybind_keys>;
              process-next;
     };
 
-    homeend-prevent-move {
+    altesc-prevent-move {
         layers = <3>;
         input-processors = <&zip_xy_scaler 0 1>;
     };
 
-     vertical_scroller {
+     scroller {
         layers = <5>;
-        input-processors = <
-            &zip_xy_to_scroll_mapper
-            &zip_scroll_x_scaler 0 1
-            &zip_scroll_scaler 1 16
-        >;
+        input-processors = 
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_scaler 1 16>;
     };
-
-};
-
-&zip_keybind_tab{
-    require-prior-idle-ms = <400>;
-};
-
-&zip_keybind_keys{
-    require-prior-idle-ms = <400>;
 };
 
 &zip_temp_layer {
