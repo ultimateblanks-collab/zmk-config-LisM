@@ -58,7 +58,6 @@
 // ペリフェラル（split経由）のリスナーを有効化
 &peripheral_listener {
     status = "okay";
-    layers = <0>;
         input-processors = <
             &zip_xy_to_scroll_mapper
             &zip_scroll_x_scaler 0 1
