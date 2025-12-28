@@ -58,13 +58,18 @@
 // ペリフェラル（split経由）のリスナーを有効化
 &peripheral_listener {
     status = "okay";
-        input-processors = <
-            &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
-            &zip_xy_to_scroll_mapper
-            &zip_scroll_x_scaler 0 1
-            &zip_scroll_scaler 1 16
-        >;
+        arrow {
+            layers = <0>;
+            input-processors =
+            <&zip_keybind_keys>;
+             process-next;
     };
+
+    arrow-prevent-move {
+        layers = <0>;
+        input-processors = <&zip_xy_scaler 0 1>;
+    };
+};
 
 // セントラルのリスナーを有効化し、deviceを紐付け
 &central_listener {
