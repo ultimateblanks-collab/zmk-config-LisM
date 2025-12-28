@@ -736,7 +736,7 @@
 
         end {
             bindings = <&kp END>;
-            key-positions = <17 18 16>;
+            key-positions = <12 13>;
         };
 
         escape {
@@ -816,7 +816,7 @@
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <16 17 15>;
+            key-positions = <11 12>;
         };
 
         pgup {
