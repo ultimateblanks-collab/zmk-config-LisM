@@ -36,7 +36,7 @@
                   <&altleft>,
                   <&altup>,
                   <&altdown>;
-        tick = <50>;
+        tick = <100>;
         wait-ms = <0>;
         tap-ms = <10>;
          mode = <1>;
