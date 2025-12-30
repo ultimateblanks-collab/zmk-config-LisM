@@ -58,8 +58,7 @@
 // ペリフェラル（split経由）のリスナーを有効化
 &peripheral_listener {
     status = "okay";
-     input-processors = 
-        arrow {
+    arrow {
             layers = <0>;
             input-processors =
             <&zip_keybind_arrow>;
