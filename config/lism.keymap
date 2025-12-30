@@ -458,60 +458,60 @@
             label = "CTRL_W";
         };
 
-        ctrlleft: ctrlleft {
+        altleft: altleft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
+                <&kp LEFT_ALT>,
                 <&macro_wait_time 20>,
                 <&kp LEFT_ARROW>,
                 <&macro_release>,
-                <&kp LEFT_ARROW &kp LCTRL>;
+                <&kp LEFT_ARROW &kp LALT>;
 
-            label = "CTRLLEFT";
+            label = "ALTLEFT";
         };
 
-        ctrlright: ctrlright {
+        altright: altright {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
+                <&kp LALT>,
                 <&macro_wait_time 20>,
                 <&kp RIGHT>,
                 <&macro_release>,
-                <&kp RIGHT &kp LCTRL>;
+                <&kp RIGHT &kp LEFT_ALT>;
 
-            label = "CTRLRIGHT";
+            label = "ALTRIGHT";
         };
 
-        ctrlup: ctrlup {
+        altup: altup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
+                <&kp LEFT_ALT>,
                 <&macro_wait_time 20>,
                 <&kp UP_ARROW>,
                 <&macro_release>,
-                <&kp UP_ARROW &kp LCTRL>;
+                <&kp UP_ARROW &kp LALT>;
 
-            label = "CTRLUP";
+            label = "ALTUP";
         };
 
-        ctrldown: ctrldown {
+        altdown: altdown {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCTRL>,
+                <&kp LEFT_ALT>,
                 <&macro_wait_time 20>,
                 <&kp DOWN>,
                 <&macro_release>,
-                <&kp DOWN_ARROW &kp LCTRL>;
+                <&kp DOWN_ARROW &kp LEFT_ALT>;
 
-            label = "CTRLDOWN";
+            label = "ALTDOWN";
         };
 
         L_yamakakko: lyk {
