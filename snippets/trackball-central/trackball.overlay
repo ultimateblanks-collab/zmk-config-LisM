@@ -58,18 +58,20 @@
 // ペリフェラル（split経由）のリスナーを有効化
 &peripheral_listener {
     status = "okay";
-        arrow {
-            layers = <0>;
-            input-processors =
-            <&zip_keybind_arrow>;
-             process-next;
-    };
-
-    arrow-prevent-move {
-        layers = <0>;
-        input-processors = <&zip_xy_scaler 0 1>;
-    };
+     input-processors = <&zip_xy_scaler 1 3>;
 };
+     //   arrow {
+     //       layers = <0>;
+     //       input-processors =
+     //       <&zip_keybind_arrow>;
+     //        process-next;
+   // };
+
+   // arrow-prevent-move {
+    //    layers = <0>;
+    //    input-processors = <&zip_xy_scaler 0 1>;
+   // };
+//};
 
 // セントラルのリスナーを有効化し、deviceを紐付け
 &central_listener {
