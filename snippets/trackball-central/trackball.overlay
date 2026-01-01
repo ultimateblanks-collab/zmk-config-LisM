@@ -32,10 +32,10 @@
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
         track_remainders;
-        bindings = <&kp RIGHT>,
-                  <&kp LEFT>,
-                  <&kp UP>,
-                  <&kp DOWN>;
+        bindings = <&kp TAB>,
+                  <&stab>,
+                  <&ctrlplus>,
+                  <&ctrlminus>;
         tick = <100>;
         wait-ms = <0>;
         tap-ms = <10>;
