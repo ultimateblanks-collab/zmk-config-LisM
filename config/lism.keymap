@@ -569,6 +569,34 @@
 
             label = "SALTESC";
         };
+
+        ctrlplus: ctrlplus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHFT>,
+                <&macro_wait_time 20>,
+                <&kp SEMI>,
+                <&macro_release>,
+                <&kp SEMI &kp LCTRL &kp LSHFT>;
+
+            label = "CTRLPLUS";
+        };
+
+        ctrlminus: ctrlminus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp MINUS>,
+                <&macro_release>,
+                <&kp MINUS &kp LCTRL>;
+
+            label = "CTRLMINUS";
+        };
     };
 
     behaviors {
