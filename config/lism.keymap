@@ -1017,7 +1017,7 @@
             status = "reserved";
             display-name = "Brank Layer";
             bindings = <
-&none  &none  &none  &none  &none                  &none  &mkp MB1  &none  &mkp MB2  &none
+&none  &none  &mo 5  &none  &none                  &none  &mkp MB1  &none  &mkp MB2  &none
 &none  &none  &none  &none  &none                  &none  &none     &none  &none     &none
 &none  &none  &none  &none  &none                  &none  &none     &none  &none     &none
 &none  &none  &none  &none  &none  &none    &none  &none  &none     &none  &none     &none
