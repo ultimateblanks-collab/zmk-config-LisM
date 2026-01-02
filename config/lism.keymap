@@ -1014,43 +1014,10 @@
         };
 
         layer_5 {
-            status = "reserved";
-            display-name = "Brank Layer";
-            bindings = <
-&none  &none  &mo 5  &none  &none                  &none  &mkp MB1  &mo 5  &mkp MB2  &none
-&none  &none  &none  &none  &none                  &none  &none     &none  &none     &none
-&none  &none  &none  &none  &none                  &none  &none     &none  &none     &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none     &none  &none     &none
-            >;
-        };
-
-        layer_6 {
-            status = "reserved";
-            display-name = "Brank Layer";
-            bindings = <
-&none  &none  &none  &none  &none                  &none  &mkp MB1  &none  &mkp MB2  &none
-&none  &none  &none  &none  &none                  &none  &none     &none  &none     &none
-&none  &none  &none  &none  &none                  &none  &none     &none  &none     &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none     &none  &none     &none
-            >;
-        };
-
-        layer_7 {
-            status = "reserved";
-            display-name = "Brank Layer";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_8 {
-            display-name = "Mouse";
+            display-name = "Snipe";
             bindings = <
 &none         &none         &none      &none           &none                  &msc SCRL_LEFT  &mkp MB1  &none  &mkp MB2  &msc SCRL_RIGHT
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &none           &none     &none  &none     &none
+&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &msc SCRL_UP    &none     &none  &none     &msc SCRL_DOWN
 &none         &none         &none      &none           &none                  &none           &none     &none  &none     &none
 &none         &none         &none      &none           &none  &none    &none  &none           &none     &none  &none     &none
             >;
