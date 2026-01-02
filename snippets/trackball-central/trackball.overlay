@@ -1,5 +1,6 @@
 #include <input/processors/zmk-input-processor-keybind.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <scroll-snap.dtsi>
 &spi0 {
     status = "okay";
 
@@ -45,15 +46,15 @@
         // max_threshold = <200>
         // max_pending_activations = <10>
     };
-   input_processors {
-        zip_scroll_x_scaler: zip_scroll_x_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_HWHEEL>;
-            track-remainders;
-        };
-    };
+ //  input_processors {
+   //     zip_scroll_x_scaler: zip_scroll_x_scaler {
+   //         compatible = "zmk,input-processor-scaler";
+   //         #input-processor-cells = <2>;
+   //         type = <INPUT_EV_REL>;
+   //         codes = <INPUT_REL_HWHEEL>;
+   //         track-remainders;
+   //     };
+   // };
 
 };
 // ペリフェラル（split経由）のリスナーを有効化
@@ -85,6 +86,7 @@
         layers = <2>;
         input-processors = 
             <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_snap>,
             <&zip_scroll_scaler 1 16>;
     };
 
