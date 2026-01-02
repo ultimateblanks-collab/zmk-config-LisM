@@ -29,5 +29,8 @@ manifest:
     - name: zmk-input-processor-keybind
       remote: ultimateblanks-collab
       revision: 3d62fbe08e05a28c97b3136a4a25d6b62567d762
+    - name: zmk-scroll-snap
+      remote: ultimateblanks-collab
+      revision: v1
   self:
     path: config
