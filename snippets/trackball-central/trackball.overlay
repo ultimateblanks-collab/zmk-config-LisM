@@ -22,7 +22,7 @@
                   <&saltesc>,
                   <&ctpgup>,
                   <&ctpgdn>;
-        tick = <150>;
+        tick = <170>;
         wait-ms = <0>;
         tap-ms = <10>;
          mode = <1>;
@@ -38,7 +38,7 @@
                   <&stab>,
                   <&ctrlplus>,
                   <&ctrlminus>;
-        tick = <200>;
+        tick = <180>;
         wait-ms = <0>;
         tap-ms = <10>;
          mode = <1>;
