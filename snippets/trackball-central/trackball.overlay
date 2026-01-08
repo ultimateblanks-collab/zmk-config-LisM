@@ -21,7 +21,7 @@
                   <&saltesc>,
                   <&ctpgup>,
                   <&ctpgdn>;
-        tick = <170>;
+        tick = <150>;
         wait-ms = <0>;
         tap-ms = <10>;
          mode = <1>;
@@ -37,7 +37,7 @@
                   <&stab>,
                   <&ctrlplus>,
                   <&ctrlminus>;
-        tick = <180>;
+        tick = <150>;
         wait-ms = <0>;
         tap-ms = <10>;
          mode = <1>;
@@ -110,7 +110,8 @@
     snipe {
         layers = <5>;
         input-processors = 
-            <&zip_xy_scaler 1 7>;
+            <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
+            &zip_xy_scaler 1 7>;
     };
 
 
