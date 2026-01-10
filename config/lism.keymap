@@ -819,7 +819,7 @@
             key-positions = <17 18>;
         };
 
-        pl {
+        asterisk {
             bindings = <&pl>;
             key-positions = <2 12>;
         };
@@ -909,29 +909,19 @@
             key-positions = <1 2 3>;
         };
 
-        anpa {
+        and {
             bindings = <&anp>;
-            key-positions = <13 23>;
-        };
-
-        ast {
-            bindings = <&aster>;
-            key-positions = <12 22>;
-        };
-
-        plus {
-            bindings = <&plus>;
-            key-positions = <11 21>;
+            key-positions = <3 13>;
         };
 
         equal {
             bindings = <&eql>;
-            key-positions = <14 24>;
+            key-positions = <4 14>;
         };
 
-        pct {
-            bindings = <&percent>;
-            key-positions = <3 13>;
+        pls {
+            bindings = <&plus>;
+            key-positions = <1 11>;
         };
     };
 
@@ -944,7 +934,7 @@
 &kp Q              &kp W            &kp E              &kp R                &kp T                                                                    &kp Y             &kp U                 &kp I           &kp O          &kp P
 &L_HRM LEFT_WIN A  &L_HRM LALT S    &L_HRM LCTRL D     &L_HRM LEFT_SHIFT F  &kp G                                                                    &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RALT L  &RMTwin RIGHT_WIN 0
 &kp Z              &kp X            &kp C              &kp V                &kp B                                                                    &kp N             &kp M                 &semicoron      &coron         &kp ENTER
-&hussexc           &kp PRINTSCREEN  &kp K_APPLICATION  &L_THUMB 3 TAB       &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL    &R_HRM LEFT_SHIFT SLASH  &R_THUMB 2 SPACE  &none                 &kp RIGHT_ALT   &kp RCTRL      &athutt
+&hussexc           &kp PRINTSCREEN  &kp K_APPLICATION  &L_THUMB 3 TAB       &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL    &R_HRM LEFT_SHIFT SLASH  &R_THUMB 2 SPACE  &none                 &pl             &percent       &athutt
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
