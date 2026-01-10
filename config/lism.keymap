@@ -973,7 +973,7 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&none         &none         &to 0      &none           &none                  &mkp MB4   &mkp MB1  &to 0  &mkp MB2  &mkp MB5
+&none         &none         &mo 5      &none           &none                  &mkp MB4   &mkp MB1  &to 0  &mkp MB2  &mkp MB5
 &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &none      &none     &none  &none     &none
 &none         &none         &none      &none           &none                  &none      &none     &none  &none     &none
 &none         &none         &none      &none           &none  &none    &none  &mkp MCLK  &none     &none  &none     &none
