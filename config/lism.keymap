@@ -961,7 +961,7 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q              &kp W            &L_LT 5 E                  &kp R                &kp T                                                       &kp Y             &kp U                 &R_LT 2 I       &kp O          &kp P
+&kp Q              &kp W            &kp E                      &kp R                &kp T                                                       &kp Y             &kp U                 &R_LT 2 I       &kp O          &kp P
 &L_HRM LEFT_WIN A  &L_HRM LALT S    &L_HRM LCTRL D             &L_HRM LEFT_SHIFT F  &kp G                                                       &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RALT L  &RMTwin RIGHT_WIN 0
 &kp Z              &kp X            &kp C                      &kp V                &kp B                                                       &kp N             &kp M                 &semicoron      &coron         &kp ENTER
 &hussexc           &kp PRINTSCREEN  &L_THUMB 4 K_CONTEXT_MENU  &none                &L_THUMB 3 TAB  &L_HRM F8 LCTRL    &R_HRM LEFT_SHIFT SLASH  &R_THUMB 2 SPACE  &none                 &kp RIGHT_ALT   &kp RCTRL      &athutt
