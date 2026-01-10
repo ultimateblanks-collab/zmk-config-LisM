@@ -60,12 +60,12 @@
 &peripheral_listener {
     status = "okay";
       input-processors =
-        <&zip_xy_scaler 1 5>;
-    };
-    /*arrow {
+      /*  <&zip_xy_scaler 1 5>;
+    };*/
+    arrow {
             layers = <0>;
             input-processors =
-            <&zip_keybind_arrow>;
+            <&zip_keybind_keys>;
              process-next;
     };
 
@@ -73,7 +73,7 @@
         layers = <0>;
         input-processors = <&zip_xy_scaler 0 1>;
     };  
-};  */
+};  
 
 // セントラルのリスナーを有効化し、deviceを紐付け
 &central_listener {
@@ -110,7 +110,7 @@
         layers = <5>;
         input-processors = 
             <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-            &zip_xy_scaler 1 7>;
+            &zip_xy_scaler 1 5>;
     };
 
 
