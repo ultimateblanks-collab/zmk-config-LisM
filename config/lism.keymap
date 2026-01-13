@@ -884,13 +884,13 @@
             key-positions = <15 16>;
         };
 
-        pgup {
-            bindings = <&kp PG_UP>;
+        alt {
+            bindings = <&kp LEFT_ALT>;
             key-positions = <13 12>;
         };
 
-        pgdn {
-            bindings = <&kp PAGE_DOWN>;
+        ctrl {
+            bindings = <&kp LCTRL>;
             key-positions = <14 13>;
         };
 
@@ -923,6 +923,16 @@
             bindings = <&plus>;
             key-positions = <1 11>;
         };
+
+        app {
+            bindings = <&kp K_APPLICATION>;
+            key-positions = <25 26>;
+        };
+
+        prsc {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <26 27>;
+        };
     };
 
     keymap {
@@ -931,10 +941,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q              &kp W            &kp E              &kp R                &kp T                                                                    &kp Y             &kp U                 &kp I           &kp O          &kp P
-&L_HRM LEFT_WIN A  &L_HRM LALT S    &L_HRM LCTRL D     &L_HRM LEFT_SHIFT F  &kp G                                                                    &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RALT L  &RMTwin RIGHT_WIN 0
-&kp Z              &kp X            &kp C              &kp V                &kp B                                                                    &kp N             &kp M                 &semicoron      &coron         &kp ENTER
-&hussexc           &kp PRINTSCREEN  &kp K_APPLICATION  &L_THUMB 3 TAB       &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT LCTRL    &R_HRM LEFT_SHIFT SLASH  &R_THUMB 2 SPACE  &none                 &pl             &percent       &athutt
+&kp Q              &kp W          &kp E           &kp R                &kp T                                                              &kp Y             &kp U                 &kp I           &kp O          &kp P
+&L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                                                              &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RALT L  &RMTwin RIGHT_WIN 0
+&kp Z              &kp X          &kp C           &kp V                &kp B                                                              &kp N             &kp M                 &semicoron      &coron         &kp ENTER
+&hussexc           &kp PG_UP      &kp PAGE_DOWN   &L_THUMB 3 TAB       &L_THUMB 4 HOME  &L_HRM LEFT_SHIFT END    &R_HRM LEFT_SHIFT SLASH  &R_THUMB 2 SPACE  &none                 &pl             &percent       &athutt
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
