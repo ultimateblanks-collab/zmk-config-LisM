@@ -953,9 +953,9 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&none         &none         &mo 5      &none           &none                      &mkp MB4  &mkp MB1  &mo 2  &mkp MB2  &mo 5
+&none         &none         &mo 5      &none           &none                      &mkp MB4  &mkp MB1  &mo 2  &mkp MB2  &mkp MB5
 &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none                      &none     &none     &none  &none     &none
-&none         &none         &none      &none           &none                      &none     &none     &none  &none     &mkp MB5
+&none         &none         &none      &none           &none                      &none     &none     &none  &none     &mo 5
 &none         &none         &none      &none           &none  &none    &mkp MCLK  &none     &none     &none  &none     &none
             >;
         };
@@ -963,7 +963,7 @@
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&none         &none     &none      &none           &none                  &none     &mo 5           &kp UP_ARROW  &mo 5      &none
+&none         &none     &none      &none           &none                  &none     &kp PG_UP       &kp UP_ARROW  &kp PG_DN  &none
 &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
 &none         &none     &none      &none           &none                  &none     &none           &none         &none      &none
 &none         &none     &none      &none           &none  &none    &none  &none     &none           &none         &none      &none
