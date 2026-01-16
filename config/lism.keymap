@@ -799,11 +799,6 @@
     combos {
         compatible = "zmk,combos";
 
-        snipe {
-            bindings = <&mo 5>;
-            key-positions = <7 8>;
-        };
-
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <7 8>;
