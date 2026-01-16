@@ -799,8 +799,8 @@
     combos {
         compatible = "zmk,combos";
 
-        end {
-            bindings = <&kp END>;
+        snipe {
+            bindings = <&mo 5>;
             key-positions = <16 17>;
         };
 
@@ -953,7 +953,7 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&none         &none         &mo 5      &none           &none                      &mkp MB4  &mkp MB1  &mo 6  &mkp MB2  &mkp MB5
+&none         &none         &mo 5      &none           &none                      &mkp MB4  &mkp MB1  &mo 2  &mkp MB2  &mkp MB5
 &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none                      &none     &none     &none  &none     &none
 &none         &none         &none      &none           &none                      &none     &none     &none  &none     &mo 5
 &none         &none         &none      &none           &none  &none    &mkp MCLK  &none     &none     &none  &none     &none
