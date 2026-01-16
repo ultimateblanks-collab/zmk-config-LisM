@@ -801,7 +801,7 @@
             bindings = <&kp>, <&altesc>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <200>;
             flavor = "balanced";
