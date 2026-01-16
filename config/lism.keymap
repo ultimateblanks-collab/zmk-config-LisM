@@ -933,6 +933,11 @@
             bindings = <&kp PRINTSCREEN>;
             key-positions = <26 27>;
         };
+
+        snipe2 {
+            bindings = <&mo 5>;
+            key-positions = <6 7>;
+        };
     };
 
     keymap {
