@@ -597,6 +597,62 @@
 
             label = "CTRLMINUS";
         };
+
+        ctup: ctup {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp UP_ARROW &kp LCTRL>;
+
+            label = "CTUP";
+        };
+
+        ctdn: ctdn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp DOWN_ARROW>,
+                <&macro_release>,
+                <&kp DOWN_ARROW &kp LCTRL>;
+
+            label = "CTDN";
+        };
+
+        ctlt: ctlt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_ARROW &kp LCTRL>;
+
+            label = "CTLT";
+        };
+
+        ctrt: ctrt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp RIGHT>,
+                <&macro_release>,
+                <&kp RIGHT &kp LCTRL>;
+
+            label = "CTRT";
+        };
     };
 
     behaviors {
