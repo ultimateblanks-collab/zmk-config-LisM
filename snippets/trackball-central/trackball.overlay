@@ -84,6 +84,15 @@
         &zip_temp_layer 1 10000>;
        // &zip_xy_scaler 5 10>;
 
+     scroller {
+        layers = <2>;
+        input-processors = 
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
+            <&zip_scroll_snap>,
+            <&zip_scroll_scaler 1 16>;
+    };
+
     appchanger{
         layers = <3>;
         input-processors =
@@ -103,15 +112,6 @@
             <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
              &zip_xy_scaler 1 5>;
          };
-
-     scroller {
-        layers = <6>;
-        input-processors = 
-            <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
-            <&zip_scroll_snap>,
-            <&zip_scroll_scaler 1 16>;
-    };
 };
 
 &zip_temp_layer {
