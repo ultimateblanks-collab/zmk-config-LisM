@@ -1055,9 +1055,9 @@
         layer_3 {
             display-name = "NUM";
             bindings = <
-&none         &msc SCRL_UP  &none         &msc SCRL_DOWN  &none                               &kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE
+&none         &msc SCRL_UP  &none         &msc SCRL_DOWN  &none                               &kp N0           &kp N7        &kp N8        &kp N9        &kp GRAVE
 &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &none                               &kp N0           &kp NUMBER_4  &kp N5        &kp N6        &kp PERIOD
-&none         &none         &none         &none           &none                               &kp N0           &kp N7        &kp N8        &kp N9        &kp SLASH
+&none         &none         &none         &none           &none                               &kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
 &none         &none         &kp NUMBER_0  &none           &kp SPACE  &none    &msc SCRL_LEFT  &msc SCRL_RIGHT  &none         &none         &none         &none
             >;
         };
