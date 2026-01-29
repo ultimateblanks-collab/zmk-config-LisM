@@ -1018,6 +1018,11 @@
             bindings = <&altesc>;
             key-positions = <16 37>;
         };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <0 10>;
+        };
     };
 
     keymap {
