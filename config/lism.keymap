@@ -886,7 +886,7 @@
 
         ime {
             bindings = <&kp GRAVE>;
-            key-positions = <11 12>;
+            key-positions = <33 37>;
         };
 
         bs {
@@ -895,7 +895,7 @@
         };
 
         asterisk {
-            bindings = <&pl>;
+            bindings = <&aster>;
             key-positions = <2 12>;
         };
 
@@ -906,12 +906,12 @@
 
         cw {
             bindings = <&C_W>;
-            key-positions = <17 37>;
+            key-positions = <17 12>;
         };
 
         st {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <37 16>;
+            key-positions = <16 13>;
         };
 
         yen {
@@ -1012,6 +1012,11 @@
         snipe2 {
             bindings = <&mo 5>;
             key-positions = <7 8>;
+        };
+
+        appch {
+            bindings = <&altesc>;
+            key-positions = <16 37>;
         };
     };
 
