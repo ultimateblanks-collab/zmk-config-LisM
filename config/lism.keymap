@@ -1026,10 +1026,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q              &kp W          &kp E                 &kp R                &kp T                                                              &kp Y             &kp U                 &kp I           &kp O          &kp P
-&L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D        &L_HRM LEFT_SHIFT F  &kp G                                                              &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RALT L  &RMTwin RIGHT_WIN 0
-&kp Z              &kp X          &kp C                 &kp V                &kp B                                                              &kp N             &kp M                 &semicoron      &coron         &kp ENTER
-&hussexc           &kp PG_UP      &L_THUMB 5 PAGE_DOWN  &L_THUMB 3 TAB       &L_THUMB 4 HOME  &L_HRM LEFT_SHIFT END    &R_HRM_SP1 LEFT_SHIFT 0  &R_THUMB 2 SPACE  &none                 &kp SLASH       &plper         &athutt
+&kp Q              &kp W          &kp E                 &kp R                &kp T                                                                           &kp Y             &kp U                 &kp I           &kp O          &kp P
+&L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D        &L_HRM LEFT_SHIFT F  &kp G                                                                           &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RALT L  &RMTwin RIGHT_WIN 0
+&kp Z              &kp X          &kp C                 &kp V                &kp B                                                                           &kp N             &kp M                 &semicoron      &coron         &kp ENTER
+&hussexc           &kp PG_UP      &L_THUMB 5 PAGE_DOWN  &L_THUMB 3 TAB       &L_THUMB 4 LANGUAGE_1  &L_HRM LEFT_SHIFT LANGUAGE_2    &R_HRM_SP1 LEFT_SHIFT 0  &R_THUMB 2 SPACE  &none                 &kp SLASH       &plper         &athutt
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
