@@ -946,7 +946,7 @@
 
         af4 {
             bindings = <&endapp>;
-            key-positions = <25 37>;
+            key-positions = <37 16>;
         };
 
         home {
