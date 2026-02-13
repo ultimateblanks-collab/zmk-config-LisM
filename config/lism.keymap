@@ -731,7 +731,7 @@
             label = "S_KEY";
             bindings = <&kp>;
             #binding-cells = <1>;
-            release-after-ms = <250>;
+            release-after-ms = <500>;
         };
 
         C_W: C_W {
