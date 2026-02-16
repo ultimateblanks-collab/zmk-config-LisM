@@ -851,20 +851,6 @@
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
         };
 
-        R_HRM_SP1: R_HRM_SP1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "R_HRM_SP1";
-            bindings = <&kp>, <&altesc>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <200>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
-            hold-trigger-on-release;
-        };
-
         plper: plper {
             compatible = "zmk,behavior-mod-morph";
             label = "PLPER";
@@ -883,6 +869,20 @@
             #binding-cells = <2>;
             tapping-term-ms = <20>;
             flavor = "hold-preferred";
+        };
+
+        R_Th_space: R_Th_space {
+            compatible = "zmk,behavior-hold-tap";
+            label = "R_TH_SPACE";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <170>;
+            require-prior-idle-ms = <170>;
+            flavor = "hold-preferred";
+            hold-trigger-key-positions = <5 6 7 9 8 15 16 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 37 38 39 40 41 36>;
+            hold-trigger-on-release;
         };
     };
 
@@ -1026,10 +1026,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q              &kp W          &kp E                 &kp R                &kp T                                                              &kp Y             &kp U                 &kp I           &kp O          &kp P
-&L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D        &L_HRM LEFT_SHIFT F  &kp G                                                              &kp H             &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RALT L  &RMTwin RIGHT_WIN 0
-&kp Z              &kp X          &kp C                 &kp V                &kp B                                                              &kp N             &kp M                 &semicoron      &coron         &kp ENTER
-&hussexc           &kp PG_UP      &L_THUMB 5 PAGE_DOWN  &L_THUMB 3 TAB       &L_THUMB 4 GRAVE  &L_HRM LEFT_SHIFT HOME    &R_HRM LEFT_SHIFT END  &R_THUMB 2 SPACE  &none                 &kp SLASH       &plper         &athutt
+&kp Q              &kp W          &kp E                 &kp R                &kp T                                                              &kp Y                &kp U                 &kp I           &kp O          &kp P
+&L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D        &L_HRM LEFT_SHIFT F  &kp G                                                              &kp H                &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RALT L  &RMTwin RIGHT_WIN 0
+&kp Z              &kp X          &kp C                 &kp V                &kp B                                                              &kp N                &kp M                 &semicoron      &coron         &kp ENTER
+&hussexc           &kp PG_UP      &L_THUMB 5 PAGE_DOWN  &L_THUMB 3 TAB       &L_THUMB 4 GRAVE  &L_HRM LEFT_SHIFT HOME    &R_HRM LEFT_SHIFT END  &R_Th_space 2 SPACE  &none                 &kp SLASH       &plper         &athutt
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
