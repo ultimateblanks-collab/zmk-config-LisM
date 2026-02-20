@@ -1029,7 +1029,7 @@
 &kp Q              &kp W          &kp E                 &kp R                &kp T                                                              &kp Y                &kp U                 &kp I           &kp O          &kp P
 &L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D        &L_HRM LEFT_SHIFT F  &kp G                                                              &kp H                &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RALT L  &RMTwin RIGHT_WIN 0
 &kp Z              &kp X          &kp C                 &kp V                &kp B                                                              &kp N                &kp M                 &semicoron      &coron         &kp ENTER
-&hussexc           &kp PG_UP      &L_THUMB 5 PAGE_DOWN  &L_THUMB 3 TAB       &L_THUMB 4 GRAVE  &L_HRM LEFT_SHIFT HOME    &R_HRM LEFT_SHIFT END  &R_Th_space 2 SPACE  &none                 &kp SLASH       &plper         &athutt
+&hussexc           &kp PG_UP      &L_THUMB 5 PAGE_DOWN  &L_THUMB 3 TAB       &L_THUMB 4 GRAVE  &L_HRM LEFT_SHIFT HOME    &R_HRM LEFT_SHIFT END  &R_Th_space 2 SPACE  &none                 &athutt         &plper         &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1048,10 +1048,10 @@
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&none         &msc SCRL_UP  &none      &msc SCRL_DOWN  &none                  &msc SCRL_LEFT  &ctpgup         &kp UP_ARROW  &ctpgdn    &msc SCRL_RIGHT
-&kp LEFT_WIN  &kp LALT      &kp LCTRL  &kp LEFT_SHIFT  &none                  &kp HOME        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
-&none         &none         &none      &none           &none                  &none           &none           &none         &none      &none
-&none         &none         &none      &none           &none  &none    &none  &ctrlW          &none           &none         &none      &none
+&msc SCRL_LEFT  &msc SCRL_UP  &none      &msc SCRL_DOWN  &msc SCRL_RIGHT                  &msc SCRL_LEFT  &ctpgup         &kp UP_ARROW  &ctpgdn    &msc SCRL_RIGHT
+&kp LEFT_WIN    &kp LALT      &kp LCTRL  &kp LEFT_SHIFT  &none                            &kp HOME        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
+&none           &none         &none      &none           &none                            &none           &none           &none         &none      &none
+&none           &none         &none      &none           &none            &none    &none  &ctrlW          &none           &none         &none      &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
