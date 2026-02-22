@@ -1018,6 +1018,16 @@
             bindings = <&C_W>;
             key-positions = <6 7>;
         };
+
+        home2 {
+            bindings = <&kp HOME>;
+            key-positions = <37 6>;
+        };
+
+        end2 {
+            bindings = <&kp END>;
+            key-positions = <37 7>;
+        };
     };
 
     keymap {
