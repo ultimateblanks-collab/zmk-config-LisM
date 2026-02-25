@@ -991,7 +991,7 @@
 
         pls {
             bindings = <&plus>;
-            key-positions = <1 11>;
+            key-positions = <3 2>;
         };
 
         app {
@@ -1006,7 +1006,7 @@
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <0 10>;
+            key-positions = <1 2>;
         };
 
         skey {
