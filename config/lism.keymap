@@ -1028,6 +1028,11 @@
             bindings = <&kp END>;
             key-positions = <37 7>;
         };
+
+        pl {
+            bindings = <&pl>;
+            key-positions = <13 23>;
+        };
     };
 
     keymap {
