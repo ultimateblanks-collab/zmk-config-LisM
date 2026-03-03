@@ -793,7 +793,7 @@
         YOKOBOU: YOKOBOU {
             compatible = "zmk,behavior-mod-morph";
             label = "YOKOBOU";
-            bindings = <&kp MINUS>, <&kp INT1>;
+            bindings = <&kp MINUS>, <&kp MINUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_LCTL|MOD_LALT|MOD_LGUI)>;
@@ -1032,6 +1032,11 @@
         pl {
             bindings = <&pl>;
             key-positions = <13 23>;
+        };
+
+        us {
+            bindings = <&us>;
+            key-positions = <12 22>;
         };
     };
 
