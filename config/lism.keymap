@@ -1011,12 +1011,12 @@
 
         skey {
             bindings = <&S_key RIGHT_SHIFT>;
-            key-positions = <16 17>;
+            key-positions = <16 15>;
         };
 
         cw {
             bindings = <&C_W>;
-            key-positions = <6 7>;
+            key-positions = <6 5>;
         };
 
         home2 {
