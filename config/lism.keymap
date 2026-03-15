@@ -884,6 +884,15 @@
             hold-trigger-key-positions = <5 6 7 9 8 15 16 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 37 38 39 40 41 36>;
             hold-trigger-on-release;
         };
+
+        SL_SP2: SL_SP2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SL_SP2";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <170>;
+        };
     };
 
     combos {
@@ -1068,10 +1077,10 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&none  &none  &none  &none  &none                      &mkp MB4  &mkp MB1  &sl_sp 2 0  &mkp MB2  &mkp MB5
-&none  &none  &none  &none  &none                      &none     &none     &none       &none     &none
-&none  &none  &none  &none  &none                      &none     &none     &none       &none     &none
-&none  &none  &none  &none  &none  &none    &mkp MCLK  &none     &none     &none       &none     &none
+&none  &none  &none  &none  &none                      &mkp MB4  &mkp MB1  &sl_sp 2 0  &SL_SP2 5 MB2  &mkp MB5
+&none  &none  &none  &none  &none                      &none     &none     &none       &none          &none
+&none  &none  &none  &none  &none                      &none     &none     &none       &none          &none
+&none  &none  &none  &none  &none  &none    &mkp MCLK  &none     &none     &none       &none          &none
             >;
         };
 
