@@ -1079,7 +1079,7 @@
             bindings = <
 &none  &none  &none  &none  &none                      &mkp MB4  &mkp MB1  &sl_sp 2 0  &SL_SP2 5 MB2  &mkp MB5
 &none  &none  &none  &none  &none                      &none     &none     &none       &none          &none
-&none  &none  &none  &none  &none                      &none     &none     &none       &none          &none
+&none  &none  &none  &none  &none                      &mkp MB4  &mkp MB1  &sl_sp 2 0  &SL_SP2 5 MB2  &mkp MB5
 &none  &none  &none  &none  &none  &none    &mkp MCLK  &none     &none     &none       &none          &none
             >;
         };
@@ -1089,7 +1089,7 @@
             bindings = <
 &msc SCRL_LEFT  &msc SCRL_UP  &none      &msc SCRL_DOWN  &msc SCRL_RIGHT                  &none     &ctpgup         &kp UP_ARROW  &ctpgdn    &none
 &kp LEFT_WIN    &kp LALT      &kp LCTRL  &kp LEFT_SHIFT  &none                            &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
-&none           &none         &none      &none           &none                            &none     &none           &none         &none      &none
+&none           &none         &none      &none           &none                            &kp END   &ctpgup         &none         &ctpgdn    &none
 &none           &none         &none      &none           &none            &none    &none  &ctrlW    &none           &none         &none      &none
             >;
 
