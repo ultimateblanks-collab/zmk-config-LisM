@@ -970,7 +970,7 @@
 
         ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <3 4>;
+            key-positions = <1 2>;
         };
 
         VBE {
@@ -1000,7 +1000,7 @@
 
         pls {
             bindings = <&plus>;
-            key-positions = <3 2>;
+            key-positions = <22 23>;
         };
 
         tab {
@@ -1010,7 +1010,7 @@
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <1 2>;
+            key-positions = <21 22>;
         };
 
         skey {
