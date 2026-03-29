@@ -1005,7 +1005,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <26 27>;
+            key-positions = <6 7>;
         };
 
         minus {
@@ -1067,10 +1067,10 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&none  &none  &none  &none  &none                      &mkp MB4  &mkp MB1  &sl_sp 2 0  &SL_SP2 5 MB2  &mkp MB5
-&none  &none  &none  &none  &none                      &none     &none     &none       &none          &none
-&none  &none  &none  &none  &none                      &mkp MB4  &mkp MB1  &sl_sp 2 0  &SL_SP2 5 MB2  &mkp MB5
-&none  &none  &none  &none  &none  &none    &mkp MCLK  &none     &none     &none       &none          &none
+&none  &none  &none  &none  &none                  &mkp MB4  &mkp MB1  &sl_sp 2 0  &SL_SP2 5 MB2  &mkp MB5
+&none  &none  &none  &none  &none                  &none     &none     &none       &none          &none
+&none  &none  &none  &none  &none                  &mkp MB4  &mkp MB1  &sl_sp 2 0  &SL_SP2 5 MB2  &mkp MB5
+&none  &none  &none  &none  &none  &none    &none  &none     &none     &none       &none          &none
             >;
         };
 
