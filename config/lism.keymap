@@ -1023,11 +1023,6 @@
             key-positions = <34 37>;
         };
 
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <14 24>;
-        };
-
         pgup {
             bindings = <&kp PG_UP>;
             key-positions = <11 12>;
@@ -1048,7 +1043,7 @@
 &kp Q              &kp W          &kp E                  &kp R                &kp T                                                                              &kp Y                &kp U                 &kp I           &kp O          &kp P
 &L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D         &L_HRM LEFT_SHIFT F  &kp G                                                                              &kp H                &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RALT L  &RMTwin RIGHT_WIN 0
 &kp Z              &kp X          &kp C                  &kp V                &kp B                                                                              &kp N                &kp M                 &kp COMMA       &kp PERIOD     &kp ENTER
-&hussexc           &kp SEMI       &L_THUMB 5 APOSTROPHE  &L_THUMB 3 HOME      &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN    &R_HRM LEFT_SHIFT K_CONTEXT_MENU  &R_Th_space 2 SPACE  &none                 &athutt         &plper         &altesc
+&hussexc           &kp SEMI       &L_THUMB 5 APOSTROPHE  &L_THUMB 3 HOME      &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN    &R_HRM LEFT_SHIFT K_CONTEXT_MENU  &R_Th_space 2 SPACE  &none                 &athutt         &plper         &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
