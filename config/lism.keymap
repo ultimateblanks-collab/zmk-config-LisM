@@ -1040,10 +1040,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q              &kp W          &kp E                  &kp R                &kp T                                                                              &kp Y                &kp U                 &kp I           &kp O          &kp P
-&L_HRM LEFT_WIN A  &L_HRM LALT S  &L_HRM LCTRL D         &L_HRM LEFT_SHIFT F  &kp G                                                                              &kp H                &R_HRM RIGHT_SHIFT J  &R_HRM RCTRL K  &R_HRM RALT L  &RMTwin RIGHT_WIN 0
-&kp Z              &kp X          &kp C                  &kp V                &kp B                                                                              &kp N                &kp M                 &kp COMMA       &kp PERIOD     &kp ENTER
-&hussexc           &kp SEMI       &L_THUMB 5 APOSTROPHE  &L_THUMB 3 HOME      &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN    &R_HRM LEFT_SHIFT K_CONTEXT_MENU  &R_Th_space 2 SPACE  &none                 &athutt         &plper         &kp SLASH
+&kp Q              &kp W              &kp E                  &kp R            &kp T                                                                              &kp Y                &kp U           &kp I               &kp O                    &kp P
+&kp A              &kp S              &kp D                  &kp F            &kp G                                                                              &kp H                &kp J           &kp K               &kp L                    &kp MINUS
+&L_HRM LEFT_GUI Z  &L_HRM LEFT_ALT X  &L_HRM LCTRL C         &L_HRM LSHFT V   &kp B                                                                              &kp N                &L_HRM LSHFT M  &L_HRM RCTRL COMMA  &L_HRM RIGHT_ALT PERIOD  &L_HRM RIGHT_GUI ENTER
+&hussexc           &kp SEMI           &L_THUMB 5 APOSTROPHE  &L_THUMB 3 HOME  &L_THUMB 4 END  &L_HRM LEFT_SHIFT PRINTSCREEN    &R_HRM LEFT_SHIFT K_CONTEXT_MENU  &R_Th_space 2 SPACE  &none           &athutt             &plper                   &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
