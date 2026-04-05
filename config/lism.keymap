@@ -1020,7 +1020,7 @@
 
         cw {
             bindings = <&C_W>;
-            key-positions = <37 16>;
+            key-positions = <12 33>;
         };
 
         pgup {
