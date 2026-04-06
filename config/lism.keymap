@@ -888,10 +888,10 @@
         SL_SP2: SL_SP2 {
             compatible = "zmk,behavior-hold-tap";
             label = "SL_SP2";
-            bindings = <&mo>, <&mkp>;
+            bindings = <&mo>, <&none>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
+            tapping-term-ms = <5>;
         };
     };
 
