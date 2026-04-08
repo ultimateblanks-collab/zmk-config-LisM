@@ -81,7 +81,7 @@
     device = <&trackball_central>;
     input-processors = 
         <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-        &zip_temp_layer 1 10000
+        // &zip_temp_layer 1 10000
         &zip_xy_scaler 4 5>;
 
      scroller {
@@ -127,13 +127,13 @@
          };
 };
 
-&zip_temp_layer {
-    require-prior-idle-ms = <500>;
+// &zip_temp_layer {
+   // require-prior-idle-ms = <500>;
 
-    excluded-positions = <
+  //  excluded-positions = <
         //  5 6 7 8 9
           15 16 17 18 19
        //   25 26 27 28 29
        //   36
-    >;
-}; 
+   // >;
+//}; 
