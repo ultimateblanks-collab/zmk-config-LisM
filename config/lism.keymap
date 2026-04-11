@@ -6,7 +6,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 //&mkp_input_listener { input-processors = <&zip_temp_layer 1 250>; };
-
 //&msc_input_listener { input-processors = <&zip_temp_layer 1 10000>; };
 
 / {
@@ -1053,20 +1052,20 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&none  &none  &none  &none  &none                  &none     &none           &msc SCRL_UP    &none            &none
-&none  &none  &none  &none  &none                  &mkp MB4  &mkp MB1        &mkp MB2        &mkp MB5         &none
-&none  &none  &none  &none  &none                  &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
-&none  &none  &none  &none  &none  &none    &none  &none     &none           &none           &none            &none
+&none     &none         &none      &none      &none                  &none     &none           &msc SCRL_UP    &none            &none
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                  &mkp MB4  &mkp MB1        &mkp MB2        &mkp MB5         &none
+&none     &none         &none      &none      &none                  &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
+&none     &none         &none      &none      &none  &none    &none  &none     &none           &none           &none            &none
             >;
         };
 
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&none  &kp LALT  &kp LCTRL  &kp LSHFT  &kp LWIN                  &none     &ctpgup         &kp UP_ARROW    &ctpgdn          &none
-&none  &none     &none      &none      &none                     &kp HOME  &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
-&none  &none     &none      &none      &none                     &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
-&none  &none     &none      &none      &none     &none    &none  &ctrlW    &none           &none           &none            &none
+&none     &none     &none      &none      &none                  &none     &ctpgup         &kp UP_ARROW    &ctpgdn          &none
+&kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none                  &kp HOME  &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
+&none     &none     &none      &none      &none                  &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
+&none     &none     &none      &none      &none  &none    &none  &ctrlW    &none           &none           &none            &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -1075,20 +1074,20 @@
         layer_3 {
             display-name = "NUM";
             bindings = <
-&none  &kp LEFT_ALT  &kp LCTRL     &kp LSHFT  &kp LWIN                   &kp N0     &kp N7        &kp N8        &kp N9        &kp GRAVE
-&none  &none         &none         &none      &none                      &kp N0     &kp NUMBER_4  &kp N5        &kp N6        &kp PERIOD
-&none  &none         &none         &none      &none                      &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&none  &none         &kp NUMBER_0  &none      &kp SPACE  &none    &none  &kp SPACE  &none         &none         &none         &none
+&none     &none         &none         &none      &none                      &kp N0     &kp N7        &kp N8        &kp N9        &kp GRAVE
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL     &kp LSHFT  &none                      &kp N0     &kp NUMBER_4  &kp N5        &kp N6        &kp PERIOD
+&none     &none         &none         &none      &none                      &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&none     &none         &kp NUMBER_0  &none      &kp SPACE  &none    &none  &kp SPACE  &none         &none         &none         &none
             >;
         };
 
         layer_4 {
             display-name = "FUNCTION";
             bindings = <
-&none        &kp LALT  &kp LCTRL  &kp LSHFT  &none                    &kp F10  &kp F7  &kp F8  &kp F9  &none
-&none        &none     &none      &none      &none                    &kp F11  &kp F4  &kp F5  &kp F6  &none
-&none        &none     &none      &none      &none                    &kp F12  &kp F1  &kp F2  &kp F3  &none
-&bootloader  &none     &none      &none      &none  &none    &evalue  &calte   &none   &none   &none   &bootloader
+&none        &none         &none      &none      &none                    &kp F10  &kp F7  &kp F8  &kp F9  &none
+&kp LWIN     &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                    &kp F11  &kp F4  &kp F5  &kp F6  &none
+&none        &none         &none      &none      &none                    &kp F12  &kp F1  &kp F2  &kp F3  &none
+&bootloader  &none         &none      &none      &none  &none    &evalue  &calte   &none   &none   &none   &bootloader
             >;
         };
 
