@@ -993,8 +993,8 @@
             key-positions = <3 13>;
         };
 
-        us {
-            bindings = <&us>;
+        perc {
+            bindings = <&percent>;
             key-positions = <4 14>;
         };
 
@@ -1031,6 +1031,11 @@
         pgdn {
             bindings = <&kp PG_DN>;
             key-positions = <12 13>;
+        };
+
+        ent {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17>;
         };
     };
 
