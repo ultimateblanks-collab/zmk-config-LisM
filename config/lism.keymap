@@ -1125,10 +1125,10 @@
         layer_5 {
             display-name = "Snipe";
             bindings = <
-&none         &ctpgup       &none      &ctpgdn         &none                  &msc SCRL_LEFT  &bt BT_PRV    &msc SCRL_UP  &bt BT_NXT    &msc SCRL_RIGHT
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&none         &none         &none      &none           &none                  &none           &none         &none         &none         &none
-&none         &none         &none      &none           &none  &none    &none  &none           &none         &none         &none         &none
+&none         &ctpgup       &none      &ctpgdn         &none                  &none         &bt BT_PRV    &msc SCRL_UP  &bt BT_NXT    &msc SCRL_RIGHT
+&kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none         &none         &none      &none           &none                  &none         &none         &none         &none         &none
+&none         &none         &none      &none           &none  &none    &none  &none         &none         &none         &none         &none
             >;
         };
 
