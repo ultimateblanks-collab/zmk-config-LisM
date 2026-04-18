@@ -955,6 +955,15 @@
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 36 37 38 39 40 41>;
             hold-trigger-on-release;
         };
+
+        uspl: uspl {
+            compatible = "zmk,behavior-mod-morph";
+            label = "USPL";
+            bindings = <&us>, <&pl>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
+        };
     };
 
     combos {
@@ -1080,7 +1089,7 @@
 &kp Q          &kp W          &kp E                  &kp R           &kp T                                                           &kp Y                &kp U           &kp I            &kp O               &kp P
 &L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D         &L_HRM LSHFT F  &kp G                                                           &kp H                &R_HRM LSHFT J  &R_HRM LCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
 &kp Z          &kp X          &kp C                  &kp V           &kp B                                                           &kp N                &SL_SP2 3 M     &SL_SP2 2 COMMA  &SL_SP2 4 PERIOD    &SL_SP2 1 SLASH
-&pl            &kp SEMI       &L_THUMB 5 APOSTROPHE  &L_THUMB 3 TAB  &L_THUMB3 4 0  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 SPACE  &none           &athutt          &hussexc            &us
+&athutt        &kp SEMI       &L_THUMB 5 APOSTROPHE  &L_THUMB 3 TAB  &L_THUMB3 4 0  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 SPACE  &none           &none            &hussexc            &uspl
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
