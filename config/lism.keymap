@@ -1086,9 +1086,9 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q          &kp W          &kp E                  &kp R           &kp T                                                           &kp Y                &kp U           &kp I            &kp O               &kp P
+&kp Q          &kp W          &kp E                  &kp R           &kp T                                                           &kp Y                &kp U           &SL_SP2 2 I      &kp O               &kp P
 &L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D         &L_HRM LSHFT F  &kp G                                                           &kp H                &R_HRM LSHFT J  &R_HRM LCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X          &kp C                  &kp V           &kp B                                                           &kp N                &SL_SP2 3 M     &SL_SP2 2 COMMA  &SL_SP2 4 PERIOD    &SL_SP2 1 SLASH
+&kp Z          &kp X          &kp C                  &kp V           &kp B                                                           &kp N                &kp M           &SL_SP2 3 COMMA  &SL_SP2 4 PERIOD    &SL_SP2 1 SLASH
 &athutt        &kp SEMI       &L_THUMB 5 APOSTROPHE  &L_THUMB 3 TAB  &L_THUMB3 4 0  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 SPACE  &none           &none            &hussexc            &uspl
             >;
 
@@ -1098,10 +1098,10 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&none     &none         &none      &none      &none                    &none     &ctpgup         &msc SCRL_UP    &ctpgdn          &none
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                    &mkp MB5  &mkp MB1        &mkp MB2        &mkp MB4         &none
-&none     &none         &none      &none      &none                    &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
-&none     &none         &none      &none      &none  &none    &ctrl_w  &ctrl_t   &none           &none           &none            &none
+&none     &none         &none      &none      &none                    &none     &ctpgup         &SL_SP2 2 PG_UP  &ctpgdn          &none
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                    &mkp MB5  &mkp MB1        &mkp MB2         &mkp MB4         &none
+&none     &none         &none      &none      &none                    &none     &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_RIGHT  &none
+&none     &none         &none      &none      &none  &none    &ctrl_w  &ctrl_t   &none           &none            &none            &none
             >;
         };
 
