@@ -22,7 +22,7 @@
                    <&kp UP_ARROW>,
                    <&kp DOWN_ARROW>;
 
-        tick = <160>;
+        tick = <80>;
         wait-ms = <0>;
         tap-ms = <10>;
          mode = <1>;
@@ -35,7 +35,7 @@
         #input-processor-cells = <0>;
         track_remainders;
         bindings = <&ctpgdn>, <&ctpgup>, <&saltesc>, <&altesc>;
-        tick = <160>;
+        tick = <80>;
         wait-ms = <0>;
         tap-ms = <10>;
          mode = <1>;
