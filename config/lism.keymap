@@ -168,11 +168,11 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_SHIFT>,
+                <&kp RSHFT>,
                 <&macro_wait_time 50>,
                 <&kp INT3>,
                 <&macro_release>,
-                <&kp INT3 &kp LEFT_SHIFT>;
+                <&kp INT3 &kp RSHFT>;
 
             label = "PL";
         };
@@ -974,8 +974,8 @@
             key-positions = <7 8>;
         };
 
-        bs {
-            bindings = <&kp BACKSPACE>;
+        stab {
+            bindings = <&stab>;
             key-positions = <17 18>;
         };
 
@@ -996,12 +996,12 @@
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <2 1>;
+            key-positions = <11 12>;
         };
 
         plus {
             bindings = <&plus>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
         };
 
         VBE {
@@ -1014,16 +1014,6 @@
             key-positions = <6 7>;
         };
 
-        and {
-            bindings = <&anp>;
-            key-positions = <3 13>;
-        };
-
-        perc {
-            bindings = <&percent>;
-            key-positions = <4 14>;
-        };
-
         ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <22 23>;
@@ -1034,19 +1024,14 @@
             key-positions = <21 22>;
         };
 
-        skey {
-            bindings = <&S_key RIGHT_SHIFT>;
-            key-positions = <13 12 11>;
-        };
-
         cw {
             bindings = <&C_W>;
-            key-positions = <1 2 3>;
+            key-positions = <13 12 11>;
         };
 
         pgup {
             bindings = <&kp PG_UP>;
-            key-positions = <11 12>;
+            key-positions = <2 3>;
         };
 
         pgdn {
@@ -1054,8 +1039,8 @@
             key-positions = <12 13>;
         };
 
-        ent {
-            bindings = <&kp ENTER>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <16 17>;
         };
 
@@ -1086,10 +1071,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q          &kp W          &kp E                  &kp R           &kp T                                                                  &kp Y                &kp U           &SL_SP2 2 I      &kp O               &kp P
-&L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D         &L_HRM LSHFT F  &kp G                                                                  &kp H                &R_HRM LSHFT J  &R_HRM LCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X          &kp C                  &kp V           &kp B                                                                  &kp N                &kp M           &SL_SP2 3 COMMA  &SL_SP2 4 PERIOD    &SL_SP2 1 SLASH
-&athutt        &kp SEMI       &L_THUMB 5 APOSTROPHE  &L_THUMB 3 TAB  &L_THUMB 4 BACKSPACE  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 SPACE  &none           &none            &hussexc            &uspl
+&kp Q          &kp W          &kp E                  &kp R            &kp T                                                            &kp Y                &kp U           &SL_SP2 2 I      &kp O               &kp P
+&L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D         &L_HRM LSHFT F   &kp G                                                            &kp H                &R_HRM LSHFT J  &R_HRM LCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
+&kp Z          &kp X          &kp C                  &kp V            &kp B                                                            &kp N                &kp M           &SL_SP2 3 COMMA  &SL_SP2 4 PERIOD    &SL_SP2 1 ENTER
+&athutt        &kp SEMI       &L_THUMB 5 APOSTROPHE  &L_THUMB 3 HOME  &L_THUMB 4 END  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 SPACE  &none           &none            &hussexc            &uspl
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1108,8 +1093,8 @@
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&none     &none     &lk                &rk                &anp                      &none     &ctpgup         &kp UP_ARROW    &ctpgdn          &none
-&kp LWIN  &kp LALT  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &percent                  &kp HOME  &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
+&none     &percent  &lk                &rk                &anp                      &none     &ctpgup         &kp UP_ARROW    &ctpgdn          &none
+&kp LWIN  &kp LALT  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &aster                    &kp HOME  &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
 &none     &none     &l_tyk             &r_tyk             &kp INT3                  &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
 &none     &none     &sq                &dq                &dollar   &none    &none  &ctrlW    &none           &none           &none            &none
             >;
@@ -1120,10 +1105,10 @@
         layer_3 {
             display-name = "NUM";
             bindings = <
-&none     &none         &none         &none      &none                      &kp N0     &kp N7        &kp N8        &kp N9        &kp GRAVE
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL     &kp LSHFT  &none                      &kp N0     &kp NUMBER_4  &kp N5        &kp N6        &kp PERIOD
-&none     &none         &none         &none      &none                      &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&none     &none         &kp NUMBER_0  &none      &kp SPACE  &none    &none  &kp SPACE  &none         &none         &none         &none
+&none     &none         &none         &none      &none                      &kp N0         &kp N7        &kp N8        &kp N9        &kp GRAVE
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL     &kp LSHFT  &none                      &kp N0         &kp NUMBER_4  &kp N5        &kp N6        &kp PERIOD
+&none     &none         &none         &none      &none                      &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&none     &none         &kp NUMBER_0  &none      &kp SPACE  &none    &none  &kp BACKSPACE  &none         &none         &none         &none
             >;
         };
 
