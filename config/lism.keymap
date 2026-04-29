@@ -979,11 +979,6 @@
             key-positions = <17 18>;
         };
 
-        asterisk {
-            bindings = <&aster>;
-            key-positions = <2 12>;
-        };
-
         inputmode {
             bindings = <&kp GRAVE>;
             key-positions = <16 13>;
@@ -1096,7 +1091,7 @@
 &none     &percent  &lk                &rk                &anp                      &none     &ctpgup         &kp UP_ARROW    &ctpgdn          &none
 &kp LWIN  &kp LALT  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &aster                    &kp HOME  &kp LEFT_ARROW  &kp DOWN        &kp RIGHT        &kp END
 &none     &none     &l_tyk             &r_tyk             &kp INT3                  &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
-&none     &none     &sq                &dq                &dollar   &none    &none  &ctrlW    &none           &none           &none            &none
+&none     &none     &sq                &dq                &dollar   &none    &none  &none     &none           &none           &none            &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
