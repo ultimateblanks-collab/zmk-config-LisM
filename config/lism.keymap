@@ -974,8 +974,8 @@
             key-positions = <7 8>;
         };
 
-        saltesc {
-            bindings = <&saltesc>;
+        end {
+            bindings = <&kp END>;
             key-positions = <17 18>;
         };
 
@@ -1009,16 +1009,6 @@
             key-positions = <6 7>;
         };
 
-        ctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <22 23>;
-        };
-
-        alt {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <21 22>;
-        };
-
         cw {
             bindings = <&C_W>;
             key-positions = <13 12 11>;
@@ -1034,8 +1024,8 @@
             key-positions = <12 13>;
         };
 
-        altesc {
-            bindings = <&altesc>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <16 17>;
         };
 
@@ -1051,12 +1041,22 @@
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <6 16>;
+            key-positions = <16 17>;
         };
 
-        end {
-            bindings = <&kp END>;
+        ctrl {
+            bindings = <&kp RCTRL>;
             key-positions = <7 17>;
+        };
+
+        alt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <8 18>;
+        };
+
+        skey {
+            bindings = <&S_key LSHFT>;
+            key-positions = <33 37>;
         };
     };
 
@@ -1090,7 +1090,7 @@
             bindings = <
 &none     &percent  &lk                &rk                &anp                      &none     &ctpgup         &kp UP_ARROW  &ctpgdn    &none
 &kp LWIN  &kp LALT  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &aster                    &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
-&none     &none     &l_tyk             &r_tyk             &kp INT3                  &none     &kp TAB         &none         &stab      &none
+&none     &none     &l_tyk             &r_tyk             &kp INT3                  &none     &altesc         &kp TAB       &saltesc   &none
 &none     &none     &sq                &dq                &dollar   &none    &none  &none     &none           &none         &none      &none
             >;
 
