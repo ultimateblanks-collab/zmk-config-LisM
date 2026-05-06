@@ -680,6 +680,20 @@
 
             label = "R_TYK";
         };
+
+        ctbs: ctbs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 20>,
+                <&kp BACKSPACE>,
+                <&macro_release>,
+                <&kp BACKSPACE &kp LCTRL>;
+
+            label = "CTBS";
+        };
     };
 
     behaviors {
@@ -1076,7 +1090,7 @@
 &none     &none         &none      &none      &none                  &none          &none     &mkp MCLK  &mkp MB5  &none
 &kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                  &none          &mkp MB1  &mkp MB2   &mkp MB4  &none
 &none     &none         &none      &none      &none                  &none          &none     &none      &none     &none
-&none     &none         &none      &none      &none  &none    &none  &kp BACKSPACE  &none     &none      &none     &none
+&none     &none         &none      &none      &none  &none    &ctbs  &kp BACKSPACE  &none     &none      &none     &none
             >;
         };
 
