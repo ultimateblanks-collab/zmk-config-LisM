@@ -1024,11 +1024,6 @@
             key-positions = <12 13>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <16 17>;
-        };
-
         mn {
             bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <26 27>;
