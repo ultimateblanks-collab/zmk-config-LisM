@@ -932,7 +932,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <170>;
+            tapping-term-ms = <185>;
             flavor = "balanced";
         };
 
@@ -1099,7 +1099,7 @@
             bindings = <
 &none     &percent  &lk                &rk                &anp                      &ctbs          &ctpgup         &kp UP_ARROW  &ctpgdn    &none
 &kp LWIN  &kp LALT  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &aster                    &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
-&none     &none     &l_tyk             &r_tyk             &kp INT3                  &ctbs          &altesc         &kp TAB       &saltesc   &none
+&none     &none     &l_tyk             &r_tyk             &kp INT3                  &kp DELETE     &altesc         &kp TAB       &saltesc   &none
 &none     &none     &sq                &dq                &dollar   &none    &none  &none          &none           &none         &none      &none
             >;
 
