@@ -1075,10 +1075,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q          &kp W          &kp E           &kp R                &kp T                                                              &kp Y                &kp U           &SL_SP2 2 I     &kp O               &kp P
-&L_HRM LWIN A  &L_HRM LALT S  &L_HRM LCTRL D  &L_HRM LSHFT F       &kp G                                                              &kp H                &R_HRM LSHFT J  &R_HRM LCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X          &kp C           &kp V                &kp B                                                              &kp N                &kp M           &kp COMMA       &kp PERIOD          &SL_SP2 1 ENTER
-&athutt        &kp SEMI       &kp APOSTROPHE  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 SPACE  &none           &none           &hussexc            &uspl
+&kp Q          &kp W            &kp E               &kp R                &kp T                                                              &kp Y                &kp U           &SL_SP2 2 I     &kp O               &kp P
+&L_HRM LWIN A  &L_HRM LALT S    &L_HRM LCTRL D      &L_HRM LSHFT F       &kp G                                                              &kp H                &R_HRM LSHFT J  &R_HRM LCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
+&kp Z          &kp X            &kp C               &kp V                &kp B                                                              &kp N                &kp M           &kp COMMA       &kp PERIOD          &SL_SP2 1 ENTER
+&athutt        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 SPACE  &none           &none           &hussexc            &uspl
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1097,10 +1097,10 @@
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&dollar   &kp INTERNATIONAL_3  &lk                &rk                &anp                       &ctbs          &ctpgup         &kp UP_ARROW  &ctpgdn    &none
-&kp LWIN  &kp LALT             &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &aster                     &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
-&dq       &sq                  &l_tyk             &r_tyk             &percent                   &kp DELETE     &altesc         &kp TAB       &saltesc   &kp SLASH
-&none     &none                &L_yamakakko       &R_yamakakko       &kp SLASH  &none    &none  &none          &none           &none         &none      &none
+&dollar                &kp INTERNATIONAL_3     &lk                &rk                &anp                       &ctbs          &ctpgup         &kp UP_ARROW  &ctpgdn    &none
+&L_HRM LWIN SEMICOLON  &L_HRM LALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &aster                     &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
+&dq                    &sq                     &l_tyk             &r_tyk             &percent                   &kp DELETE     &altesc         &kp TAB       &saltesc   &kp SLASH
+&none                  &none                   &L_yamakakko       &R_yamakakko       &kp SLASH  &none    &none  &none          &none           &none         &none      &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
