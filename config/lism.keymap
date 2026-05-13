@@ -1000,7 +1000,7 @@
 
         af4 {
             bindings = <&endapp>;
-            key-positions = <37 16>;
+            key-positions = <36 15>;
         };
 
         minus {
@@ -1038,29 +1038,9 @@
             key-positions = <12 13>;
         };
 
-        mn {
-            bindings = <&kp K_CONTEXT_MENU>;
-            key-positions = <26 27>;
-        };
-
-        ps {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <27 28>;
-        };
-
         home {
             bindings = <&kp HOME>;
             key-positions = <16 17>;
-        };
-
-        ctrl {
-            bindings = <&kp RCTRL>;
-            key-positions = <7 17>;
-        };
-
-        alt {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <8 18>;
         };
 
         skey {
