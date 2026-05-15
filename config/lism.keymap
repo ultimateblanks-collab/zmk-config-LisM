@@ -1055,7 +1055,7 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q          &kp W            &kp E               &kp R                &kp T                                                              &kp Y                &kp U           &SL_SP2 1 I      &kp O               &kp P
+&kp Q          &kp W            &kp E               &kp R                &kp T                                                              &kp Y                &kp U           &kp I            &SL_SP2 1 O         &kp P
 &L_HRM LWIN A  &L_HRM LALT S    &L_HRM LCTRL D      &L_HRM LSHFT F       &kp G                                                              &kp H                &R_HRM LSHFT J  &R_HRM LCTRL K   &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
 &kp Z          &kp X            &kp C               &kp V                &kp B                                                              &kp N                &kp M           &SL_SP2 2 COMMA  &kp PERIOD          &SL_SP2 1 SLASH
 &athutt        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 SPACE  &none           &none            &hussexc            &uspl
@@ -1067,10 +1067,10 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&none     &none         &none      &none      &none                  &none  &mkp MB1  &none  &mkp MB2  &none
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                  &none  &mkp MB4  &none  &mkp MB5  &none
-&none     &none         &none      &none      &none                  &none  &none     &none  &none     &none
-&none     &none         &none      &none      &none  &none    &none  &none  &none     &none  &none     &none
+&none     &none         &none      &none      &none                     &none     &mkp MB1  &mkp MB2  &none  &none
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none     &none     &none     &none  &none
+&none     &none         &none      &none      &none                     &none     &none     &none     &none  &none
+&none     &none         &none      &none      &none  &none    &mkp MB5  &mkp MB4  &none     &none     &none  &none
             >;
         };
 
