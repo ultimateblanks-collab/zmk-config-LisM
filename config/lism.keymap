@@ -978,6 +978,18 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
         };
+
+        MLSP: MLSP {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MLSP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <16 17 37 36>;
+        };
     };
 
     combos {
@@ -1056,7 +1068,7 @@
             display-name = "Default Layer";
             bindings = <
 &L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R      &kp T                                                              &kp Y                &R_HRM RSHFT U  &R_HRM RCTRL I   &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D               &kp F                &kp G                                                              &kp H                &kp J           &kp K            &SL_SP2 1 L         &kp MINUS
+&kp A          &kp S            &kp D               &kp F                &kp G                                                              &kp H                &kp J           &kp K            &MLSP 1 L           &kp MINUS
 &kp Z          &kp X            &kp C               &kp V                &kp B                                                              &kp N                &kp M           &SL_SP2 2 COMMA  &kp PERIOD          &kp SLASH
 &athutt        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 SPACE  &none           &none            &hussexc            &uspl
             >;
