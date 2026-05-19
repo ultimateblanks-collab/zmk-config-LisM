@@ -1090,8 +1090,8 @@
             display-name = "Arrow";
             bindings = <
 &L_HRM LWIN SEMI  &L_HRM LALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                               &ctbs          &altesc         &kp TAB       &ctpgup    &none
-&dollar           &kp INTERNATIONAL_3     &lk                &rk                &aster                             &kp BACKSPACE  &kp ENTER       &kp UP_ARROW  &ctpgdn    &kp HOME
-&dq               &sq                     &l_tyk             &r_tyk             &percent                           &kp DELETE     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
+&dq               &sq                     &lk                &rk                &aster                             &kp BACKSPACE  &kp ENTER       &kp UP_ARROW  &ctpgdn    &kp HOME
+&dollar           &kp INTERNATIONAL_3     &l_tyk             &r_tyk             &percent                           &kp DELETE     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
 &none             &none                   &L_yamakakko       &R_yamakakko       &kp APOSTROPHE  &kp SEMI    &none  &none          &none           &none         &none      &none
             >;
 
