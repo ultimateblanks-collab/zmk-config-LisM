@@ -1098,10 +1098,10 @@
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&L_HRM LWIN SEMI  &L_HRM LALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                               &ctbs          &altesc         &kp TAB       &ctpgup    &none
-&dq               &sq                     &lk                &rk                &aster                             &kp BACKSPACE  &kp ENTER       &kp UP_ARROW  &ctpgdn    &kp HOME
-&dollar           &kp INTERNATIONAL_3     &l_tyk             &r_tyk             &percent                           &kp DELETE     &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp END
-&none             &none                   &L_yamakakko       &R_yamakakko       &kp APOSTROPHE  &kp SEMI    &none  &none          &none           &none         &none      &none
+&L_HRM LWIN SEMI  &L_HRM LALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                               &none     &ctpgdn    &kp TAB        &ctpgup     &none
+&dq               &sq                     &lk                &rk                &aster                             &kp HOME  &kp ENTER  &kp BACKSPACE  &kp DELETE  &kp END
+&dollar           &kp INTERNATIONAL_3     &l_tyk             &r_tyk             &percent                           &none     &altesc    &none          &saltesc    &none
+&none             &none                   &L_yamakakko       &R_yamakakko       &kp APOSTROPHE  &kp SEMI    &none  &none     &none      &none          &none       &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -1110,10 +1110,10 @@
         layer_3 {
             display-name = "NUM";
             bindings = <
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL     &kp LSHFT  &none                      &kp N0  &kp N7        &kp N8        &kp N9        &kp GRAVE
-&none     &none         &none         &none      &none                      &kp N0  &kp NUMBER_4  &kp N5        &kp N6        &kp PERIOD
-&none     &none         &none         &none      &none                      &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&none     &none         &kp NUMBER_0  &none      &kp SPACE  &none    &none  &mo 2   &none         &none         &none         &none
+&kp LWIN  &kp LEFT_ALT  &L_HRM LCTRL UP_ARROW  &kp LSHFT  &none                      &kp N0  &R_HRM RSHFT N7  &R_HRM RCTRL N8  &R_HRM RIGHT_ALT N9  &kp RWIN
+&none     &kp LEFT      &kp DOWN_ARROW         &kp RIGHT  &none                      &kp N0  &kp NUMBER_4     &kp N5           &kp N6               &kp PERIOD
+&none     &none         &none                  &none      &none                      &kp N0  &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3         &kp SLASH
+&none     &none         &kp NUMBER_0           &none      &kp SPACE  &none    &none  &mo 2   &none            &none            &none                &none
             >;
         };
 
