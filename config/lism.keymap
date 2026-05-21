@@ -1088,17 +1088,17 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL     &kp LSHFT  &none                     &none     &none      &none      &none     &none
-&none     &ctpgup       &kp UP_ARROW  &ctpgdn    &none                     &none     &mkp MB1   &none      &mkp MB2  &none
-&none     &kp LEFT      &kp DOWN      &kp RIGHT  &none                     &none     &SLSP 2 0  &SLSP 2 0  &none     &none
-&none     &none         &none         &none      &none  &none    &mkp MB5  &mkp MB4  &none      &none      &none     &none
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none     &none      &none      &none     &none
+&none     &altesc       &none      &saltesc   &none                     &none     &mkp MB1   &none      &mkp MB2  &none
+&none     &none         &none      &none      &none                     &none     &SLSP 2 0  &SLSP 2 0  &none     &none
+&none     &none         &none      &none      &none  &none    &mkp MB5  &mkp MB4  &none      &none      &none     &none
             >;
         };
 
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&L_HRM LWIN SEMI  &L_HRM LALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                               &none     &ctpgdn    &kp TAB        &ctpgup     &none
+&L_HRM LWIN SEMI  &L_HRM LALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                               &none     &ctpgup    &kp TAB        &ctpgdn     &none
 &dq               &sq                     &lk                &rk                &aster                             &kp HOME  &kp ENTER  &kp BACKSPACE  &kp DELETE  &kp END
 &dollar           &kp INTERNATIONAL_3     &l_tyk             &r_tyk             &percent                           &none     &altesc    &none          &saltesc    &none
 &none             &none                   &L_yamakakko       &R_yamakakko       &kp APOSTROPHE  &kp SEMI    &none  &none     &none      &none          &none       &none
