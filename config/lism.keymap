@@ -1011,6 +1011,18 @@
             flavor = "balanced";
             hold-trigger-key-positions = <16 17 15 18>;
         };
+
+        MINUS_L5: MINUS_L5 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MINUS_L5";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <15 16 17 18>;
+        };
     };
 
     combos {
@@ -1089,8 +1101,8 @@
             display-name = "Default Layer";
             bindings = <
 &L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R      &kp T                                                              &kp Y                &R_HRM RSHFT U  &R_HRM RCTRL I   &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D               &kp F                &kp G                                                              &kp H                &kp J           &MLSP 1 K        &kp L               &kp MINUS
-&kp Z          &kp X            &kp C               &kp V                &kp B                                                              &kp N                &kp M           &SL_SP2 2 COMMA  &kp PERIOD          &USPL_L5 5 0
+&kp A          &kp S            &kp D               &kp F                &kp G                                                              &kp H                &kp J           &MLSP 1 K        &kp L               &MINUS_L5 5 MINUS
+&kp Z          &kp X            &kp C               &kp V                &kp B                                                              &kp N                &kp M           &SL_SP2 2 COMMA  &kp PERIOD          &uspl
 &athutt        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 SPACE  &none           &none            &hussexc            &kp SLASH
             >;
 
@@ -1142,10 +1154,10 @@
         layer_5 {
             display-name = "Snipe";
             bindings = <
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none          &none      &none    &none       &none
-&none     &none         &none      &none      &none                     &kp BACKSPACE  &kp ENTER  &kp TAB  &kp DELETE  &none
-&none     &none         &none      &none      &none                     &none          &altesc    &none    &saltesc    &none
-&none     &none         &none      &none      &none  &none    &saltesc  &altesc        &none      &none    &none       &none
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none          &none      &kp TAB  &none     &none
+&none     &none         &none      &none      &none                     &kp BACKSPACE  &kp ENTER  &kp DEL  &none     &none
+&none     &none         &none      &none      &none                     &none          &altesc    &none    &saltesc  &none
+&none     &none         &none      &none      &none  &none    &saltesc  &altesc        &none      &none    &none     &none
             >;
         };
 
