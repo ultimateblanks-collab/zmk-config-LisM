@@ -1010,7 +1010,6 @@
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-key-positions = <16 17 15 18>;
-            require-prior-idle-ms = <200>;
         };
     };
 
@@ -1145,7 +1144,7 @@
             bindings = <
 &kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none          &none      &none    &none       &none
 &none     &none         &none      &none      &none                     &kp BACKSPACE  &kp ENTER  &kp TAB  &kp DELETE  &none
-&none     &none         &none      &none      &none                     &none          &none      &none    &none       &none
+&none     &none         &none      &none      &none                     &none          &altesc    &none    &saltesc    &none
 &none     &none         &none      &none      &none  &none    &saltesc  &altesc        &none      &none    &none       &none
             >;
         };
