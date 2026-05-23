@@ -988,7 +988,7 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <16 17 37 36>;
+            hold-trigger-key-positions = <16 37 36 18 26>;
         };
 
         SLSP: SLSP {
