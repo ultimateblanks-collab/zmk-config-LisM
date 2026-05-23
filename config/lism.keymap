@@ -1089,8 +1089,8 @@
         };
 
         skey {
-            bindings = <&S_key LSHFT>;
-            key-positions = <33 37>;
+            bindings = <&sk LSHFT>;
+            key-positions = <16 17 18>;
         };
     };
 
