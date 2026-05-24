@@ -1134,10 +1134,10 @@
         layer_3 {
             display-name = "NUM";
             bindings = <
-&kp LWIN  &kp LEFT_ALT  &L_HRM LCTRL UP_ARROW  &kp LSHFT  &none                      &kp N0  &R_HRM RSHFT N7  &R_HRM RCTRL N8  &R_HRM RIGHT_ALT N9  &kp RWIN
-&none     &kp LEFT      &kp DOWN_ARROW         &kp RIGHT  &none                      &kp N0  &kp NUMBER_4     &kp N5           &kp N6               &kp PERIOD
-&none     &none         &none                  &none      &none                      &kp N0  &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3         &kp SLASH
-&none     &none         &kp NUMBER_0           &none      &kp SPACE  &none    &none  &mo 2   &none            &none            &none                &none
+&kp LWIN  &kp LEFT_ALT  &L_HRM LCTRL UP_ARROW  &kp LSHFT  &none                      &kp N0         &R_HRM RSHFT N7  &R_HRM RCTRL N8  &R_HRM RIGHT_ALT N9  &kp RWIN
+&none     &kp LEFT      &kp DOWN_ARROW         &kp RIGHT  &none                      &kp N0         &kp NUMBER_4     &kp N5           &kp N6               &kp PERIOD
+&none     &none         &none                  &none      &none                      &kp N0         &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3         &kp SLASH
+&none     &none         &kp NUMBER_0           &none      &kp SPACE  &none    &none  &kp BACKSPACE  &none            &none            &none                &none
             >;
         };
 
@@ -1154,8 +1154,8 @@
         layer_5 {
             display-name = "Snipe";
             bindings = <
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none          &kp TAB    &kp HOME  &stab     &none
-&none     &none         &none      &none      &none                     &kp BACKSPACE  &kp ENTER  &kp TAB   &stab     &kp DELETE
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none          &altesc    &kp HOME  &saltesc  &none
+&none     &kp END       &none      &kp HOME   &none                     &kp BACKSPACE  &kp ENTER  &kp TAB   &stab     &kp DELETE
 &none     &none         &none      &none      &none                     &none          &altesc    &kp END   &saltesc  &none
 &none     &none         &none      &none      &none  &none    &saltesc  &altesc        &none      &none     &none     &none
             >;
