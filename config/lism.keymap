@@ -1033,8 +1033,8 @@
             key-positions = <7 8>;
         };
 
-        end {
-            bindings = <&kp END>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <17 18>;
         };
 
@@ -1083,14 +1083,19 @@
             key-positions = <12 13>;
         };
 
-        home {
-            bindings = <&kp HOME>;
+        ent {
+            bindings = <&kp ENTER>;
             key-positions = <16 17>;
         };
 
         skey {
             bindings = <&sk LSHFT>;
             key-positions = <16 17 18>;
+        };
+
+        bs {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <15 16>;
         };
     };
 
@@ -1101,7 +1106,7 @@
             display-name = "Default Layer";
             bindings = <
 &L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R      &kp T                                                              &kp Y                &R_HRM RSHFT U  &R_HRM RCTRL I   &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D               &kp F                &kp G                                                              &kp H                &kp J           &MLSP 1 K        &kp L               &MINUS_L5 5 MINUS
+&kp A          &kp S            &kp D               &kp F                &kp G                                                              &kp H                &kp J           &MLSP 1 K        &kp L               &kp MINUS
 &kp Z          &kp X            &kp C               &kp V                &kp B                                                              &kp N                &kp M           &SL_SP2 2 COMMA  &kp PERIOD          &uspl
 &athutt        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 SPACE  &none           &none            &hussexc            &kp SLASH
             >;
@@ -1134,10 +1139,10 @@
         layer_3 {
             display-name = "NUM";
             bindings = <
-&kp LWIN  &kp LEFT_ALT  &L_HRM LCTRL UP_ARROW  &kp LSHFT  &none                      &kp N0  &R_HRM RSHFT N7  &R_HRM RCTRL N8  &R_HRM RIGHT_ALT N9  &kp RWIN
-&none     &kp LEFT      &kp DOWN_ARROW         &kp RIGHT  &none                      &kp N0  &kp NUMBER_4     &kp N5           &kp N6               &kp PERIOD
-&none     &none         &none                  &none      &none                      &kp N0  &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3         &kp SLASH
-&none     &none         &kp NUMBER_0           &none      &kp SPACE  &none    &none  &mo 2   &none            &none            &none                &none
+&kp LWIN  &kp LEFT_ALT  &L_HRM LCTRL UP_ARROW  &kp LSHFT  &none                      &kp N0         &R_HRM RSHFT N7  &R_HRM RCTRL N8  &R_HRM RIGHT_ALT N9  &kp RWIN
+&none     &kp LEFT      &kp DOWN_ARROW         &kp RIGHT  &none                      &kp N0         &kp NUMBER_4     &kp N5           &kp N6               &kp PERIOD
+&none     &none         &none                  &none      &none                      &kp N0         &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3         &kp SLASH
+&none     &none         &kp NUMBER_0           &none      &kp SPACE  &none    &none  &kp BACKSPACE  &none            &none            &none                &none
             >;
         };
 
