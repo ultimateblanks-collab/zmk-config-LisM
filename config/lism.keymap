@@ -1035,7 +1035,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <17 18>;
+            key-positions = <15 16>;
         };
 
         inputmode {
@@ -1085,7 +1085,7 @@
 
         ent {
             bindings = <&kp ENTER>;
-            key-positions = <16 17>;
+            key-positions = <17 18>;
         };
 
         skey {
@@ -1095,7 +1095,7 @@
 
         space {
             bindings = <&kp SPACE>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
         };
     };
 
