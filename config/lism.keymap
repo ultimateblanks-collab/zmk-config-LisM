@@ -976,7 +976,7 @@
             bindings = <&us>, <&pl>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LALT|MOD_LSFT|MOD_LCTL)>;
         };
 
         MLSP: MLSP {
@@ -1039,7 +1039,7 @@
             bindings = <&eql>, <&uspl>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_LSFT)>;
         };
 
         LINE: LINE {
