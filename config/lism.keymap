@@ -1044,7 +1044,7 @@
 
         af4 {
             bindings = <&endapp>;
-            key-positions = <36 15>;
+            key-positions = <16 37>;
         };
 
         minus {
