@@ -1030,51 +1030,6 @@
             bindings = <&us>, <&pl>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-        };
-
-        useq: useq {
-            compatible = "zmk,behavior-mod-morph";
-            label = "USEQ";
-            bindings = <&eql>, <&uspl>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        LINE: LINE {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LINE";
-            bindings = <&kp MINUS>, <&useq>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        cd: cd {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CD";
-            bindings = <&kp C>, <&kp D>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-        };
-
-        bcd: bcd {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BCD";
-            bindings = <&kp B>, <&cd>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        abcd: abcd {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ABCD";
-            bindings = <&kp A>, <&bcd>;
-
-            #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
     };
@@ -1085,16 +1040,6 @@
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <7 8>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <15 16>;
-        };
-
-        inputmode {
-            bindings = <&kp GRAVE>;
-            key-positions = <16 13>;
         };
 
         af4 {
@@ -1122,11 +1067,6 @@
             key-positions = <6 7>;
         };
 
-        cw {
-            bindings = <&C_W>;
-            key-positions = <13 12 11>;
-        };
-
         pgup {
             bindings = <&kp PG_UP>;
             key-positions = <2 3>;
@@ -1137,18 +1077,13 @@
             key-positions = <12 13>;
         };
 
-        ent {
-            bindings = <&kp ENTER>;
+        end {
+            bindings = <&kp END>;
             key-positions = <17 18>;
         };
 
-        skey {
-            bindings = <&sk LSHFT>;
-            key-positions = <16 17 18>;
-        };
-
-        space {
-            bindings = <&kp SPACE>;
+        home {
+            bindings = <&kp HOME>;
             key-positions = <16 17>;
         };
     };
@@ -1159,10 +1094,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R      &kp T                                                              &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D               &kp F                &kp G                                                              &kp H                    &kp J           &MLSP 1 K       &SL_SP2 2 L         &abcd
-&kp Z          &kp X            &kp C               &kp V                &kp B                                                              &kp N                    &kp M           &kp COMMA       &kp PERIOD          &kp ENTER
-&athutt        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 BACKSPACE  &kp A           &none           &hussexc            &kp SLASH
+&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R   &kp T                                                         &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
+&kp A          &kp S            &kp D               &kp F             &kp G                                                         &kp H                    &kp J           &MLSP 1 K       &SL_SP2 2 L         &kp MINUS
+&kp Z          &kp X            &kp C               &kp V             &kp B                                                         &kp N                    &kp M           &kp COMMA       &kp PERIOD          &kp ENTER
+&athutt        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 SPACE  &L_THUMB 4 LALT  &L_HRM LEFT_SHIFT LCTRL    &R_HRM RSHFT TAB  &R_Th_space 2 BACKSPACE  &none           &none           &hussexc            &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1181,10 +1116,10 @@
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&L_HRM LWIN SEMI  &L_HRM LALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                               &none     &ctpgup         &kp UP_ARROW    &ctpgdn    &none
-&dq               &sq                     &lk                &rk                &aster                             &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END
-&dollar           &kp INTERNATIONAL_3     &l_tyk             &r_tyk             &percent                           &none     &altesc         &none           &saltesc   &none
-&none             &none                   &L_yamakakko       &R_yamakakko       &kp APOSTROPHE  &kp SEMI    &none  &none     &none           &none           &none      &none
+&L_HRM LWIN SEMI  &L_HRM LALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                               &C_W       &ctpgup         &kp UP_ARROW    &ctpgdn    &none
+&dq               &sq                     &lk                &rk                &aster                             &sk LSHFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp GRAVE
+&us               &pl                     &l_tyk             &r_tyk             &percent                           &none      &altesc         &none           &saltesc   &none
+&dollar           &kp INTERNATIONAL_3     &L_yamakakko       &R_yamakakko       &kp APOSTROPHE  &kp SEMI    &none  &none      &none           &none           &none      &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
