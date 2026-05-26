@@ -21,7 +21,4 @@ on:
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3.0
-    with:
-      # Node.js 24を強制するための環境変数を渡します
-      extra_env: |
-        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true
+
