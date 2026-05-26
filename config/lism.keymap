@@ -973,11 +973,10 @@
         uspl: uspl {
             compatible = "zmk,behavior-mod-morph";
             label = "USPL";
-            bindings = <&us>, <&kp INT3>;
+            bindings = <&us>, <&pl>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
-            keep-mods = <(MOD_LSFT)>;
         };
 
         MLSP: MLSP {
