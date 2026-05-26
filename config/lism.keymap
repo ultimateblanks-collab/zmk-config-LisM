@@ -1023,6 +1023,15 @@
             flavor = "balanced";
             hold-trigger-key-positions = <15 16 17 18 7 36 37>;
         };
+
+        SL_SP3: SL_SP3 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SL_SP3";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+        };
     };
 
     combos {
@@ -1105,10 +1114,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R      &kp T                                                              &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I   &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D               &kp F                &kp G                                                              &kp H                    &kp J           &MLSP 1 K        &kp L               &kp MINUS
-&kp Z          &kp X            &kp C               &kp V                &kp B                                                              &kp N                    &kp M           &SL_SP2 2 COMMA  &kp PERIOD          &uspl
-&athutt        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 BACKSPACE  &none           &none            &hussexc            &kp SLASH
+&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R      &kp T                                                              &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
+&kp A          &kp S            &kp D               &kp F                &kp G                                                              &kp H                    &kp J           &MLSP 1 K       &SL_SP2 2 L         &kp MINUS
+&kp Z          &kp X            &kp C               &kp V                &kp B                                                              &kp N                    &kp M           &kp COMMA       &kp PERIOD          &uspl
+&athutt        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 BACKSPACE  &none           &none           &hussexc            &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1117,10 +1126,10 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none     &none      &none  &none     &none
-&none     &altesc       &none      &saltesc   &none                     &none     &mkp MB1   &none  &mkp MB2  &none
-&none     &none         &none      &none      &none                     &none     &SLSP 2 0  &none  &none     &none
-&none     &none         &none      &none      &none  &none    &mkp MB5  &mkp MB4  &none      &none  &none     &none
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none     &none      &none  &none          &none
+&none     &altesc       &none      &saltesc   &none                     &none     &mkp MB1   &none  &SL_SP3 2 MB2  &none
+&none     &none         &none      &none      &none                     &none     &SLSP 2 0  &none  &none          &none
+&none     &none         &none      &none      &none  &none    &mkp MB5  &mkp MB4  &none      &none  &none          &none
             >;
         };
 
