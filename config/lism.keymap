@@ -1032,6 +1032,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;
         };
+
         useq: useq {
             compatible = "zmk,behavior-mod-morph";
             label = "USEQ";
@@ -1045,6 +1046,33 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LINE";
             bindings = <&kp MINUS>, <&useq>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        cd: cd {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CD";
+            bindings = <&kp C>, <&kp D>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        bcd: bcd {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BCD";
+            bindings = <&kp B>, <&cd>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        abcd: abcd {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ABCD";
+            bindings = <&kp A>, <&bcd>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -1132,7 +1160,7 @@
             display-name = "Default Layer";
             bindings = <
 &L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R      &kp T                                                              &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D               &kp F                &kp G                                                              &kp H                    &kp J           &MLSP 1 K       &SL_SP2 2 L         &LINE
+&kp A          &kp S            &kp D               &kp F                &kp G                                                              &kp H                    &kp J           &MLSP 1 K       &SL_SP2 2 L         &abcd
 &kp Z          &kp X            &kp C               &kp V                &kp B                                                              &kp N                    &kp M           &kp COMMA       &kp PERIOD          &kp ENTER
 &athutt        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_carte LEFT_SHIFT 0    &R_evalue LEFT_SHIFT 0  &R_Th_space 2 BACKSPACE  &none           &none           &hussexc            &kp SLASH
             >;
