@@ -1128,20 +1128,20 @@
         layer_3 {
             display-name = "NUM";
             bindings = <
-&kp LWIN  &kp LEFT_ALT  &L_HRM LCTRL UP_ARROW  &kp LSHFT  &none                        &plus       &R_HRM RSHFT N7  &R_HRM RCTRL N8  &R_HRM RIGHT_ALT N9  &kp MINUS
-&none     &none         &none                  &none      &none                        &kp PERIOD  &kp NUMBER_4     &kp N5           &kp N6               &kp BACKSPACE
-&none     &none         &none                  &none      &none                        &kp N0      &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3         &aster
-&none     &none         &none                  &none      &kp SPACE  &none    &kp TAB  &kp SPACE   &none            &none            &none                &kp SLASH
+&kp LWIN      &kp LEFT_ALT  &L_HRM LCTRL UP_ARROW  &kp LSHFT     &none                        &kp BACKSPACE  &R_HRM RSHFT N7  &R_HRM RCTRL N8  &R_HRM RIGHT_ALT N9  &kp PERIOD
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3           &kp NUMBER_4  &kp N5                       &kp NUMBER_6   &kp N7           &kp N8           &kp N9               &kp N0
+&none         &none         &none                  &none         &none                        &plus          &kp MINUS        &kp SLASH        &aster               &kp ENTER
+&none         &none         &none                  &none         &kp SPACE  &none    &kp TAB  &kp SPACE      &none            &none            &none                &kp SLASH
             >;
         };
 
         layer_4 {
             display-name = "FUNCTION";
             bindings = <
-&kp LWIN     &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                    &kp F10  &kp F7  &kp F8  &kp F9  &none
-&none        &none         &none      &none      &none                    &kp F11  &kp F4  &kp F5  &kp F6  &none
-&none        &none         &none      &none      &none                    &kp F12  &kp F1  &kp F2  &kp F3  &none
-&bootloader  &none         &none      &none      &none  &none    &evalue  &calte   &none   &none   &none   &bootloader
+&kp LWIN     &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none    &none    &none   &none   &none
+&kp F1       &kp F2        &kp F3     &kp F4     &kp F5                    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
+&none        &none         &none      &none      &none                     &kp F11  &kp F12  &none   &none   &none
+&bootloader  &none         &none      &none      &none   &none    &evalue  &calte   &none    &none   &none   &bootloader
             >;
         };
 
