@@ -1024,6 +1024,7 @@
             quick-tap-ms = <150>;
             flavor = "balanced";
             hold-trigger-key-positions = <16 37 36 18 26>;
+            require-prior-idle-ms = <200>;
         };
 
         SLSP: SLSP {
