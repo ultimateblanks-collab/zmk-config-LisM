@@ -1082,14 +1082,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "COMHOME";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp HOME>;
+            bindings = <&kp COMMA>, <&sq>;
         };
 
         periEnd: periEnd {
             compatible = "zmk,behavior-tap-dance";
             label = "PERIEND";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD>, <&kp END>;
+            bindings = <&kp PERIOD>, <&dq>;
         };
 
         mius: mius {
