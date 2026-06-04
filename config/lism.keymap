@@ -1078,29 +1078,29 @@
             mods = <(MOD_LSFT)>;
         };
 
-        comHome: comHome {
+        mius: mius {
             compatible = "zmk,behavior-tap-dance";
-            label = "COMHOME";
+            label = "MIUS";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&sq>;
+            bindings = <&SL_SP2 4 MINUS>, <&us>;
 
             tapping-term-ms = <180>;
         };
 
-        periEnd: periEnd {
+        pDq: pDq {
             compatible = "zmk,behavior-tap-dance";
-            label = "PERIEND";
+            label = "PDQ";
             #binding-cells = <0>;
             bindings = <&kp PERIOD>, <&dq>;
 
             tapping-term-ms = <180>;
         };
 
-        mius: mius {
+        cSq: cSq {
             compatible = "zmk,behavior-tap-dance";
-            label = "MIUS";
+            label = "CSQ";
             #binding-cells = <0>;
-            bindings = <&SL_SP2 4 MINUS>, <&us>;
+            bindings = <&kp COMMA>, <&sq>;
 
             tapping-term-ms = <180>;
         };
@@ -1168,7 +1168,7 @@
             bindings = <
 &L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHIFT R  &kp T                                                         &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
 &kp A          &kp S          &kp D           &kp F            &kp G                                                         &kp H                    &SL_SP2 3 J     &MLSP 1 K       &SL_SP2 2 L         &mius
-&kp Z          &kp X          &kp C           &kp V            &kp B                                                         &kp N                    &kp M           &comHome        &periEnd            &kp ENTER
+&kp Z          &kp X          &kp C           &kp V            &kp B                                                         &kp N                    &kp M           &cSq            &pDq                &kp ENTER
 &athutt        &kp LCTRL      &kp LEFT_ALT    &L_THUMB 3 HOME  &L_THUMB 4 END  &L_HRM LEFT_SHIFT DELETE    &R_HRM RSHFT TAB  &R_Th_space 2 BACKSPACE  &none           &none           &hussexc            &kp SLASH
             >;
 
