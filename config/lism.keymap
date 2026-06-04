@@ -1083,6 +1083,8 @@
             label = "COMHOME";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&sq>;
+
+            tapping-term-ms = <180>;
         };
 
         periEnd: periEnd {
@@ -1090,6 +1092,8 @@
             label = "PERIEND";
             #binding-cells = <0>;
             bindings = <&kp PERIOD>, <&dq>;
+
+            tapping-term-ms = <180>;
         };
 
         mius: mius {
@@ -1097,6 +1101,8 @@
             label = "MIUS";
             #binding-cells = <0>;
             bindings = <&SL_SP2 4 MINUS>, <&us>;
+
+            tapping-term-ms = <180>;
         };
     };
 
