@@ -1104,6 +1104,13 @@
 
             tapping-term-ms = <180>;
         };
+
+        altcontrol: altcontrol {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ALTCONTROL";
+            #binding-cells = <0>;
+            bindings = <&L_THUMB 3 LEFT_ALT>, <&kp LCTRL>;
+        };
     };
 
     combos {
@@ -1156,10 +1163,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHIFT R      &kp T                                                           &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S          &kp D           &kp F                &kp G                                                           &kp H                    &SL_SP2 3 J     &MLSP 1 K       &SL_SP2 2 L         &mius
-&kp Z          &kp X          &kp C           &kp V                &kp B                                                           &kp N                    &kp M           &cSq            &pDq                &kp ENTER
-&athutt        &kp PG_UP      &kp PAGE_DOWN   &L_THUMB 3 LEFT_ALT  &L_THUMB 4 LCTRL  &L_HRM LEFT_SHIFT DELETE    &R_HRM RSHFT TAB  &R_Th_space 2 BACKSPACE  &none           &none           &hussexc            &kp SLASH
+&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R  &kp T                                                           &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
+&kp A          &kp S            &kp D               &kp F            &kp G                                                           &kp H                    &SL_SP2 3 J     &MLSP 1 K       &SL_SP2 2 L         &mius
+&kp Z          &kp X            &kp C               &kp V            &kp B                                                           &kp N                    &kp M           &cSq            &pDq                &kp ENTER
+&athutt        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &altcontrol      &L_THUMB 4 TAB  &L_HRM LEFT_SHIFT DELETE    &R_HRM RSHFT SPACE  &R_Th_space 2 BACKSPACE  &none           &none           &hussexc            &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1168,10 +1175,10 @@
         layer_1 {
             display-name = "Mouse";
             bindings = <
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL        &kp LSHFT           &none                     &none     &none     &none  &none          &none
-&altprsc  &winshiftS    &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &none                     &kp HOME  &mkp MB1  &none  &SL_SP3 2 MB2  &kp END
-&none     &none         &none            &none               &none                     &none     &none     &none  &none          &none
-&none     &none         &none            &none               &none  &none    &mkp MB5  &mkp MB4  &none     &none  &none          &none
+&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none     &none     &none  &none          &none
+&none     &none         &none      &none      &none                     &kp HOME  &mkp MB1  &none  &SL_SP3 2 MB2  &kp END
+&none     &none         &none      &none      &none                     &none     &none     &none  &none          &none
+&none     &none         &none      &none      &none  &none    &mkp MB5  &mkp MB4  &none     &none  &none          &none
             >;
         };
 
@@ -1200,10 +1207,10 @@
         layer_4 {
             display-name = "FUNCTION";
             bindings = <
-&kp LWIN     &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none      &kp RSHFT  &kp RCTRL  &kp RIGHT_ALT  &kp RWIN
-&kp F1       &kp F2        &kp F3     &kp F4     &kp F5                    &kp PG_UP  &kp HOME   &kp END    &kp PAGE_DOWN  &none
-&none        &none         &none      &none      &none                     &kp F11    &kp F12    &none      &none          &none
-&bootloader  &none         &none      &none      &none   &none    &evalue  &calte     &none      &none      &none          &bootloader
+&kp LWIN     &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                    &none      &kp RSHFT           &kp RCTRL   &kp RIGHT_ALT  &kp RWIN
+&none        &none         &none      &none      &none                    &kp PG_UP  &kp K_CONTEXT_MENU  &winshiftS  &altprsc       &kp PAGE_DOWN
+&none        &none         &none      &none      &none                    &none      &none               &none       &none          &none
+&bootloader  &none         &none      &none      &none  &none    &evalue  &calte     &none               &none       &none          &bootloader
             >;
         };
 
