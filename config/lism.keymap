@@ -962,10 +962,10 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <170>;
             require-prior-idle-ms = <170>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             hold-trigger-key-positions = <5 6 7 9 8 15 16 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 37 38 39 40 41 36>;
             hold-trigger-on-release;
         };
@@ -1025,6 +1025,7 @@
             flavor = "balanced";
             hold-trigger-key-positions = <16 37 36 18 26>;
             require-prior-idle-ms = <200>;
+            hold-trigger-on-release;
         };
 
         SLSP: SLSP {
@@ -1197,10 +1198,10 @@
         layer_3 {
             display-name = "NUM";
             bindings = <
-&L_HRM LWIN F1  &L_HRM LEFT_ALT F2  &L_HRM LCTRL F3  &L_HRM LSHFT F4  &kp F5                       &kp F6         &R_HRM RSHFT F7  &R_HRM RCTRL F8  &R_HRM RIGHT_ALT F9  &kp F10
-&kp NUMBER_1    &kp NUMBER_2        &kp NUMBER_3     &kp NUMBER_4     &kp N5                       &kp NUMBER_6   &kp N7           &kp N8           &kp N9               &kp N0
-&kp F11         &kp F12             &aster           &kp SLASH        &none                        &kp BACKSPACE  &plus            &kp MINUS        &kp PERIOD           &kp ENTER
-&none           &none               &none            &none            &kp SPACE  &none    &kp TAB  &kp SPACE      &none            &none            &none                &kp SLASH
+&L_HRM LWIN F1  &L_HRM LEFT_ALT F4  &L_HRM LCTRL F7  &L_HRM LSHFT F10  &kp F13                      &plus          &R_HRM RSHFT N7  &R_HRM RCTRL N8  &R_HRM RIGHT_ALT N9  &kp PERIOD
+&kp F2          &kp F5              &kp F8           &kp F11           &kp F14                      &kp MINUS      &kp NUMBER_4     &kp N5           &kp NUMBER_6         &kp N0
+&kp F3          &kp F6              &kp F9           &kp F12           &kp F15                      &aster         &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3         &kp ENTER
+&none           &none               &none            &none             &kp SPACE  &none    &kp TAB  &kp BACKSPACE  &none            &none            &none                &kp SLASH
             >;
         };
 
