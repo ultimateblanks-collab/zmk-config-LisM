@@ -1164,10 +1164,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E  &L_HRM LSHIFT R      &kp T                                                           &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D           &kp F                &kp G                                                           &kp H                    &SL_SP2 3 J     &MLSP 1 K       &SL_SP2 2 L         &mius
-&kp Z          &kp X            &kp C           &kp V                &kp B                                                           &kp N                    &kp M           &cSq            &pDq                &kp ENTER
-&athutt        &kp PRINTSCREEN  &kp SLASH       &L_THUMB 3 LEFT_ALT  &L_THUMB 4 TAB  &L_HRM LEFT_SHIFT DELETE    &R_HRM RSHFT SPACE  &R_Th_space 2 BACKSPACE  &none           &none           &hussexc            &kp LCTRL
+&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E  &L_HRM LSHIFT R  &kp T                                                                &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
+&kp A          &kp S            &kp D           &kp F            &kp G                                                                &kp H                    &SL_SP2 3 J     &MLSP 1 K       &SL_SP2 2 L         &mius
+&kp Z          &kp X            &kp C           &kp V            &kp B                                                                &kp N                    &kp M           &cSq            &pDq                &kp ENTER
+&athutt        &kp PRINTSCREEN  &kp LCTRL       &L_THUMB 3 TAB   &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT DELETE    &R_HRM RSHFT SPACE  &R_Th_space 2 BACKSPACE  &none           &none           &hussexc            &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
