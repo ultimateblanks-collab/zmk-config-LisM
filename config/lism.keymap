@@ -1164,10 +1164,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E  &L_HRM LSHIFT R  &kp T                                                                         &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D           &kp F            &kp G                                                                         &kp H                    &SL_SP2 3 J     &MLSP 1 K       &SL_SP2 2 L         &mius
-&kp Z          &kp X            &kp C           &kp V            &kp B                                                                         &kp N                    &kp M           &cSq            &pDq                &kp SLASH
-&athutt        &kp PRINTSCREEN  &kp LCTRL       &L_THUMB 3 TAB   &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT K_CONTEXT_MENU    &R_HRM RSHFT DELETE  &R_Th_space 2 BACKSPACE  &none           &none           &hussexc            &kp SLASH
+&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E  &L_HRM LSHIFT R  &kp T                                                                         &kp Y              &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
+&kp A          &kp S            &kp D           &kp F            &kp G                                                                         &kp H              &SL_SP2 3 J     &MLSP 1 K       &SL_SP2 2 L         &mius
+&kp Z          &kp X            &kp C           &kp V            &kp B                                                                         &kp N              &kp M           &cSq            &pDq                &kp SLASH
+&athutt        &kp PRINTSCREEN  &kp LCTRL       &L_THUMB 4 HOME  &L_THUMB 3 LEFT_ALT  &L_HRM LEFT_SHIFT K_CONTEXT_MENU    &R_HRM RSHFT DELETE  &R_Th_space 2 END  &none           &none           &hussexc            &kp SLASH
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1186,10 +1186,10 @@
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&L_HRM LWIN SEMI  &L_HRM LALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                               &C_W       &ctpgup        &kp TAB     &ctpgdn    &none
-&dq               &sq                     &lk                &rk                &aster                             &sk LSHFT  &kp BACKSPACE  &kp SPACE   &kp ENTER  &kp GRAVE
-&us               &pl                     &l_tyk             &r_tyk             &percent                           &none      &altesc        &kp DELETE  &saltesc   &wintab
-&dollar           &kp INTERNATIONAL_3     &L_yamakakko       &mo 4              &kp APOSTROPHE  &kp SEMI    &none  &none      &none          &none       &none      &none
+&L_HRM LWIN SEMI  &L_HRM LALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &anp                         &C_W       &ctpgup        &kp TAB     &ctpgdn    &none
+&dq               &sq                     &lk                &rk                &aster                       &sk LSHFT  &kp BACKSPACE  &kp SPACE   &kp ENTER  &kp GRAVE
+&us               &pl                     &l_tyk             &r_tyk             &percent                     &none      &altesc        &kp DELETE  &saltesc   &wintab
+&dollar           &kp INTERNATIONAL_3     &L_yamakakko       &mo 4              &mo 3     &kp SEMI    &none  &none      &none          &none       &none      &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -1208,10 +1208,10 @@
         layer_4 {
             display-name = "FUNCTION";
             bindings = <
-&kp LWIN     &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                    &none      &kp RSHFT       &kp UP_ARROW    &kp RIGHT_ALT  &kp RWIN
-&none        &none         &none      &none      &none                    &kp PG_UP  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp PAGE_DOWN
-&none        &none         &none      &none      &none                    &none      &none           &none           &none          &none
-&bootloader  &none         &none      &none      &none  &none    &evalue  &calte     &none           &none           &none          &bootloader
+&kp LWIN     &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                    &none     &kp RSHFT       &kp UP_ARROW    &kp RIGHT_ALT  &kp RWIN
+&none        &none         &none      &none      &none                    &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp END
+&none        &none         &none      &none      &none                    &none     &none           &none           &none          &none
+&bootloader  &none         &none      &none      &none  &none    &evalue  &calte    &none           &none           &none          &bootloader
             >;
         };
 
