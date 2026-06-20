@@ -1167,7 +1167,7 @@
 &L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E  &L_HRM LSHIFT R  &kp T                                                                          &kp Y              &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
 &kp A          &kp S            &kp D           &kp F            &kp G                                                                          &kp H              &SL_SP2 3 J     &MLSP 1 K       &SL_SP2 2 L         &mius
 &kp Z          &kp X            &kp C           &kp V            &kp B                                                                          &kp N              &kp M           &cSq            &pDq                &kp SLASH
-&athutt        &kp PRINTSCREEN  &kp LCTRL       &L_THUMB 4 HOME  &L_THUMB 3 LEFT_ALT  &L_HRM LEFT_SHIFT K_CONTEXT_MENU    &R_Th_space 5 DELETE  &R_Th_space 2 END  &none           &none           &none               &hussexc
+&athutt        &kp PRINTSCREEN  &kp LCTRL       &L_THUMB 3 HOME  &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT K_CONTEXT_MENU    &R_Th_space 5 DELETE  &R_Th_space 2 END  &none           &none           &none               &hussexc
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1186,10 +1186,10 @@
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&L_HRM LWIN F6  &L_HRM LALT F7  &L_HRM LCTRL F8  &L_HRM LSHFT F9  &kp F10                  &none  &ctpgup        &kp TAB     &ctpgdn    &none
-&kp F1          &kp F2          &kp F3           &kp F4           &kp F5                   &none  &kp BACKSPACE  &kp SPACE   &kp ENTER  &kp GRAVE
-&sk LSHFT       &C_W            &none            &kp F11          &kp F12                  &none  &altesc        &kp DELETE  &saltesc   &wintab
-&none           &none           &none            &none            &none    &none    &none  &none  &none          &none       &none      &none
+&L_HRM LWIN F6  &L_HRM LALT F7  &L_HRM LCTRL F8  &L_HRM LSHFT F9  &kp F10                  &C_W       &stab          &kp DELETE  &kp TAB    &none
+&kp F1          &kp F2          &kp F3           &kp F4           &kp F5                   &kp HOME   &kp BACKSPACE  &kp SPACE   &kp ENTER  &kp END
+&sk LSHFT       &C_W            &none            &kp F11          &kp F12                  &sk LSHFT  &altesc        &wintab     &saltesc   &kp GRAVE
+&none           &none           &none            &none            &none    &none    &none  &none      &none          &none       &none      &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -1198,30 +1198,30 @@
         layer_3 {
             display-name = "NUM";
             bindings = <
-&L_HRM LWIN F6  &L_HRM LEFT_ALT F7  &L_HRM LCTRL F8  &L_HRM LSHFT F9  &kp F10                    &plus      &R_HRM RSHFT N7  &R_HRM RCTRL N8  &R_HRM RIGHT_ALT N9  &aster
-&kp F1          &kp F2              &kp F3           &kp F4           &kp F5                     &kp N0     &kp NUMBER_4     &kp N5           &kp NUMBER_6         &kp PERIOD
-&kp F11         &kp F12             &none            &kp F11          &kp F12                    &kp MINUS  &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3         &kp ENTER
-&none           &none               &none            &none            &none    &none    &kp TAB  &mo 2      &none            &none            &none                &kp SLASH
+&hush     &exc       &L_yamakakko  &R_yamakakko  &kp INTERNATIONAL_3                    &kp NUMBER_6   &R_HRM RSHFT N7  &R_HRM RCTRL N8  &R_HRM RIGHT_ALT N9  &kp N0
+&plus     &kp MINUS  &aster        &kp SLASH     &kp EQUAL                              &kp NUMBER_1   &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4         &kp N5
+&kp LBKT  &kp F12    &anp          &percent      &dollar                                &kp PERIOD     &none            &none            &none                &kp ENTER
+&none     &none      &none         &none         &none                &none    &kp TAB  &kp BACKSPACE  &none            &none            &none                &kp SLASH
             >;
         };
 
         layer_4 {
             display-name = "FUNCTION";
             bindings = <
-&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &aster                      &none     &ctpgup         &kp UP_ARROW    &ctpgdn    &none
-&dq               &sq                         &lk                &rk                &anp                        &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END
-&us               &pl                         &l_tyk             &r_tyk             &percent                    &none     &altesc         &none           &saltesc   &none
-&none             &none                       &none              &none              &none     &none    &evalue  &calte    &none           &none           &none      &none
+&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &aster                      &aster    &R_HRM RSHFT RBKT  &R_HRM RCTRL NUHS  &R_HRM RIGHT_ALT APOSTROPHE  &R_HRM RIGHT_ALT SEMI
+&dq               &sq                         &lk                &rk                &anp                        &anp      &lk                &rk                &sq                          &dq
+&us               &pl                         &l_tyk             &r_tyk             &percent                    &percent  &l_tyk             &r_tyk             &pl                          &us
+&none             &none                       &none              &none              &none     &none    &evalue  &calte    &none              &none              &none                        &none
             >;
         };
 
         layer_5 {
             display-name = "Snipe";
             bindings = <
-&kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none     &ctpgup   &kp UP_ARROW    &ctpgdn    &none
-&none     &none         &none      &none      &none                     &kp HOME  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp END
-&none     &none         &none      &none      &none                     &none     &altesc   &none           &saltesc   &none
-&none     &none         &none      &none      &none  &none    &saltesc  &altesc   &none     &none           &none      &none
+&L_HRM LWIN F6  &L_HRM LEFT_ALT F7  &L_HRM LCTRL F8  &L_HRM LSHFT F9  &kp F10                     &ctup    &ctpgup   &kp UP_ARROW    &ctpgdn    &ctdn
+&kp F1          &kp F2              &kp F3           &kp F4           &kp F5                      &ctlt    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &ctrt
+&none           &none               &none            &kp F11          &kp F12                     &none    &altesc   &wintab         &saltesc   &none
+&none           &none               &none            &none            &none    &none    &saltesc  &altesc  &none     &none           &none      &none
             >;
         };
 
