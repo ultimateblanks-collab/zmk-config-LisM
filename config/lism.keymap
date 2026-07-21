@@ -738,6 +738,34 @@
 
             label = "WINSHIFTS";
         };
+
+        shiftHOME: shiftHOME {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 20>,
+                <&kp HOME>,
+                <&macro_release>,
+                <&kp HOME &kp LEFT_SHIFT>;
+
+            label = "SHIFTHOME";
+        };
+
+        shiftEND: shiftEND {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_wait_time 20>,
+                <&kp END>,
+                <&macro_release>,
+                <&kp END &kp LEFT_SHIFT>;
+
+            label = "SHIFTEND";
+        };
     };
 
     behaviors {
@@ -823,7 +851,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "C_W";
             #binding-cells = <0>;
-            continue-list = <INT_YEN INT_RO>;
+            continue-list = <INT_YEN INT_RO A B C D E F G H I J K L M N O P Q R S T U V W X Y Z N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 MINUS BACKSPACE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -965,7 +993,7 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <170>;
             require-prior-idle-ms = <170>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             hold-trigger-key-positions = <5 6 7 9 8 15 16 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 37 38 39 40 41 36>;
             hold-trigger-on-release;
         };
@@ -1088,20 +1116,20 @@
             tapping-term-ms = <180>;
         };
 
-        pDq: pDq {
+        periCOL: periCOL {
             compatible = "zmk,behavior-tap-dance";
-            label = "PDQ";
+            label = "PERICOL";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD>, <&dq>;
+            bindings = <&kp PERIOD>, <&kp APOSTROPHE>;
 
             tapping-term-ms = <180>;
         };
 
-        cSq: cSq {
+        comSEMI: comSEMI {
             compatible = "zmk,behavior-tap-dance";
-            label = "CSQ";
+            label = "COMSEMI";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&sq>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
 
             tapping-term-ms = <180>;
         };
@@ -1112,49 +1140,79 @@
             #binding-cells = <0>;
             bindings = <&L_THUMB 3 LEFT_ALT>, <&kp LCTRL>;
         };
+
+        HIUS: HIUS {
+            compatible = "zmk,behavior-tap-dance";
+            label = "HIUS";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&us>;
+        };
+
+        SLPL: SLPL {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SLPL";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&pl>;
+        };
+
+        SP_CTUP: SP_CTUP {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SP_CTUP";
+            bindings = <&kp>, <&ctup>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <7 17 16 18>;
+            hold-trigger-on-release;
+        };
+
+        SP_CTPGUP: SP_CTPGUP {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SP_CTPGUP";
+            bindings = <&kp>, <&ctpgup>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <7 16 17 18>;
+            hold-trigger-on-release;
+        };
+
+        SP_CTPGDN: SP_CTPGDN {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SP_CTPGDN";
+            bindings = <&kp>, <&ctpgdn>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <7 17 16 17 18>;
+            hold-trigger-on-release;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
-
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <7 8>;
-        };
 
         af4 {
             bindings = <&endapp>;
             key-positions = <16 37>;
         };
 
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <12 13>;
-        };
-
-        plus {
-            bindings = <&plus>;
-            key-positions = <2 3>;
-        };
-
-        VBE {
-            bindings = <&VBE>;
-            key-positions = <23 24>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
+        CW {
+            bindings = <&C_W>;
             key-positions = <6 7>;
         };
 
-        home {
-            bindings = <&kp HOME>;
+        SK {
+            bindings = <&sk LSHFT>;
             key-positions = <16 17>;
         };
 
-        end {
-            bindings = <&kp END>;
-            key-positions = <17 18>;
+        IME {
+            bindings = <&kp GRAVE>;
+            key-positions = <13 16>;
         };
     };
 
@@ -1164,10 +1222,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E  &L_HRM LSHIFT R  &kp T                                                                          &kp Y              &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D           &kp F            &kp G                                                                          &kp H              &SL_SP2 3 J     &MLSP 1 K       &SL_SP2 2 L         &mius
-&kp Z          &kp X            &kp C           &kp V            &kp B                                                                          &kp N              &kp M           &cSq            &pDq                &kp SLASH
-&athutt        &kp PRINTSCREEN  &kp LCTRL       &L_THUMB 3 HOME  &L_THUMB 4 LEFT_ALT  &L_HRM LEFT_SHIFT K_CONTEXT_MENU    &R_Th_space 5 DELETE  &R_Th_space 2 END  &none           &none           &none               &hussexc
+&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R      &kp T                         &kp Y                &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
+&kp A          &kp S            &kp D               &kp F                &kp G                         &kp H                &kp J           &kp K           &kp L               &mkp MB1
+&kp Z          &kp X            &kp C               &kp V                &kp B                         &kp N                &kp M           &comSEMI        &periCOL            &mkp MB2
+&kp TAB        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 4 LEFT_ALT  &L_THUMB 3 LCTRL  &sq    &dq  &R_Th_space 2 SPACE  &none           &none           &none               &R_THUMB 5 ENTER
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1186,10 +1244,10 @@
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&L_HRM LWIN F6  &L_HRM LALT F7  &L_HRM LCTRL F8  &L_HRM LSHFT F9  &kp F10                  &C_W       &stab          &kp DELETE  &kp TAB    &none
-&kp F1          &kp F2          &kp F3           &kp F4           &kp F5                   &kp HOME   &kp BACKSPACE  &kp SPACE   &kp ENTER  &kp END
-&sk LSHFT       &C_W            &none            &kp F11          &kp F12                  &sk LSHFT  &altesc        &wintab     &saltesc   &kp GRAVE
-&none           &none           &none            &none            &none    &none    &none  &none      &none          &none       &none      &none
+&L_HRM LWIN F6  &SP_CTPGUP LALT 0  &SP_CTUP LCTRL 0  &SP_CTPGDN LSHFT 0  &none                       &altesc   &kp BACKSPACE   &kp UP_ARROW    &kp TAB    &saltesc
+&shiftEND       &ctlt              &ctdn             &ctrt               &shiftHOME                  &wintab   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &HIUS
+&none           &cthome            &calte            &ctend              &none                       &kp RWIN  &ctpgup         &wintab         &ctpgdn    &SLPL
+&none           &none              &evalue           &none               &none       &none    &none  &none     &none           &none           &none      &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -1198,30 +1256,30 @@
         layer_3 {
             display-name = "NUM";
             bindings = <
-&hush         &exc          &anp          &percent      &kp INTERNATIONAL_3                    &plus          &kp MINUS  &aster        &kp SLASH     &eql
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                 &kp NUMBER_6   &kp N7     &kp N8        &kp N9        &kp N0
-&kp LBKT      &kp EQUAL     &none         &none         &dollar                                &kp PERIOD     &none      &L_yamakakko  &R_yamakakko  &kp ENTER
-&none         &none         &none         &none         &none                &none    &kp TAB  &kp BACKSPACE  &none      &none         &none         &kp SLASH
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                    &kp F6         &kp F7     &kp F8     &kp F9  &kp F10
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp NUMBER_6   &kp N7     &kp N8     &kp N9  &kp N0
+&kp DOT       &kp EQUAL     &none         &none         &dollar                   &plus          &kp MINUS  &kp SLASH  &aster  &kp ENTER
+&none         &none         &none         &none         &none    &VBE    &kp F12  &kp BACKSPACE  &none      &none      &none   &kp SLASH
             >;
         };
 
         layer_4 {
             display-name = "FUNCTION";
             bindings = <
-&L_HRM LWIN SEMI  &L_HRM LEFT_ALT APOSTROPHE  &L_HRM LCTRL RBKT  &L_HRM LSHFT NUHS  &aster                      &aster    &R_HRM RSHFT RBKT  &R_HRM RCTRL NUHS  &R_HRM RIGHT_ALT APOSTROPHE  &R_HRM RIGHT_ALT SEMI
-&dq               &sq                         &lk                &rk                &anp                        &anp      &lk                &rk                &sq                          &dq
-&us               &pl                         &l_tyk             &r_tyk             &percent                    &percent  &l_tyk             &r_tyk             &pl                          &us
-&none             &none                       &none              &none              &none     &none    &evalue  &calte    &none              &none              &none                        &none
+&none  &none  &none  &none  &aster                  &kp INTERNATIONAL_3  &kp LBKT  &kp RBKT      &kp NUHS      &kp EQUAL
+&none  &none  &none  &none  &none                   &dollar              &anp      &lk           &rk           &eql
+&none  &none  &none  &none  &none                   &percent             &hush     &L_yamakakko  &R_yamakakko  &exc
+&none  &none  &none  &none  &none   &none    &none  &none                &none     &none         &none         &none
             >;
         };
 
         layer_5 {
             display-name = "Snipe";
             bindings = <
-&L_HRM LWIN F6  &L_HRM LEFT_ALT F7  &L_HRM LCTRL F8  &L_HRM LSHFT F9  &kp F10                     &ctup    &ctpgup   &kp UP_ARROW    &ctpgdn    &ctdn
-&kp F1          &kp F2              &kp F3           &kp F4           &kp F5                      &ctlt    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &ctrt
-&none           &none               &none            &kp F11          &kp F12                     &none    &altesc   &wintab         &saltesc   &none
-&none           &none               &none            &none            &none    &none    &saltesc  &altesc  &none     &none           &none      &none
+&none  &none  &none  &none  &none                     &ctup    &none     &none     &none  &none
+&none  &none  &none  &none  &none                     &none    &mkp MB4  &mkp MB5  &none  &none
+&none  &none  &none  &none  &none                     &none    &altesc   &none     &none  &none
+&none  &none  &none  &none  &none  &none    &kp HOME  &kp END  &none     &none     &none  &none
             >;
         };
 
