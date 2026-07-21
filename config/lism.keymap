@@ -1244,10 +1244,10 @@
         layer_2 {
             display-name = "Arrow";
             bindings = <
-&L_HRM LWIN F6  &SP_CTPGUP LALT 0  &SP_CTUP LCTRL 0  &SP_CTPGDN LSHFT 0  &none                       &altesc   &kp BACKSPACE   &kp UP_ARROW    &kp TAB    &saltesc
-&shiftEND       &ctlt              &ctdn             &ctrt               &shiftHOME                  &wintab   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &HIUS
-&none           &cthome            &calte            &ctend              &none                       &kp RWIN  &ctpgup         &wintab         &ctpgdn    &SLPL
-&none           &none              &evalue           &none               &none       &none    &none  &none     &none           &none           &none      &none
+&kp LWIN    &SP_CTPGUP LALT 0  &SP_CTUP LCTRL 0  &SP_CTPGDN LSHFT 0  &none                      &altesc   &kp BACKSPACE   &kp UP_ARROW    &kp ESCAPE  &saltesc
+&shiftHOME  &ctlt              &ctdn             &ctrt               &shiftEND                  &wintab   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT   &HIUS
+&none       &cthome            &calte            &ctend              &none                      &kp RWIN  &ctpgup         &kp DELETE      &ctpgdn     &SLPL
+&none       &none              &evalue           &none               &none      &none    &none  &none     &none           &none           &none       &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
