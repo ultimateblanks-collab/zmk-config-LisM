@@ -19,7 +19,7 @@ manifest:
       import: app/west.yml
     - name: zmk-driver-paw3222
       remote: ultimateblanks-collab
-      revision: acc0.1
+      revision: main
     - name: zmk-rgbled-widget
       remote: ultimateblanks-collab
       revision: ae2864f400774d6cfc7d65b50f74605bfe5e9031
