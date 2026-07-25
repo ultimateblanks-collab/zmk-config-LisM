@@ -1204,6 +1204,15 @@
             #binding-cells = <0>;
             bindings = <&dq>, <&kp SEMI>;
         };
+
+        l_HI_US: l_HI_US {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L_HI_US";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp MINUS>, <&us>;
+
+            tapping-term-ms = <170>;
+        };
     };
 
     combos {
@@ -1237,7 +1246,7 @@
             display-name = "Default Layer";
             bindings = <
 &L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R      &kp T                                &kp Y                &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D               &kp F                &kp G                                &kp H                &kp J           &kp K           &kp L               &mkp MB1
+&kp A          &kp S            &kp D               &kp F                &kp G                                &kp H                &kp J           &kp K           &l_HI_US            &mkp MB1
 &kp Z          &kp X            &kp C               &kp V                &kp B                                &kp N                &kp M           &comHI          &periUS             &R_THUMB 5 ENTER
 &kp TAB        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 4 LEFT_ALT  &L_THUMB 6 LCTRL  &sqCOR    &dqSEMI  &R_Th_space 2 SPACE  &none           &none           &none               &mkp MB2
             >;
