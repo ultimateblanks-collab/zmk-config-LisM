@@ -1116,20 +1116,20 @@
             tapping-term-ms = <180>;
         };
 
-        periCOL: periCOL {
+        periUS: periUS {
             compatible = "zmk,behavior-tap-dance";
-            label = "PERICOL";
+            label = "PERIUS";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD>, <&kp APOSTROPHE>;
+            bindings = <&kp PERIOD>, <&us>;
 
             tapping-term-ms = <180>;
         };
 
-        comSEMI: comSEMI {
+        comHI: comHI {
             compatible = "zmk,behavior-tap-dance";
-            label = "COMSEMI";
+            label = "COMHI";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
+            bindings = <&kp COMMA>, <&kp MINUS>;
 
             tapping-term-ms = <180>;
         };
@@ -1190,6 +1190,20 @@
             hold-trigger-key-positions = <7 17 16 17 18>;
             hold-trigger-on-release;
         };
+
+        sqCOR: sqCOR {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SQCOR";
+            #binding-cells = <0>;
+            bindings = <&sq>, <&kp APOSTROPHE>;
+        };
+
+        dqSEMI: dqSEMI {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DQSEMI";
+            #binding-cells = <0>;
+            bindings = <&dq>, <&kp SEMI>;
+        };
     };
 
     combos {
@@ -1222,10 +1236,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R      &kp T                         &kp Y                &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D               &kp F                &kp G                         &kp H                &kp J           &kp K           &kp L               &mkp MB1
-&kp Z          &kp X            &kp C               &kp V                &kp B                         &kp N                &kp M           &comSEMI        &periCOL            &mkp MB2
-&kp TAB        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 4 LEFT_ALT  &L_THUMB 3 LCTRL  &sq    &dq  &R_Th_space 2 SPACE  &none           &none           &none               &R_THUMB 5 ENTER
+&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E      &L_HRM LSHIFT R      &kp T                                &kp Y                &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
+&kp A          &kp S            &kp D               &kp F                &kp G                                &kp H                &kp J           &kp K           &kp L               &mkp MB1
+&kp Z          &kp X            &kp C               &kp V                &kp B                                &kp N                &kp M           &comHI          &periUS             &R_THUMB 5 ENTER
+&kp TAB        &kp PRINTSCREEN  &kp K_CONTEXT_MENU  &L_THUMB 4 LEFT_ALT  &L_THUMB 6 LCTRL  &sqCOR    &dqSEMI  &R_Th_space 2 SPACE  &none           &none           &none               &mkp MB2
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1245,9 +1259,9 @@
             display-name = "Arrow";
             bindings = <
 &kp LWIN    &SP_CTPGUP LALT 0  &SP_CTUP LCTRL 0  &SP_CTPGDN LSHFT 0  &none                      &altesc   &kp BACKSPACE   &kp UP_ARROW    &kp ESCAPE  &saltesc
-&shiftHOME  &ctlt              &ctdn             &ctrt               &shiftEND                  &wintab   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT   &HIUS
-&none       &cthome            &calte            &ctend              &none                      &kp RWIN  &ctpgup         &kp DELETE      &ctpgdn     &SLPL
-&none       &none              &evalue           &none               &none      &none    &none  &none     &none           &none           &none       &none
+&shiftHOME  &ctlt              &ctdn             &ctrt               &shiftEND                  &wintab   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT   &pl
+&none       &cthome            &calte            &ctend              &none                      &kp RWIN  &ctpgup         &kp DELETE      &ctpgdn     &kp SLASH
+&none       &none              &evalue           &kp HOME            &kp END    &none    &none  &none     &none           &none           &none       &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -1285,10 +1299,10 @@
 
         scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &trans  &to 5   &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans  &trans
+&none    &kp F1  &kp F2  &kp F3  &none                    &none    &kp N1  &kp N2  &kp N3  &none
+&kp F10  &kp F4  &kp F5  &kp F6  &kp F11                  &kp DOT  &kp N4  &kp N5  &kp N6  &kp N0
+&kp F12  &kp F7  &kp F8  &kp F9  &none                    &none    &kp N7  &kp N8  &kp N9  &none
+&none    &none   &none   &none   &none    &none    &none  &none    &none   &none   &none   &none
             >;
         };
     };
