@@ -1306,7 +1306,7 @@
         SC_SYMBOL {
             display-name = "FUNCTION";
             bindings = <
-&none               &none  &none     &none     &aster                           &kp INTERNATIONAL_3  &kp LBKT  &kp RBKT      &kp NUHS      &kp EQUAL
+&none               &none  &none     &none     &none                            &kp INTERNATIONAL_3  &kp LBKT  &kp RBKT      &kp NUHS      &kp EQUAL
 &kp K_CONTEXT_MENU  &none  &mkp MB4  &mkp MB5  &kp PRINTSCREEN                  &dollar              &anp      &lk           &rk           &eql
 &none               &none  &none     &none     &none                            &percent             &hush     &L_yamakakko  &R_yamakakko  &exc
 &none               &none  &none     &none     &none            &none    &none  &none                &none     &none         &none         &none
