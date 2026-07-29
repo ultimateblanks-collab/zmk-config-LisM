@@ -1111,7 +1111,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MIUS";
             #binding-cells = <0>;
-            bindings = <&SL_SP2 6 MINUS>, <&us>;
+            bindings = <&SL_SP2 5 MINUS>, <&us>;
 
             tapping-term-ms = <180>;
         };
@@ -1252,10 +1252,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W    &L_HRM LCTRL E  &L_HRM LSHIFT R  &kp T                                           &kp Y                &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S            &kp D           &kp F            &kp G                                           &kp H                &kp J           &kp K           &kp L               &HIUS
-&kp Z          &kp X            &kp C           &kp V            &kp B                                           &kp N                &kp M           &comSEMI        &periCOR            &SLPL
-&kp TAB        &kp PRINTSCREEN  &mkp MB2        &mkp MB1         &L_THUMB 5 LEFT_ALT  &L_THUMB 6 LCTRL    &SQDQ  &R_Th_space 2 SPACE  &none           &none           &none               &kp ENTER
+&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHIFT R  &kp T                                               &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
+&kp A          &kp S          &kp D           &kp F            &kp G                                               &kp H                    &kp J           &kp K           &kp L               &HIUS
+&kp Z          &kp X          &kp C           &kp V            &kp B                                               &kp N                    &kp M           &comSEMI        &periCOR            &SLPL
+&kp TAB        &mkp MB4       &mkp MB2        &mkp MB1         &L_THUMB 5 LEFT_ALT  &L_THUMB 6 LCTRL    &kp ENTER  &R_Th_space 2 BACKSPACE  &none           &none           &none               &SQDQ
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1274,7 +1274,7 @@
         BASIC {
             display-name = "Arrow";
             bindings = <
-&kp LWIN    &SP_CTPGUP LALT 0  &SP_CTUP LCTRL 0  &SP_CTPGDN LSHFT 0  &none                      &altesc   &kp BACKSPACE   &kp UP_ARROW    &kp ESCAPE  &saltesc
+&kp LWIN    &SP_CTPGUP LALT 0  &SP_CTUP LCTRL 0  &SP_CTPGDN LSHFT 0  &none                      &altesc   &kp SPACE       &kp UP_ARROW    &kp ESCAPE  &saltesc
 &shiftHOME  &ctlt              &ctdn             &ctrt               &shiftEND                  &wintab   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT   &pl
 &none       &cthome            &calte            &ctend              &none                      &kp RWIN  &ctpgup         &kp DELETE      &ctpgdn     &kp SLASH
 &none       &none              &evalue           &kp HOME            &kp END    &none    &none  &none     &none           &none           &none       &none
@@ -1303,6 +1303,15 @@
             >;
         };
 
+        NUM_FUN_2 {
+            bindings = <
+&none    &kp F1  &kp F2  &kp F3  &none                    &none    &kp N1  &kp N2  &kp N3  &none
+&kp F10  &kp F4  &kp F5  &kp F6  &kp F11                  &kp DOT  &kp N4  &kp N5  &kp N6  &kp N0
+&kp F12  &kp F7  &kp F8  &kp F9  &none                    &none    &kp N7  &kp N8  &kp N9  &none
+&none    &none   &none   &none   &none    &none    &none  &none    &none   &none   &none   &none
+            >;
+        };
+
         SC_SYMBOL {
             display-name = "FUNCTION";
             bindings = <
@@ -1310,15 +1319,6 @@
 &kp K_CONTEXT_MENU  &none  &mkp MB4  &mkp MB5  &kp PRINTSCREEN                  &dollar              &anp      &lk           &rk           &eql
 &none               &none  &none     &none     &none                            &percent             &hush     &L_yamakakko  &R_yamakakko  &exc
 &none               &none  &none     &none     &none            &none    &none  &none                &none     &none         &none         &none
-            >;
-        };
-
-        NUM_FUN_2 {
-            bindings = <
-&none    &kp F1  &kp F2  &kp F3  &none                    &none    &kp N1  &kp N2  &kp N3  &none
-&kp F10  &kp F4  &kp F5  &kp F6  &kp F11                  &kp DOT  &kp N4  &kp N5  &kp N6  &kp N0
-&kp F12  &kp F7  &kp F8  &kp F9  &none                    &none    &kp N7  &kp N8  &kp N9  &none
-&none    &none   &none   &none   &none    &none    &none  &none    &none   &none   &none   &none
             >;
         };
     };
