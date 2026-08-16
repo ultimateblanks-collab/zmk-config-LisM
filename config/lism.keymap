@@ -1287,6 +1287,16 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
         };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <11 12>;
+        };
+
+        ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <12 13>;
+        };
     };
 
     keymap {
@@ -1295,10 +1305,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q          &kp W              &kp E           &kp R                &kp T                                    &kp Y                    &kp U           &kp I           &kp O               &kp P
-&L_HRM LWIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                                    &kp H                    &R_HRM RSHFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X              &kp C           &kp V                &kp B                                    &kp N                    &kp M           &comSEMI        &periCOR            &SLPL
-&kp TAB        &mkp MB4           &MB245          &mo 5                &mkp MB1  &L_THUMB 7 LCTRL    &kp ENTER  &R_Th_space 6 BACKSPACE  &none           &none           &none               &SQDQ
+&kp Q          &kp W              &kp E           &kp R                &kp T                        &kp Y  &kp U           &kp I           &kp O               &kp P
+&L_HRM LWIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                        &kp H  &R_HRM RSHFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
+&kp Z          &kp X              &kp C           &kp V                &kp B                        &kp N  &kp M           &comSEMI        &periCOR            &SLPL
+&kp TAB        &mkp MB4           &MB245          &mo 5                &mkp MB1  &mkp MB5    &mo 6  &mo 2  &none           &none           &none               &SQDQ
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
