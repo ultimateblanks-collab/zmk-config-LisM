@@ -1368,10 +1368,10 @@
         SC_SYMBOL {
             display-name = "FUNCTION";
             bindings = <
-&kp EQUAL  &kp RBKT      &kp NUHS      &kp LBKT  &kp INTERNATIONAL_3                  &kp INTERNATIONAL_3  &kp LBKT  &kp RBKT      &kp NUHS      &kp EQUAL
-&SQDQ      &lk           &rk           &anp      &dollar                              &dollar              &anp      &lk           &rk           &SQDQ
-&exc       &L_yamakakko  &R_yamakakko  &hush     &percent                             &percent             &hush     &L_yamakakko  &R_yamakakko  &exc
-&none      &none         &none         &none     &none                &none    &none  &none                &none     &none         &none         &none
+&kp EQUAL  &kp RBKT  &kp NUHS  &kp LBKT  &kp INTERNATIONAL_3                  &kp INTERNATIONAL_3  &kp LBKT  &kp RBKT      &kp NUHS      &kp EQUAL
+&SQDQ      &lk       &rk       &anp      &dollar                              &dollar              &anp      &lk           &rk           &SQDQ
+&exc       &l_tyk    &r_tyk    &hush     &percent                             &percent             &hush     &L_yamakakko  &R_yamakakko  &exc
+&none      &none     &none     &none     &none                &none    &none  &none                &none     &none         &none         &none
             >;
         };
     };
