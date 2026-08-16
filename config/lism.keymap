@@ -1111,7 +1111,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MIUS";
             #binding-cells = <0>;
-            bindings = <&SL_SP2 5 MINUS>, <&us>;
+            bindings = <&SL_SP2 4 MINUS>, <&us>;
 
             tapping-term-ms = <180>;
         };
@@ -1138,7 +1138,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "ALTCONTROL";
             #binding-cells = <0>;
-            bindings = <&L_THUMB 3 LEFT_ALT>, <&kp LCTRL>;
+            bindings = <&L_THUMB 2 LEFT_ALT>, <&kp LCTRL>;
         };
 
         HIUS: HIUS {
@@ -1155,10 +1155,10 @@
             bindings = <&kp SLASH>, <&pl>;
         };
 
-        SP_CTUP: SP_CTUP {
+        SP_CTDN: SP_CTDN {
             compatible = "zmk,behavior-hold-tap";
-            label = "SP_CTUP";
-            bindings = <&kp>, <&ctup>;
+            label = "SP_CTDN";
+            bindings = <&kp>, <&ctdn>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -1167,10 +1167,10 @@
             hold-trigger-on-release;
         };
 
-        SP_CTPGUP: SP_CTPGUP {
+        SP_CTLT: SP_CTLT {
             compatible = "zmk,behavior-hold-tap";
-            label = "SP_CTPGUP";
-            bindings = <&kp>, <&ctpgup>;
+            label = "SP_CTLT";
+            bindings = <&kp>, <&ctlt>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -1179,10 +1179,10 @@
             hold-trigger-on-release;
         };
 
-        SP_CTPGDN: SP_CTPGDN {
+        SP_CTRT: SP_CTRT {
             compatible = "zmk,behavior-hold-tap";
-            label = "SP_CTPGDN";
-            bindings = <&kp>, <&ctpgdn>;
+            label = "SP_CTRT";
+            bindings = <&kp>, <&ctrt>;
 
             #binding-cells = <2>;
             tapping-term-ms = <180>;
@@ -1220,6 +1220,44 @@
             #binding-cells = <0>;
             bindings = <&dq>, <&sq>;
         };
+
+        APPPRSC: APPPRSC {
+            compatible = "zmk,behavior-tap-dance";
+            label = "APPPRSC";
+            #binding-cells = <0>;
+            bindings = <&kp K_CONTEXT_MENU>, <&kp PRINTSCREEN>;
+        };
+
+        SP_SHIFTHOME: SP_SHIFTHOME {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SP_SHIFTHOME";
+            bindings = <&kp>, <&shiftHOME>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <7 17 16 17 18>;
+            hold-trigger-on-release;
+        };
+
+        SP_CTUP: SP_CTUP {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SP_CTUP";
+            bindings = <&kp>, <&ctup>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <7 17 16 18>;
+            hold-trigger-on-release;
+        };
+
+        MB245: MB245 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MB245";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2>, <&mkp MB4>, <&mkp MB5>;
+        };
     };
 
     combos {
@@ -1244,6 +1282,11 @@
             bindings = <&kp GRAVE>;
             key-positions = <13 16>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
@@ -1252,10 +1295,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&L_HRM LWIN Q  &L_HRM LALT W  &L_HRM LCTRL E  &L_HRM LSHIFT R  &kp T                                               &kp Y                    &R_HRM RSHFT U  &R_HRM RCTRL I  &R_HRM RIGHT_ALT O  &R_HRM RIGHT_WIN P
-&kp A          &kp S          &kp D           &kp F            &kp G                                               &kp H                    &kp J           &kp K           &kp L               &HIUS
-&kp Z          &kp X          &kp C           &kp V            &kp B                                               &kp N                    &kp M           &comSEMI        &periCOR            &SLPL
-&kp TAB        &mkp MB4       &mkp MB2        &mkp MB1         &L_THUMB 5 LEFT_ALT  &L_THUMB 6 LCTRL    &kp ENTER  &R_Th_space 2 BACKSPACE  &none           &none           &none               &SQDQ
+&kp Q          &kp W              &kp E           &kp R                &kp T                                    &kp Y                    &kp U           &kp I           &kp O               &kp P
+&L_HRM LWIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                                    &kp H                    &R_HRM RSHFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
+&kp Z          &kp X              &kp C           &kp V                &kp B                                    &kp N                    &kp M           &comSEMI        &periCOR            &SLPL
+&kp TAB        &mkp MB4           &MB245          &mo 5                &mkp MB1  &L_THUMB 7 LCTRL    &kp ENTER  &R_Th_space 6 BACKSPACE  &none           &none           &none               &SQDQ
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1265,31 +1308,19 @@
             display-name = "Mouse";
             bindings = <
 &kp LWIN  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &none                     &none     &none     &none  &none          &none
-&none     &none         &none      &none      &none                     &kp HOME  &mkp MB1  &none  &SL_SP3 2 MB2  &kp END
+&none     &none         &none      &none      &none                     &kp HOME  &mkp MB1  &none  &SL_SP3 6 MB2  &kp END
 &none     &none         &none      &none      &none                     &none     &none     &none  &none          &none
 &none     &none         &none      &none      &none  &none    &mkp MB5  &mkp MB4  &none     &none  &none          &none
             >;
         };
 
-        BASIC {
-            display-name = "Arrow";
-            bindings = <
-&kp LWIN    &SP_CTPGUP LALT 0  &SP_CTUP LCTRL 0  &SP_CTPGDN LSHFT 0  &none                      &altesc   &kp SPACE       &kp UP_ARROW    &kp ESCAPE  &saltesc
-&shiftHOME  &ctlt              &ctdn             &ctrt               &shiftEND                  &wintab   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT   &pl
-&none       &cthome            &calte            &ctend              &none                      &kp RWIN  &ctpgup         &kp DELETE      &ctpgdn     &kp SLASH
-&none       &none              &evalue           &kp HOME            &kp END    &none    &none  &none     &none           &none           &none       &none
-            >;
-
-            sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
-        };
-
         NUM_FUN_1 {
             display-name = "NUM";
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                    &kp F6         &kp F7     &kp F8     &kp F9  &kp F10
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp NUMBER_6   &kp N7     &kp N8     &kp N9  &kp N0
-&kp DOT       &kp EQUAL     &none         &none         &dollar                   &plus          &kp MINUS  &kp SLASH  &aster  &kp ENTER
-&none         &none         &none         &none         &none    &VBE    &kp F12  &kp BACKSPACE  &none      &none      &none   &kp SLASH
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                    &kp F6         &kp F7     &kp F8  &kp F9      &kp F10
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp NUMBER_6   &kp N7     &kp N8  &kp N9      &kp N0
+&kp F11       &kp F12       &none         &none         &none                     &plus          &kp MINUS  &aster  &kp PERIOD  &kp SLASH
+&none         &none         &none         &none         &calte  &evalue    &none  &kp BACKSPACE  &none      &none   &none       &kp SLASH
             >;
         };
 
@@ -1312,13 +1343,25 @@
             >;
         };
 
+        BASIC {
+            display-name = "Arrow";
+            bindings = <
+&kp ESCAPE            &altesc              &ctup             &saltesc          &none                         &altesc        &kp TAB         &kp UP_ARROW    &kp ENTER  &kp DELETE
+&SP_SHIFTHOME LWIN 0  &SP_CTLT LEFT_ALT 0  &SP_CTDN LCTRL 0  &SP_CTRT LSHFT 0  &shiftEND                     &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &uspl
+&none                 &cthome              &none             &ctend            &none                         &APPPRSC       &ctpgup         &kp SPACE       &ctpgdn    &wintab
+&none                 &none                &none             &none             &none      &none    &kp HOME  &kp END        &none           &none           &none      &none
+            >;
+
+            sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
+        };
+
         SC_SYMBOL {
             display-name = "FUNCTION";
             bindings = <
-&none               &none  &none     &none     &none                            &kp INTERNATIONAL_3  &kp LBKT  &kp RBKT      &kp NUHS      &kp EQUAL
-&kp K_CONTEXT_MENU  &none  &mkp MB4  &mkp MB5  &kp PRINTSCREEN                  &dollar              &anp      &lk           &rk           &eql
-&none               &none  &none     &none     &none                            &percent             &hush     &L_yamakakko  &R_yamakakko  &exc
-&none               &none  &none     &none     &none            &none    &none  &none                &none     &none         &none         &none
+&kp EQUAL  &kp NUHS      &kp RBKT      &kp LBKT  &kp INTERNATIONAL_3                  &kp INTERNATIONAL_3  &kp LBKT  &kp RBKT      &kp NUHS      &kp EQUAL
+&SQDQ      &rk           &lk           &anp      &dollar                              &dollar              &anp      &lk           &rk           &SQDQ
+&exc       &R_yamakakko  &L_yamakakko  &hush     &percent                             &percent             &hush     &L_yamakakko  &R_yamakakko  &exc
+&none      &none         &none         &none     &none                &none    &none  &none                &none     &none         &none         &none
             >;
         };
     };
