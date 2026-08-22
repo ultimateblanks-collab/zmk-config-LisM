@@ -1270,11 +1270,11 @@
 
         CW {
             bindings = <&C_W>;
-            key-positions = <6 7>;
+            key-positions = <33 37>;
         };
 
-        SK {
-            bindings = <&sk LSHFT>;
+        bs {
+            bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
         };
 
@@ -1297,6 +1297,36 @@
             bindings = <&kp LCTRL>;
             key-positions = <12 13>;
         };
+
+        mb1 {
+            bindings = <&mkp MB1>;
+            key-positions = <3 13>;
+        };
+
+        mb2 {
+            bindings = <&mkp MB2>;
+            key-positions = <2 12>;
+        };
+
+        mb4 {
+            bindings = <&mkp MB4>;
+            key-positions = <1 11>;
+        };
+
+        mb5 {
+            bindings = <&mkp MB5>;
+            key-positions = <4 14>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <17 18>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <7 8>;
+        };
     };
 
     keymap {
@@ -1305,10 +1335,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q          &kp W              &kp E           &kp R                &kp T                     &kp Y  &kp U           &kp I           &kp O               &kp P
-&L_HRM LWIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                     &kp H  &R_HRM RSHFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X              &kp C           &kp V                &kp B                     &kp N  &kp M           &comSEMI        &periCOR            &kp SLASH
-&kp TAB        &mkp MB4           &MB245          &mo 5                &mo 1  &mkp MB5    &mo 6  &mo 2  &none           &none           &none               &SQDQ
+&kp Q          &kp W              &kp E           &kp R                &kp T                     &kp Y      &kp U           &kp I           &kp O               &kp P
+&L_HRM LWIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                     &kp H      &R_HRM RSHFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
+&kp Z          &kp X              &kp C           &kp V                &kp B                     &kp N      &kp M           &comSEMI        &periCOR            &kp SLASH
+&kp TAB        &mkp MB4           &mkp MB4        &mo 5                &mo 6  &mkp MB5    &mo 2  &kp SPACE  &none           &none           &none               &SQDQ
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1327,10 +1357,10 @@
         NUM_FUN_1 {
             display-name = "NUM";
             bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5                    &kp F6         &kp F7     &kp F8  &kp F9      &kp F10
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp NUMBER_6   &kp N7     &kp N8  &kp N9      &kp N0
-&kp F11       &kp F12       &none         &none         &none                     &plus          &kp MINUS  &aster  &kp PERIOD  &kp SLASH
-&none         &none         &none         &none         &calte  &evalue    &none  &kp BACKSPACE  &none      &none   &none       &kp SLASH
+&kp F1        &kp F2        &kp F3        &kp F4         &kp F5                       &kp F6         &kp F7     &kp F8  &kp F9      &kp F10
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5                       &kp NUMBER_6   &kp N7     &kp N8  &kp N9      &kp N0
+&kp F11       &kp F12       &none         &none          &none                        &plus          &kp MINUS  &aster  &kp PERIOD  &kp SLASH
+&none         &none         &none         &kp BACKSPACE  &kp ENTER  &kp TAB    &none  &kp BACKSPACE  &none      &none   &none       &kp SLASH
             >;
         };
 
