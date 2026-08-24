@@ -1258,6 +1258,20 @@
             #binding-cells = <0>;
             bindings = <&mkp MB2>, <&mkp MB4>, <&mkp MB5>;
         };
+
+        MBMO_THUMB: MBMO_THUMB {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MBMO_THUMB";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 37 38 39 40 41 36>;
+            hold-trigger-on-release;
+        };
     };
 
     combos {
@@ -1335,10 +1349,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp Q          &kp W              &kp E           &kp R                &kp T                     &kp Y      &kp U           &kp I           &kp O               &kp P
-&L_HRM LWIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D  &L_HRM LEFT_SHIFT F  &kp G                     &kp H      &R_HRM RSHFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
-&kp Z          &kp X              &kp C           &kp V                &kp B                     &kp N      &kp M           &comSEMI        &periCOR            &kp SLASH
-&kp TAB        &mkp MB4           &mkp MB4        &mo 5                &mo 6  &mkp MB5    &mo 2  &kp SPACE  &none           &none           &none               &SQDQ
+&kp Q          &kp W              &kp E              &kp R                &kp T                                 &kp Y      &kp U           &kp I           &kp O               &kp P
+&L_HRM LWIN A  &L_HRM LEFT_ALT S  &L_HRM LCTRL D     &L_HRM LEFT_SHIFT F  &kp G                                 &kp H      &R_HRM RSHFT J  &R_HRM RCTRL K  &R_HRM RIGHT_ALT L  &R_HRM RWIN MINUS
+&kp Z          &kp X              &kp C              &kp V                &kp B                                 &kp N      &kp M           &comSEMI        &periCOR            &kp SLASH
+&kp TAB        &mkp MB4           &MBMO_THUMB 6 MB4  &mkp MB1             &MBMO_THUMB 5 MB4  &mkp MB5    &mo 2  &kp SPACE  &none           &none           &none               &SQDQ
             >;
 
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
@@ -1386,10 +1400,10 @@
         BASIC {
             display-name = "Arrow";
             bindings = <
-&kp ESCAPE            &altesc              &ctup             &saltesc          &none                         &altesc   &kp SPACE       &kp UP_ARROW    &kp BACKSPACE  &kp DELETE
-&SP_SHIFTHOME LWIN 0  &SP_CTLT LEFT_ALT 0  &SP_CTDN LCTRL 0  &SP_CTRT LSHFT 0  &shiftEND                     &kp TAB   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp ENTER
-&none                 &cthome              &none             &ctend            &none                         &APPPRSC  &ctpgup         &kp SPACE       &ctpgdn        &wintab
-&none                 &none                &none             &none             &none      &none    &kp HOME  &kp END   &none           &none           &none          &none
+&kp ESCAPE            &altesc              &ctup             &saltesc          &none                         &altesc   &altesc         &kp UP_ARROW    &saltesc   &kp DELETE
+&SP_SHIFTHOME LWIN 0  &SP_CTLT LEFT_ALT 0  &SP_CTDN LCTRL 0  &SP_CTRT LSHFT 0  &shiftEND                     &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END
+&none                 &cthome              &none             &ctend            &none                         &APPPRSC  &ctpgup         &kp SPACE       &ctpgdn    &wintab
+&none                 &none                &none             &none             &none      &none    &kp HOME  &kp END   &none           &none           &none      &none
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -1400,8 +1414,8 @@
             bindings = <
 &kp EQUAL  &kp RBKT  &kp NUHS  &kp LBKT  &kp INTERNATIONAL_3                  &kp INTERNATIONAL_3  &kp LBKT  &kp RBKT  &kp NUHS  &kp EQUAL
 &SQDQ      &lk       &rk       &anp      &dollar                              &dollar              &anp      &lk       &rk       &uspl
-&exc       &l_tyk    &r_tyk    &hush     &percent                             &percent             &hush     &l_tyk    &r_tyk    &exc
-&none      &none     &none     &none     &none                &none    &none  &none                &none     &none     &none     &none
+&exc       &l_tyk    &r_tyk    &hush     &percent                             &percent             &hush     &l_tyk    &r_tyk    &SQDQ
+&none      &none     &none     &none     &none                &none    &none  &none                &none     &none     &none     &exc
             >;
         };
     };
