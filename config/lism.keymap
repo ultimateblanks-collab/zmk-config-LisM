@@ -1284,7 +1284,7 @@
 
         CW {
             bindings = <&C_W>;
-            key-positions = <33 37>;
+            key-positions = <6 7>;
         };
 
         bs {
